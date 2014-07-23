@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<default>
+		<embed></embed> 
+		<tokenAuth>
+			<akamai>
+				<param name="tokenizerSrc" value="/astv/mvpd/processors/services/token.do" />
+				<param name="profile" value="adultswim" />
+				<param name="loginCheck" value="off" />
+			</akamai>
+            <akamaiSpe>
+                <param name="tokenizerSrc" value="http://token.vgtf.net/token/token_spe" />
+                <param name="profile" value="tve" />
+            </akamaiSpe>
+			
+			<octoshape>
+				<param name="tokenizerSrc" value="http://token.vgtf.net/token/octoshape" />
+				<param name="profile" value="adultswim" />
+			</octoshape>
+
+			<param name="tokenizerSrc" value="/astv/mvpd/processors/services/token.do"/>
+			<param name="profile" value="adultswim"/>
+			<param name="loginCheck" value="off"/>
+		</tokenAuth>
+		<param name="dataSrc" value="/astv/mvpd/services/cvpXML.do?id=${videoId}"/>
+		<param name="mediaSrc" value="" />
+		<param name="lowBitrate" value="512" />
+		<param name="autostart" value="on" />
+		<param name="volume" value="75"/>
+		<param name="muted" value="off"/>
+        <param name="maxLiveDrift" value="" />
+        <param name="backgroundImage" value="" />
+
+        <param name="groupOrder" value="pHDS" />
+        <param name="stageVideo" value="on" />
+
+		<plugins> 
+			<plugin type="akamaiAnalytics" player="osmf"> 
+				<metadata> 
+					<param name="csmaPluginPath" value="http://79423.analytics.edgesuite.net/csma/plugin/csma.swf" /> 
+					<param name="csmaConfigPath" value="http://ma67-r.analytics.edgesuite.net/config/beacon-5658.xml"/> 
+				</metadata>
+            </plugin>
+
+		</plugins>
+
+	</default>
+	<!-- Sample "Main" Player Instance -->
+
+	<player name="main">
+		<param name="autostart" value="on" />
+	</player>
+
+    <player name="tve_ios_iphone">
+        <param name="iOSFileSelection" value="iphone"/>
+        <tokenAuth>
+            <akamai>
+                <param name="tokenizerSrc" value="/astv/mvpd/processors/services/token.do" />
+                <param name="profile" value="adultswim" />
+            </akamai>
+            <akamaiSpe>
+                <param name="tokenizerSrc" value="http://token.vgtf.net/token/token_spe" />
+                <param name="profile" value="tve" />
+            </akamaiSpe>
+        </tokenAuth>
+		<param name="mediaSrc" value="http://apple-secure.cdn.turner.com/adultswim/big"/>
+		<param name="dataSrc" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?id=${videoId}" />
+	</player>
+
+	<player name="tve_ios_ipad">
+        <param name="iOSFileSelection" value="ipad"/>
+        <tokenAuth>
+	        <param name="tokenizerSrc" value="http://www.adultswim.com/astv/mvpd/processors/services/token_ipadAdobe.do"/>
+        </tokenAuth>
+		<param name="mediaSrc" value="http://apple-secure.cdn.turner.com/adultswim/big"/>
+		<param name="dataSrc" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?id=${videoId}" />
+	</player>
+	
+	<player name="tve_embed">
+	    <tokenAuth>
+	        <param name="tokenizerSrc" value="http://www.adultswim.com/astv/mvpd/processors/services/token_embed.do"/>
+	    </tokenAuth>
+        <param name="dataSrc" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}" />
+	</player>
+	<player name="tve_embed_preprod">
+	    <tokenAuth>
+	        <param name="tokenizerSrc" value="http://pre-prod.adultswim.com/astv/mvpd/processors/services/token_embed.do"/>
+	    </tokenAuth>
+        <param name="dataSrc" value="http://pre-prod.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}" />
+	</player>
+	<player name="tve_embed_att">
+		<tokenAuth>
+			<param name="tokenizerSrc" value="http://www.adultswim.com/astv/mvpd/processors/services/token_embed.do" />
+			<param name="profile" value="adultswim" />
+			<param name="loginCheck" value="off" />
+		</tokenAuth>
+        <param name="dataSrc" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}" />
+	</player>
+	
+	<player name="tve_embed_att_preprod">
+		<tokenAuth>
+			<param name="tokenizerSrc" value="http://pre-prod.adultswim.com/astv/mvpd/processors/services/token_embed.do" />
+			<param name="profile" value="adultswim" />
+			<param name="loginCheck" value="off" />
+		</tokenAuth>
+        <param name="dataSrc" value="http://pre-prod.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}" />
+	</player>
+	
+	<player name="tve_embed_charter">
+		<tokenAuth>
+			<param name="tokenizerSrc" value="http://www.adultswim.com/astv/mvpd/processors/services/token_embed.do" />
+			<param name="profile" value="adultswim" />
+			<param name="loginCheck" value="off" />
+		</tokenAuth>
+        <param name="dataSrc" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}" />
+	</player>
+
+	<player name="tve_embed_charter_preprod">
+		<tokenAuth>
+			<param name="tokenizerSrc" value="http://pre-prod.adultswim.com/astv/mvpd/processors/services/token_embed.do" />
+			<param name="profile" value="adultswim" />
+			<param name="loginCheck" value="off" />
+		</tokenAuth>
+        <param name="dataSrc" value="http://pre-prod.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}" />
+	</player>
+	
+	<player name="tve_embed_cox">
+		<tokenAuth>
+			<param name="tokenizerSrc" value="http://www.adultswim.com/astv/mvpd/processors/services/token_embed.do" />
+			<param name="profile" value="adultswim" />
+			<param name="loginCheck" value="off" />
+		</tokenAuth>
+        <param name="dataSrc" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}" />
+	</player>
+	
+	<player name="tve_embed_cox_preprod">
+		<tokenAuth>
+			<param name="tokenizerSrc" value="http://pre-prod.adultswim.com/astv/mvpd/processors/services/token_embed.do" />
+			<param name="profile" value="adultswim" />
+			<param name="loginCheck" value="off" />
+		</tokenAuth>
+        <param name="dataSrc" value="http://pre-prod.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}" />
+	</player>
+
+	<player name="tve_embed_suddenlink">
+		<tokenAuth>
+			<param name="tokenizerSrc" value="http://www.adultswim.com/astv/mvpd/processors/services/token_embed.do" />
+			<param name="profile" value="adultswim" />
+			<param name="loginCheck" value="off" />
+		</tokenAuth>
+        <param name="dataSrc" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}" />
+	</player>
+
+	<player name="tve_embed_suddenlink_preprod">
+		<tokenAuth>
+			<param name="tokenizerSrc" value="http://pre-prod.adultswim.com/astv/mvpd/processors/services/token_embed.do" />
+			<param name="profile" value="adultswim" />
+			<param name="loginCheck" value="off" />
+		</tokenAuth>
+        <param name="dataSrc" value="http://pre-prod.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}" />
+	</player>
+
+    <player name="tve_embed_simulcast">
+        <param name="dataSrc" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?id=${videoId}"  />
+        <param name="lowBitrate" value="512" />
+        <param name="volume" value="75" />
+        <param name="stageVideo" value="on" />
+        <param name="autostart" value="on" />
+        <tokenAuth>
+            <akamaiSpe>
+                <param name="tokenizerSrc" value="http://token.vgtf.net/token/token_spe" />
+                <param name="profile" value="tve" />
+            </akamaiSpe>
+        </tokenAuth>
+    </player>
+    <player name="tve_embed_simulcast_preprod">
+        <param name="dataSrc" value="http://pre-prod.adultswim.com/astv/mvpd/services/cvpXML.do?id=${videoId}" />
+        <param name="lowBitrate" value="512" />
+        <param name="volume" value="75" />
+        <param name="stageVideo" value="on" />
+        <param name="autostart" value="on" />
+        <tokenAuth>
+            <akamaiSpe>
+                <param name="tokenizerSrc" value="http://reftoken.aspen.vgtf.net/token/token_spe" />
+                <param name="profile" value="tve" />
+            </akamaiSpe>
+        </tokenAuth>
+    </player>
+
+    <player name="live_preview">
+        <param name="dataSrc" value="/tools/xml/${video.id}.xml"/>
+        <param name="volume" value="0"/>
+		<param name="groupOrder" value="AkamaiHDN2"/>
+    </player>
+    <player name="live_preview_2">
+         <param name="dataSrc" value="/tools/xml/${video.id}.xml"/> 	
+        <param name="volume" value="0"/>
+		<param name="groupOrder" value="AkamaiHDN2"/>
+    </player>   
+    <player name="live_preview_3">
+         <param name="dataSrc" value="/tools/xml/${video.id}.xml"/> 	
+        <param name="volume" value="0"/>
+		<param name="groupOrder" value="AkamaiHDN2"/>
+    </player>    
+    <player name="live_preview_4">
+         <param name="dataSrc" value="/tools/xml/${video.id}.xml"/> 	
+        <param name="volume" value="0"/>
+		<param name="groupOrder" value="AkamaiHDN2"/>
+    </player>
+    <player name="live_preview_lazzo">
+         <param name="dataSrc" value="/tools/xml/${video.id}.xml"/> 	
+        <param name="volume" value="0"/>
+		<param name="groupOrder" value="AkamaiHDN2"/>
+    </player>
+
+</config>

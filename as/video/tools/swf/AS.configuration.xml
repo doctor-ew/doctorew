@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+  <timestamp value="1395245535577"/>
+  <applicationBasePath url="http://www.adultswim.com/adultswimfix/index.html"/>
+  <featured id="whatsnew" title="What's New" imageUrl="" rssUrl="http://asfix.adultswim.com/staged/asfix.rss"/>
+  <categories/>
+  <shows/>
+  <allcollections>
+    <collection id="8a25c3920e1ded1c010e1edb838d0052" scarlettShowID="359954" name="12 oz. Mouse" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e1ded1c010e1edb838d0052/thumbnail_4143464755909756084.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50451" position="1" genre="Action" xbox="false">
+      <description><![CDATA[12 oz. Mouse]]></description>
+    </collection>
+    <collection id="8a25c3921408036d0114080c4b770001" scarlettShowID="" name="Ads" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="2" genre="Action" xbox="false">
+      <description><![CDATA[Ads]]></description>
+    </collection>
+    <collection id="8a250aae229ce57001229dc1a3ee000e" scarlettShowID="" name="Adult Swim Games" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="GAME-TRLR" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250aae229ce57001229dc1a3ee000e/thumbnail_8093408623163401300.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="4" genre="Action" xbox="true">
+      <description><![CDATA[Adult Swim Game Promos]]></description>
+    </collection>
+    <collection id="8a250ba13ab75d93013b05a5a48a0604" scarlettShowID="401352" name="Adult Swim Infomercials" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ab75d93013b05a5a48a0604/thumbnail_7726080865530377160.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="639103" position="5" genre="Action" xbox="false">
+      <description><![CDATA[Adult Swim Infomercials]]></description>
+    </collection>
+    <collection id="8a250ba1419857900142007fe9823528" scarlettShowID="" name="Adult Swim Sync App" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="6" genre="Action" xbox="false">
+      <description><![CDATA[Adult Swim Sync App]]></description>
+    </collection>
+    <collection id="8a25c3920e5857a1010e585b61da0001" scarlettShowID="332142" name="American Dad" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a25c3920e5857a1010e585b61da0001/header_8479121067830166497.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e5857a1010e585b61da0001/thumbnail_7137365677694711541.png" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="148827" position="7" genre="Action" xbox="false">
+      <description><![CDATA[American Dad]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31cbd160010" scarlettShowID="" name="Animal Calls" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31cbd160010/thumbnail_4266769855737544380.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="8" genre="Action" xbox="true">
+      <description><![CDATA[Michael Darby is the world's foremost expert in nonhuman vocalization, and has spent his life learning the intricacies of more than 4,000 animal calls. ]]></description>
+    </collection>
+    <collection id="8a250ba137a3e1540137a444965e005a" scarlettShowID="387072" name="Aqua Something You Know Whatever" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba137a3e1540137a444965e005a/thumbnail_6284112347961610252.png" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="543895" position="10" genre="Action" xbox="true">
+      <description><![CDATA[Aqua Something You Know Whatever]]></description>
+    </collection>
+    <collection id="8a25c39212c8bcf30112c99af0910001" scarlettShowID="316905" name="Aqua Teen Hunger Force" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a25c39212c8bcf30112c99af0910001/header_8662936177325558775.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c39212c8bcf30112c99af0910001/thumbnail_3361104146927167963.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50119" position="11" genre="Action" xbox="true">
+      <description><![CDATA[Aqua Teen Hunger Force]]></description>
+    </collection>
+    <collection id="8a250ba13f865824013fc9dd21ac0401" scarlettShowID="397292" name="Aqua TV Show Show" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13f865824013fc9dd21ac0401/thumbnail_4878073869771774762.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="776666" position="12" genre="Action" xbox="true">
+      <description><![CDATA[Aqua TV Show Show]]></description>
+    </collection>
+    <collection id="8a250ba12f7d09ee012fa194fb33012d" scarlettShowID="377032" name="Aqua Unit Patrol Squad 1" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba12f7d09ee012fa194fb33012d/thumbnail_4283537139445470112.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="266815" position="13" genre="Action" xbox="true">
+      <description><![CDATA[Aqua Unit Patrol Squad 1]]></description>
+    </collection>
+    <collection id="8a25c3920e3cd4c5010e3d2f005f006d" scarlettShowID="344844" name="Assy McGee" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e3cd4c5010e3d2f005f006d/thumbnail_1808214818244234704.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50453" position="14" genre="Action" xbox="true">
+      <description><![CDATA[Assy McGee]]></description>
+    </collection>
+    <collection id="8a250ba13119c93c01312a44ddcd01de" scarlettShowID="379912" name="Black Dynamite" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a250ba13119c93c01312a44ddcd01de/header_4539021602435804971.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250aae295b307c01295b774d490005/thumbnail_2298538239109210404.png" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="543896" position="15" genre="Action" xbox="true">
+      <description><![CDATA[Black Dynamite]]></description>
+    </collection>
+    <collection id="8a250ba13ef0a786013f0b463a4d020c" scarlettShowID="395593" name="Bob's Burgers" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ef0a786013f0b463a4d020c/thumbnail_4518813914041282463.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="755366" position="17" genre="Action" xbox="true">
+      <description><![CDATA[Bob's Burgers]]></description>
+    </collection>
+    <collection id="8a2505951d1a2751011d261779af007d" scarlettShowID="" name="Brad Neely" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a2505951d1a2751011d261779af007d/thumbnail_4929443577989451370.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="18" genre="Action" xbox="true">
+      <description><![CDATA[Brad Neely]]></description>
+    </collection>
+    <collection id="8a250ba130322c23013046fe60170049" scarlettShowID="" name="Cardboard Box Assembler Walkthrough" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="GAME-TRLR" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba130322c23013046fe60170049/thumbnail_5633469831760223685.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="19" genre="Action" xbox="false">
+      <description><![CDATA[Cardboard Box Assembler Walkthrough]]></description>
+    </collection>
+    <collection id="8a25c39215b8f3910115ba5794c40045" scarlettShowID="" name="Carl" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c39215b8f3910115ba5794c40045/thumbnail_5243381663842018378.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="20" genre="Action" xbox="true">
+      <description><![CDATA[Carl]]></description>
+    </collection>
+    <collection id="8a250ba1377efb17013780db0ced011f" scarlettShowID="387013" name="Casshern Sins" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba1377efb17013780db0ced011f/thumbnail_1218616037475362485.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="541161" position="21" genre="Action" xbox="false">
+      <description><![CDATA[Casshern Sins]]></description>
+    </collection>
+    <collection id="8a250aae2886f3560128880fe6b60006" scarlettShowID="369632" name="Check It Out! with Dr. Steve Brule" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250aae2886f3560128880fe6b60006/thumbnail_5256368082033508565.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="358518" position="22" genre="Comedy" xbox="true">
+      <description><![CDATA[Check It Out! with Dr. Steve Brule]]></description>
+    </collection>
+    <collection id="8a250aae295b307c01295b774d490005" scarlettShowID="368653" name="Childrens Hospital" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a250aae295b307c01295b774d490005/header_3420258687514735856.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13119c93c01312a44ddcd01de/thumbnail_1607445549238713634.png" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50128" position="23" genre="Comedy" xbox="true">
+      <description><![CDATA[Childrens Hospital]]></description>
+    </collection>
+    <collection id="8a250ba1318c04920131ab3f838e01f3" scarlettShowID="380074" name="China, IL" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a250ba1318c04920131ab3f838e01f3/header_8947785859949503010.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba1318c04920131ab3f838e01f3/thumbnail_9070570879788930843.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="358770" position="24" genre="Action" xbox="true">
+      <description><![CDATA[China, IL]]></description>
+    </collection>
+    <collection id="8a25c392138c678401138d97f6440010" scarlettShowID="" name="Convention Panels" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c392138c678401138d97f6440010/thumbnail_9017523003650691950.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="25" genre="Action" xbox="true">
+      <description><![CDATA[Convention Panels]]></description>
+    </collection>
+    <collection id="8a25c392105ef2970110603f4d023a67" scarlettShowID="319442" name="Cowboy Bebop" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository/8a25c392105ef2970110603f4d023a67/header_969869090384734344.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c392105ef2970110603f4d023a67/thumbnail_5533519010761397865.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="59798" position="26" genre="Action" xbox="false">
+      <description><![CDATA[Cowboy Bebop]]></description>
+    </collection>
+    <collection id="8a250ba1377efb17013780d6efff011e" scarlettShowID="387012" name="Deadman Wonderland" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba1377efb17013780d6efff011e/thumbnail_5070368453435160582.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="541162" position="27" genre="Action" xbox="false">
+      <description><![CDATA[Deadman Wonderland]]></description>
+    </collection>
+    <collection id="8a2505951f130c9f011f2962ccd1023c" scarlettShowID="357349" name="Delocated" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a2505951f130c9f011f2962ccd1023c/header_9038970268833548603.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a2505951f130c9f011f2962ccd1023c/thumbnail_2629659863276659330.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50126" position="28" genre="Action" xbox="true">
+      <description><![CDATA[Delocated]]></description>
+    </collection>
+    <collection id="8a250ba12df31170012e05ff81ec0087" scarlettShowID="371535" name="Eagleheart" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a250ba12df31170012e05ff81ec0087/header_2940069181883212749.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba12df31170012e05ff81ec0087/thumbnail_3975668870440912081.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="257210" position="31" genre="Action" xbox="true">
+      <description><![CDATA[Eagleheart]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31cbe42001b" scarlettShowID="" name="Entertainment" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31cbe42001b/thumbnail_8725633547337684426.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="32" genre="Comedy" xbox="true">
+      <description><![CDATA[All the latest dirt about your favorite celebs.]]></description>
+    </collection>
+    <collection id="8a250ba13119c93c01312a0c22be01db" scarlettShowID="" name="Escape from Puppy Death Factory Walkthrough" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="GAME-TRLR" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13119c93c01312a0c22be01db/thumbnail_7040521450788883528.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="33" genre="Action" xbox="false">
+      <description><![CDATA[Escape from Puppy Death Factory Walkthrough]]></description>
+    </collection>
+    <collection id="8a25c3920eaf5fa6010eaffb99c438bf" scarlettShowID="325795" name="Family Guy" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a25c3920eaf5fa6010eaffb99c438bf/header_6804701449177526742.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920eaf5fa6010eaffb99c438bf/thumbnail_4157233801165113426.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51840" position="35" genre="Comedy" xbox="true">
+      <description><![CDATA[Family Guy]]></description>
+    </collection>
+    <collection id="8a25c392127659d1011276999ece002a" scarlettShowID="345184" name="Fat Guy Stuck In Internet" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c392127659d1011276999ece002a/thumbnail_7728518864325513746.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="350811" position="36" genre="Action" xbox="false">
+      <description><![CDATA[Fat Guy Stuck In Internet]]></description>
+    </collection>
+    <collection id="8a250ba141521cf801419412470c306d" scarlettShowID="" name="Filthy Sexy Teens" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba141521cf801419412470c306d/thumbnail_1395289666207117222.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="828206" position="37" genre="Action" xbox="true">
+      <description><![CDATA[Filthy Sexy Teens]]></description>
+    </collection>
+    <collection id="8a250aae270a0f4a01270bf2379e0041" scarlettShowID="380076" name="Freaknik" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250aae270a0f4a01270bf2379e0041/thumbnail_8550190445903106475.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="550199" position="38" genre="Comedy" xbox="false">
+      <description><![CDATA[Freaknik]]></description>
+    </collection>
+    <collection id="8a25c3920e3cd4c5010e3d323df0006f" scarlettShowID="344104" name="Frisky Dingo" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e3cd4c5010e3d323df0006f/thumbnail_1497085324420806341.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="49053" position="39" genre="Action" xbox="true">
+      <description><![CDATA[Frisky Dingo]]></description>
+    </collection>
+    <collection id="8a250aae26dc1d960126dce023fd000a" scarlettShowID="368673" name="Fullmetal Alchemist: Brotherhood" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250aae26dc1d960126dce023fd000a/thumbnail_7807736380461885138.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="59800" position="40" genre="Action" xbox="false">
+      <description><![CDATA[Fullmetal Alchemist: Brotherhood]]></description>
+    </collection>
+    <collection id="8a250ba141521cf801415685fbe300a4" scarlettShowID="" name="Futuremanity" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba141521cf801415685fbe300a4/thumbnail_6408077196109366687.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="41" genre="Action" xbox="true">
+      <description><![CDATA[Futuremanity]]></description>
+    </collection>
+    <collection id="8a25c3920e5857a1010e585e25260005" scarlettShowID="330847" name="Ghost in the Shell" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e5857a1010e585e25260005/thumbnail_6014514949309404804.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="59796" position="42" genre="Action" xbox="false">
+      <description><![CDATA[Ghost in the Shell ]]></description>
+    </collection>
+    <collection id="8a25c392127763f00112776b1ff20001" scarlettShowID="316907" name="Harvey Birdman, Attorney at Law" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c392127763f00112776b1ff20001/thumbnail_2200467233952632128.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="49909" position="44" genre="Action" xbox="false">
+      <description><![CDATA[Harvey Birdman, Attorney at Law]]></description>
+    </collection>
+    <collection id="8a25c3920eec2495010eecf65c5a16f7" scarlettShowID="319443" name="Home Movies" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920eec2495010eecf65c5a16f7/thumbnail_3584406790661911516.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51061" position="45" genre="Action" xbox="true">
+      <description><![CDATA[Home Movies]]></description>
+    </collection>
+    <collection id="8a250ba1412d0643014131723c8f0173" scarlettShowID="398352" name="Hot Package" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba1412d0643014131723c8f0173/thumbnail_5747919084176612053.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="820212" position="46" genre="Action" xbox="true">
+      <description><![CDATA[Hot Package]]></description>
+    </collection>
+    <collection id="8a250ba13f865824013fc9e120880402" scarlettShowID="" name="Job Interview Tips" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13f865824013fc9e120880402/thumbnail_4799719345904581581.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="48" genre="Action" xbox="true">
+      <description><![CDATA[Job Interview Tips]]></description>
+    </collection>
+    <collection id="8a2505951e3ac6db011e3c1420880059" scarlettShowID="359714" name="King of the Hill" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a2505951e3ac6db011e3c1420880059/header_5355503071676571460.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a2505951e3ac6db011e3c1420880059/thumbnail_2297837086958841824.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51839" position="49" genre="Action" xbox="true">
+      <description><![CDATA[King of the Hill]]></description>
+    </collection>
+    <collection id="8a250ba140e47fcc0140ef37bfae00c5" scarlettShowID="" name="Literary Musings With Mark Twain" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba140e47fcc0140ef37bfae00c5/thumbnail_6377084249520657284.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="52" genre="Action" xbox="true">
+      <description><![CDATA[Literary Musings With Mark Twain]]></description>
+    </collection>
+    <collection id="8a250ba134caa063013516dd18ef041c" scarlettShowID="385014" name="Loiter Squad" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a250ba134caa063013516dd18ef041c/header_8664893895023235641.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13d27d4f2013d8412b7300767/thumbnail_5329514325716302457.png" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="517923" position="53" genre="Action" xbox="true">
+      <description><![CDATA[Loiter Squad]]></description>
+    </collection>
+    <collection id="8a25c3920f05f16b010f069371f52339" scarlettShowID="332263" name="Lucy, The Daughter of the Devil" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920f05f16b010f069371f52339/thumbnail_7634119881986536505.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51063" position="54" genre="Action" xbox="false">
+      <description><![CDATA[Lucy, The Daughter of the Devil]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31cc9820093" scarlettShowID="" name="Magical Apartment Land" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31cc9820093/thumbnail_6248495374899092868.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="55" genre="Comedy" xbox="true">
+      <description><![CDATA[When the humans leave, ordinary objects come to life as if by magic. They drink, swear, and have sex, also as if by magic.]]></description>
+    </collection>
+    <collection id="8a250aae29457a12012947d38ee60008" scarlettShowID="370612" name="Mary Shelley's Frankenhole" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250aae29457a12012947d38ee60008/thumbnail_3409619068093358083.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50127" position="56" genre="Comedy" xbox="true">
+      <description><![CDATA[Mary Shelley's Frankenhole]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31cce4f00c0" scarlettShowID="" name="Memes" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31cce4f00c0/thumbnail_2633604961517260691.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="57" genre="Comedy" xbox="true">
+      <description><![CDATA[Our own flavor of trending Internet stuff.]]></description>
+    </collection>
+    <collection id="8a25c392105ef29701106035229f33b2" scarlettShowID="341865" name="Metalocalypse" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a25c392105ef29701106035229f33b2/header_5893598030778573358.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c392105ef29701106035229f33b2/thumbnail_5142601901767418733.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="49910" position="58" genre="Action" xbox="true">
+      <description><![CDATA[Metalocalypse]]></description>
+    </collection>
+    <collection id="8a25c3920e3cd4c5010e3d4ce52c007d" scarlettShowID="336825" name="Minoriteam" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e3cd4c5010e3d4ce52c007d/thumbnail_7320898627079503681.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51042" position="59" genre="Action" xbox="true">
+      <description><![CDATA[Minoriteam]]></description>
+    </collection>
+    <collection id="8a250ba12d869160012d9a68b5570058" scarlettShowID="373903" name="Mongo Wrestling Alliance" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba12d869160012d9a68b5570058/thumbnail_6500752451591013345.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="257211" position="60" genre="Action" xbox="true">
+      <description><![CDATA[Mongo Wrestling Alliance]]></description>
+    </collection>
+    <collection id="8a25c3920ee1de84010ee202607a0ad3" scarlettShowID="338087" name="Moral Orel" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920ee1de84010ee202607a0ad3/thumbnail_3507506230072649450.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="59130" position="61" genre="Action" xbox="true">
+      <description><![CDATA[Moral Orel]]></description>
+    </collection>
+    <collection id="8a25c39212901607011290950960000b" scarlettShowID="" name="Music Videos" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c39212901607011290950960000b/thumbnail_5587103669049084287.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="62" genre="Action" xbox="false">
+      <description><![CDATA[Music Videos]]></description>
+    </collection>
+    <collection id="8a250ba13b49a632013b52ebe336010c" scarlettShowID="335883" name="Naruto" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13b49a632013b52ebe336010c/thumbnail_7610713657589665313.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="650535" position="63" genre="Action" xbox="false">
+      <description><![CDATA[Naruto]]></description>
+    </collection>
+    <collection id="8a250ba142dd657a0142e8513fed0112" scarlettShowID="391933" name="Naruto: Shippuden" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="873167" position="64" genre="Action" xbox="true">
+      <description><![CDATA[Naruto: Shippuden]]></description>
+    </collection>
+    <collection id="8a250ba13c15a9dc013c1c2a9f7a00fc" scarlettShowID="388835" name="Newsreaders" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a250ba13c15a9dc013c1c2a9f7a00fc/header_7618960756795814902.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13c15a9dc013c1c2a9f7a00fc/thumbnail_1666632995495487539.png" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="672028" position="65" genre="Action" xbox="false">
+      <description><![CDATA[Newsreaders]]></description>
+    </collection>
+    <collection id="8a250ba12f68cdd2012f697105d10038" scarlettShowID="379036" name="NTSF:SD:SUV::" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a250ba12f68cdd2012f697105d10038/header_5549484602850114935.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba134caa063013516dd18ef041c/thumbnail_6718359168532245427.png" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="319413" position="66" genre="Comedy" xbox="true">
+      <description><![CDATA[NTSF:SD:SUV::]]></description>
+    </collection>
+    <collection id="8a250ba12d527964012d5304e37f000f" scarlettShowID="374155" name="Off The Air" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba12d527964012d5304e37f000f/thumbnail_96687149856446719.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="350809" position="67" genre="Action" xbox="false">
+      <description><![CDATA[Off the Air]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31cc3690047" scarlettShowID="" name="On Cinema" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31cc3690047/thumbnail_561460120704337639.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="68" genre="Comedy" xbox="true">
+      <description><![CDATA[Tim Heidecker and his guest Gregg Turkington discuss what movies you should see this weekend and what movies you can wait to see on video or even not even see.]]></description>
+    </collection>
+    <collection id="8a250ba13e1838a6013ea3dc1f6f06e9" scarlettShowID="331646" name="One Piece" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13e1838a6013ea3dc1f6f06e9/thumbnail_6702642555940884557.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="744532" position="69" genre="Action" xbox="true">
+      <description><![CDATA[One Piece]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31ccdca00bf" scarlettShowID="" name="Paynt Boyz" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31ccdca00bf/thumbnail_423327598734744653.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="70" genre="Comedy" xbox="true">
+      <description><![CDATA[Four would-be street artists get together to start a crew that will dominate the five boroughs! Or not. Paynt Boyz. Represent.]]></description>
+    </collection>
+    <collection id="8a25c3920e3cd4c5010e3d4dfefb007f" scarlettShowID="331383" name="Perfect Hair Forever" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="350810" position="71" genre="Action" xbox="true">
+      <description><![CDATA[Perfect Hair Forever]]></description>
+    </collection>
+    <collection id="8a250ba142dd657a0142fd07390d0217" scarlettShowID="" name="Pilots" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="873169" position="72" genre="Action" xbox="false">
+      <description><![CDATA[Pilots]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31ccc6a00b5" scarlettShowID="" name="Porn Foley" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31ccc6a00b5/thumbnail_7396340376322380864.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="73" genre="Comedy" xbox="true">
+      <description><![CDATA[The definitive documentary on Horst Pell, the adult film industry's undisputed master of Foley artistry.]]></description>
+    </collection>
+    <collection id="8a250aae28010cff01280343f418001a" scarlettShowID="" name="Press Releases" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250aae28010cff01280343f418001a/thumbnail_1581384055445610453.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="74" genre="Comedy" xbox="false">
+      <description><![CDATA[Press Releases]]></description>
+    </collection>
+    <collection id="8a250ba13d123d96013d1da483c1011a" scarlettShowID="" name="Prism Panic Walkthrough" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="GAME-TRLR" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13d123d96013d1da483c1011a/thumbnail_2315357510089639485.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="75" genre="Action" xbox="false">
+      <description><![CDATA[Prism Panic Walkthrough]]></description>
+    </collection>
+    <collection id="8a25c39212e334eb0112e3f0f2fa00a4" scarlettShowID="" name="Promos" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c39212e334eb0112e3f0f2fa00a4/thumbnail_3720128181345480831.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="76" genre="Action" xbox="false">
+      <description><![CDATA[Promos]]></description>
+    </collection>
+    <collection id="8a250ba13f865824013fc9db8b6b0400" scarlettShowID="401312" name="Rick and Morty" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13f865824013fc9db8b6b0400/thumbnail_6648958967314939391.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="776665" position="77" genre="Action" xbox="true">
+      <description><![CDATA[Rick and Morty]]></description>
+    </collection>
+    <collection id="8a25c3920ef15683010ef20fc9d2015d" scarlettShowID="331864" name="Robot Chicken" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a25c3920ef15683010ef20fc9d2015d/header_7395637833271337124.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920ef15683010ef20fc9d2015d/thumbnail_5551965298090311205.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50454" position="78" genre="Action" xbox="true">
+      <description><![CDATA[Robot Chicken]]></description>
+    </collection>
+    <collection id="8a25c392127659d1011276b512950067" scarlettShowID="" name="Robot Chicken Star Wars" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c392127659d1011276b512950067/thumbnail_2683005780985944999.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="79" genre="Action" xbox="false">
+      <description><![CDATA[Robot Chicken Star Wars]]></description>
+    </collection>
+    <collection id="8a250ba13925b17a013926b402aa000d" scarlettShowID="388692" name="Samurai 7" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13925b17a013926b402aa000d/thumbnail_2966717993059736431.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="570927" position="80" genre="Action" xbox="false">
+      <description><![CDATA[Samurai 7]]></description>
+    </collection>
+    <collection id="8a25c3920e516e19010e529c8a5d001c" scarlettShowID="346729" name="Saul of the Mole Men" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e516e19010e529c8a5d001c/thumbnail_6146622849694755639.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51041" position="81" genre="Action" xbox="false">
+      <description><![CDATA[Saul of the Mole Men]]></description>
+    </collection>
+    <collection id="8a25c3920ef15683010ef214f9770177" scarlettShowID="316903" name="Sealab 2021" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920ef15683010ef214f9770177/thumbnail_1047117583182318324.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="49908" position="82" genre="Action" xbox="true">
+      <description><![CDATA[Sealab 2021]]></description>
+    </collection>
+    <collection id="8a250ba142d829000142d9889ebd0043" scarlettShowID="" name="Shorts" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="83" genre="Action" xbox="false">
+      <description><![CDATA[Shorts]]></description>
+    </collection>
+    <collection id="8a2505951bc80ed4011c6761049c0751" scarlettShowID="363972" name="Snake 'N' Bacon" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a2505951bc80ed4011c6761049c0751/thumbnail_5021970754861853650.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="84" genre="Action" xbox="false">
+      <description><![CDATA[Snake 'N' Bacon]]></description>
+    </collection>
+    <collection id="8a250ba13cba7c86013cca2aae1800a2" scarlettShowID="369457" name="Soul Eater" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13cba7c86013cca2aae1800a2/thumbnail_2837576525013683025.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="691826" position="85" genre="Action" xbox="true">
+      <description><![CDATA[Soul Eater]]></description>
+    </collection>
+    <collection id="8a250ba12ffa61c1012ffa82e3760003" scarlettShowID="369457" name="Soul Quest Overdrive" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="320745" position="86" genre="Comedy" xbox="false">
+      <description><![CDATA[Soul Quest Overdrive]]></description>
+    </collection>
+    <collection id="8a250ba142dd657a0142e84fcdcd0110" scarlettShowID="401472" name="Space Dandy" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="873166" position="87" genre="Action" xbox="true">
+      <description><![CDATA[Space Dandy]]></description>
+    </collection>
+    <collection id="8a25c3920e3cd4c5010e3d554b530082" scarlettShowID="304555" name="Space Ghost Coast to Coast" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e3cd4c5010e3d554b530082/thumbnail_3146143528447075914.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="53571" position="88" genre="Action" xbox="false">
+      <description><![CDATA[Space Ghost Coast to Coast]]></description>
+    </collection>
+    <collection id="8a250ba13f865824013fc9e1dd8b0403" scarlettShowID="" name="Space Miners" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13f865824013fc9e1dd8b0403/thumbnail_3723303131144914129.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="89" genre="Action" xbox="true">
+      <description><![CDATA[Space Miners]]></description>
+    </collection>
+    <collection id="8a25c3920eec2495010eed62293217c8" scarlettShowID="330849" name="Squidbillies" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a25c3920eec2495010eed62293217c8/header_3492744582433764476.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c39212c8bcf30112c99af0910001/thumbnail_919295391724322881.png" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51838" position="90" genre="Action" xbox="true">
+      <description><![CDATA[Squidbillies]]></description>
+    </collection>
+    <collection id="8a25c39215db8cc00115dd68184d003c" scarlettShowID="352627" name="Stiff" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c39215db8cc00115dd68184d003c/thumbnail_7065898628087940535.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="91" genre="Action" xbox="false">
+      <description><![CDATA[Stiff]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31cdde00168" scarlettShowID="" name="Stock Footage Commentary" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31cdde00168/thumbnail_3678286604295326561.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="92" genre="Action" xbox="true">
+      <description><![CDATA[The creative team at Stock Dump Studios talks about how they made some of their most popular stock footage.]]></description>
+    </collection>
+    <collection id="8a25c3920e2e6751010e2e6e91230001" scarlettShowID="329365" name="Stroker and Hoop" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e2e6751010e2e6e91230001/thumbnail_4912318290286768810.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51472" position="93" genre="Action" xbox="true">
+      <description><![CDATA[Stroker and Hoop]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31ccf1600c7" scarlettShowID="" name="Superego" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31ccf1600c7/thumbnail_1972020341400113813.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="94" genre="Comedy" xbox="true">
+      <description><![CDATA[An animated series created by the team at Superego: voices improvised by Mark McConville, Matt Gourley, and Rob Delaney. Animation by Dan Hartshorn.]]></description>
+    </collection>
+    <collection id="8a25c392127017ed0112711d76f10001" scarlettShowID="347964" name="Superjail!" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a25c392127017ed0112711d76f10001/header_7555296028011858191.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c392127017ed0112711d76f10001/thumbnail_8844693295843100256.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51060" position="95" genre="Action" xbox="true">
+      <description><![CDATA[Superjail! ]]></description>
+    </collection>
+    <collection id="8a250ba13ab75d93013ab7f0504a0015" scarlettShowID="371652" name="Sym-Bionic Titan" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ab75d93013ab7f0504a0015/thumbnail_5168839762207332512.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="621743" position="97" genre="Action" xbox="true">
+      <description><![CDATA[Sym-Bionic Titan]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31cbbbb0003" scarlettShowID="" name="Tech Scoop" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31cbbbb0003/thumbnail_8745225014334559190.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="98" genre="Comedy" xbox="true">
+      <description><![CDATA[Ready to see the latest in tech put through the paces in ways that lay bare the cowardice of those Stone Age boneheads at Wired and Gizmodo? Thing X giga-guru Joe Garden performs a battery of unorthodox stress-tests on the shiniest new gadgets, so you'll know exactly which devices are worthy of your undying love and hard-earned cash.]]></description>
+    </collection>
+    <collection id="8a250ba13ab75d93013ab7f1c3350016" scarlettShowID="391352" name="Tenchi Muyo!" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ab75d93013ab7f1c3350016/thumbnail_4115231239199379318.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="621744" position="99" genre="Action" xbox="false">
+      <description><![CDATA[Tenchi Muyo!]]></description>
+    </collection>
+    <collection id="8a25c3920e0e884f010e0ec6285b0003" scarlettShowID="317420" name="The Big O" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e0e884f010e0ec6285b0003/thumbnail_2276618875987571520.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="151014" position="100" genre="Action" xbox="false">
+      <description><![CDATA[The  Big O]]></description>
+    </collection>
+    <collection id="8a25c3920eaf5fa6010eafc3fecd017e" scarlettShowID="336141" name="The Boondocks" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a25c3920eaf5fa6010eafc3fecd017e/header_2437972755531118365.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920eaf5fa6010eafc3fecd017e/thumbnail_1095848348486774880.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50129" position="101" genre="Action" xbox="true">
+      <description><![CDATA[The Boondocks ]]></description>
+    </collection>
+    <collection id="8a25c3920ee5ea4e010ee6e805a20001" scarlettShowID="312481" name="The Brak Show" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920ee5ea4e010ee6e805a20001/thumbnail_208841038990967794.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51062" position="102" genre="Action" xbox="true">
+      <description><![CDATA[The Brak Show]]></description>
+    </collection>
+    <collection id="8a250ba139a116f50139c0e8823b03b8" scarlettShowID="370973" name="The Cleveland Show" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba139a116f50139c0e8823b03b8/thumbnail_5906196224918367505.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="592444" position="103" genre="Action" xbox="false">
+      <description><![CDATA[The Cleveland Show]]></description>
+    </collection>
+    <collection id="8a25c392127659d101127696ef200020" scarlettShowID="348605" name="The Drinky Crow Show" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c392127659d101127696ef200020/thumbnail_3306062352174951568.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50452" position="104" genre="Action" xbox="false">
+      <description><![CDATA[The Drinky Crow Show]]></description>
+    </collection>
+    <collection id="8a250ba136ee324a0137045b3d7601ca" scarlettShowID="386452" name="The Eric Andre Show" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a250ba136ee324a0137045b3d7601ca/header_5905192902247908423.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba136ee324a0137045b3d7601ca/thumbnail_7337500590598075727.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="540804" position="105" genre="Action" xbox="true">
+      <description><![CDATA[The Eric Andre Show]]></description>
+    </collection>
+    <collection id="8a250ba137ec0c5001380bb4a34e0347" scarlettShowID="" name="The Eric Andre Show: Mini Episodes" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba137ec0c5001380bb4a34e0347/thumbnail_7550383439771622207.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="106" genre="Comedy" xbox="false">
+      <description><![CDATA[The Eric Andre Show: Mini Episodes]]></description>
+    </collection>
+    <collection id="8a250ba13a22ebea013a2d25d12800f5" scarlettShowID="394792" name="The Greatest Event in Television History" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13a22ebea013a2d25d12800f5/thumbnail_4809621163669114166.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="605079" position="107" genre="Action" xbox="true">
+      <description><![CDATA[The Greatest Event in Television History]]></description>
+    </collection>
+    <collection id="8a250ba13ef0a786013ef0fe93d7006d" scarlettShowID="" name="The Greatest Event in Television History 2" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ef0a786013ef0fe93d7006d/thumbnail_6511685685513666480.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="757458" position="108" genre="Comedy" xbox="false">
+      <description><![CDATA[The Greatest Event in Television History]]></description>
+    </collection>
+    <collection id="8a250ba13249688801325e9118460149" scarlettShowID="380952" name="The Heart, She Holler" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13249688801325e9118460149/thumbnail_5460832473914513073.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="433541" position="109" genre="Action" xbox="false">
+      <description><![CDATA[The Heart, She Holler]]></description>
+    </collection>
+    <collection id="8a250ba141521cf801415685292200a1" scarlettShowID="" name="The New Big Ball" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba141521cf801415685292200a1/thumbnail_7530241666595426279.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="110" genre="Action" xbox="true">
+      <description><![CDATA["America's Funnyman" Neil Hamburger hosts The New Big Ball, a game show that pits three contestants against each other in a series of ball-related competitions for a fabulous grand prize. Featuring trusty assistant (and female bodybuilder) Linda and special guest Corbin Bernsen, The New Big Ball will have you on the edge of your seat!]]></description>
+    </collection>
+    <collection id="8a250ba13968a11f0139789e5d1a0133" scarlettShowID="389373" name="The Restless Bell" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13968a11f0139789e5d1a0133/thumbnail_2040396831095221175.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="597009" position="112" genre="Action" xbox="true">
+      <description><![CDATA[The Restless Bell]]></description>
+    </collection>
+    <collection id="8a250ba13335b6fe0133b39149820e26" scarlettShowID="363131" name="The Rising Son" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13335b6fe0133b39149820e26/thumbnail_6992172555736126572.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="440079" position="113" genre="Action" xbox="true">
+      <description><![CDATA[The Rising Son]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31cdce4015e" scarlettShowID="" name="The Trash Heap" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31cdce4015e/thumbnail_7768689133257414778.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="114" genre="Comedy" xbox="true">
+      <description><![CDATA[Host Kelly Hudson serves up heaping platters of entertainment garbage in each episode of Hot Trash. What movie tanked? What actress got pregnant, and whose schlong did the deed? Kelly knows!]]></description>
+    </collection>
+    <collection id="8a25c3920eaf5fa6010eafac52fc00ef" scarlettShowID="325518" name="The Venture Bros." distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a25c3920eaf5fa6010eafac52fc00ef/header_8918705546004553364.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920eaf5fa6010eafac52fc00ef/thumbnail_112726594532636803.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50062" position="115" genre="Action" xbox="true">
+      <description><![CDATA[The Venture Bros.]]></description>
+    </collection>
+    <collection id="8a2505951d6251d9011d7797e78200ae" scarlettShowID="360800" name="The Xtacles" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c39215fa78a40115fc18077c00eb/thumbnail_7683925734992401247.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="930266" position="116" genre="Action" xbox="true">
+      <description><![CDATA[The Xtacles]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31cd31500f9" scarlettShowID="" name="Think Talk" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31cd31500f9/thumbnail_677659733169258614.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="117" genre="Comedy" xbox="true">
+      <description><![CDATA[The Think X project strives to bring the human masses only the most salient interviews with luminaries from the worlds of entertainment, technology, science, lobster-fishing and literature.]]></description>
+    </collection>
+    <collection id="8a250ba13ab75d93013ab7ec575d0014" scarlettShowID="377732" name="Thundercats" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ab75d93013ab7ec575d0014/thumbnail_4020505246673953992.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="621742" position="118" genre="Action" xbox="false">
+      <description><![CDATA[Thundercats]]></description>
+    </collection>
+    <collection id="8a25c392109799c3011098b1d6f40001" scarlettShowID="346726" name="Tim and Eric Awesome Show Great Job!" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a25c392109799c3011098b1d6f40001/header_8036378244278113006.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c392109799c3011098b1d6f40001/thumbnail_6363505557820383458.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="50455" position="119" genre="Action" xbox="false">
+      <description><![CDATA[Tim and Eric Awesome Show Great Job!]]></description>
+    </collection>
+    <collection id="8a250ba1419857900141dc3767a92b2d" scarlettShowID="400612" name="Tim and Eric's Bedtime Stories" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba1419857900141dc3767a92b2d/thumbnail_6797690572307464405.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="843411" position="120" genre="Action" xbox="true">
+      <description><![CDATA[Tim and Eric's Bedtime Stories]]></description>
+    </collection>
+    <collection id="8a250aae22c0eb170122c304f19c005e" scarlettShowID="365995" name="Titan Maximum" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250aae22c0eb170122c304f19c005e/thumbnail_2427403638571524550.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="257212" position="121" genre="Action" xbox="true">
+      <description><![CDATA[Titan Maximum]]></description>
+    </collection>
+    <collection id="8a25c3920eaf5fa6010eaffccf083bbd" scarlettShowID="330850" name="Tom Goes To The Mayor" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920eaf5fa6010eaffccf083bbd/thumbnail_734422709811291006.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51064" position="122" genre="Action" xbox="false">
+      <description><![CDATA[Tom Goes To The Mayor ]]></description>
+    </collection>
+    <collection id="8a250ba13f445ed6013f77f76c0201ed" scarlettShowID="" name="Toonami Game Reviews" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13f445ed6013f77f76c0201ed/thumbnail_1688258088908872515.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="123" genre="Action" xbox="false">
+      <description><![CDATA[Toonami Game Reviews]]></description>
+    </collection>
+    <collection id="8a250ba13f445ed6013f77f6d8f401ec" scarlettShowID="" name="Toonami Tom" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="863767" position="124" genre="Action" xbox="false">
+      <description><![CDATA[Toonami Tom]]></description>
+    </collection>
+    <collection id="8a250ba13249688801325fd4295601f7" scarlettShowID="" name="UNCLASSIFIED" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="126" genre="Action" xbox="false">
+      <description><![CDATA[UNCLASSIFIED]]></description>
+    </collection>
+    <collection id="8a25c392129016070112907eafa00003" scarlettShowID="" name="Webisodes" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Other" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c392129016070112907eafa00003/thumbnail_5188893719447796897.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="127" genre="Action" xbox="false">
+      <description><![CDATA[Webisodes]]></description>
+    </collection>
+    <collection id="8a25c39215fa78a40115fc18077c00eb" scarlettShowID="352414" name="Xavier: Renegade Angel" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a2505951d1a2751011d2fd2b9db0142/thumbnail_6627385741781444848.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="51059" position="128" genre="Action" xbox="true">
+      <description><![CDATA[Xavier: Renegade Angel]]></description>
+    </collection>
+    <collection id="8a250ba13ec31b3b013ec31cd01e00ce" scarlettShowID="" name="XHow" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Originals" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13ec31b3b013ec31cd01e00ce/thumbnail_3322636125429607823.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="129" genre="Comedy" xbox="true">
+      <description><![CDATA[XHow is the Internet's premier Do-It-Yourself series, featuring only the top Xperts in their respective fields, telling you exactly what you need to know and nothing else.]]></description>
+    </collection>
+    <collection id="8a250ba13a899fee013a9dbe77ba0393" scarlettShowID="385754" name="You're Whole" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a250ba13a899fee013a9dbe77ba0393/thumbnail_5647520349970850347.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="626026" position="130" genre="Action" xbox="true">
+      <description><![CDATA[You're Whole]]></description>
+    </collection>
+    <collection id="8a2505951d1a2751011d2fd2b9db0142" scarlettShowID="357230" name="Young Person's Guide to History" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a2505951d6251d9011d7797e78200ae/thumbnail_2855991068420917464.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="692439" position="131" genre="Action" xbox="false">
+      <description><![CDATA[Young Person's Guide to History]]></description>
+    </collection>
+    <collection id="8a250ba13d27d4f2013d8412b7300767" scarlettShowID="374612" name="Your Pretty Face is Going to Hell" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository/8a250ba13d27d4f2013d8412b7300767/header_968395245849653627.jpg" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920eec2495010eed62293217c8/thumbnail_7245742218843263009.png" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="711857" position="132" genre="Action" xbox="true">
+      <description><![CDATA[Your Pretty Face is Going to Hell]]></description>
+    </collection>
+    <collection id="8a250ba142dd657a0143014c6e3202d0" scarlettShowID="" name="Condemn the Naughty" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Comedy" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="" position="361" genre="Action" xbox="false">
+      <description><![CDATA[Christmas Specials]]></description>
+    </collection>
+    <collection id="8a250ba143778bfc01438d003a650143" scarlettShowID="403612" name="Blue Exorcist" distributor="Comedy" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="882039" position="364" genre="Action" xbox="true">
+      <description><![CDATA[Watch full episodes of Blue Exorcist, only on Toonami. When Rin Okumura discovers that he's secretly the son of Satan, he dedicates his life to becoming an exorcist and learning to defeat his father. Toonami is your home for anime, action and more, and it's only on Adult Swim.]]></description>
+    </collection>
+    <collection id="8a250ba14402b52a01446ff503d30946" scarlettShowID="404932" name="Black Lagoon" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="916568" position="365" genre="Action" xbox="false">
+      <description><![CDATA[Black Lagoon]]></description>
+    </collection>
+    <collection id="8a25c3920e5857a1010e585bcd5a0002" scarlettShowID="343790" name="Bleach" distributor="Action" contextpageurl="" contextpageurltitle="" category="Action" header1="http://i.adultswim.com/asfix/repository" header2="http://i.adultswim.com/asfix/repository" thumbnail="http://i.adultswim.com/asfix/repository/8a25c3920e5857a1010e585bcd5a0002/thumbnail_3616077670176304409.jpg" brandimg="http://i.adultswim.com/asfix/repository" cmacontentid="543897" position="15" genre="Action" xbox="true">
+      <description><![CDATA[Bleach ]]></description>
+    </collection>
+  </allcollections>
+  <logiccategories>
+    <category name="GAME-TRLR" description="Game Trailers" categoryId="8a250ba13e1838a6013eb3d35f7b0791">
+      <collection id="8a250aae229ce57001229dc1a3ee000e" name="Adult Swim Games" rating="TV-14" embed="N"/>
+      <collection id="8a250ba130322c23013046fe60170049" name="Cardboard Box Assembler Walkthrough" rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13119c93c01312a0c22be01db" name="Escape from Puppy Death Factory Walkthrough" rating="TV-14" embed="Y"/>
+      <collection id="8a250ba13d123d96013d1da483c1011a" name="Prism Panic Walkthrough" rating="TV-PG" embed="Y"/>
+    </category>
+    <category name="Comedy" description="Comedy category" categoryId="8a25c39211b7c6eb0111b80cecb226a3">
+      <collection id="8a25c3920e1ded1c010e1edb838d0052" name="12 oz. Mouse" rating="TV-MA" embed="N"/>
+      <collection id="8a250ba13ab75d93013b05a5a48a0604" name="Adult Swim Infomercials" rating="TV-PG" embed="Y"/>
+      <collection id="8a25c3920e5857a1010e585b61da0001" name="American Dad" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba137a3e1540137a444965e005a" name="Aqua Something You Know Whatever" rating="TV-MA" embed="Y"/>
+      <collection id="8a25c39212c8bcf30112c99af0910001" name="Aqua Teen Hunger Force" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba13f865824013fc9dd21ac0401" name="Aqua TV Show Show" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba12f7d09ee012fa194fb33012d" name="Aqua Unit Patrol Squad 1" rating="TV-14" embed="Y"/>
+      <collection id="8a25c3920e3cd4c5010e3d2f005f006d" name="Assy McGee" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba13119c93c01312a44ddcd01de" name="Black Dynamite" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13ef0a786013f0b463a4d020c" name="Bob's Burgers" rating="TV-14 DLSV" embed="Y"/>
+      <collection id="8a250aae2886f3560128880fe6b60006" name="Check It Out! with Dr. Steve Brule" rating="TV-MA" embed="Y"/>
+      <collection id="8a250aae295b307c01295b774d490005" name="Childrens Hospital" rating="TV-14 DLSV" embed="Y"/>
+      <collection id="8a250ba1318c04920131ab3f838e01f3" name="China, IL" rating="TV-MA" embed="Y"/>
+      <collection id="8a2505951f130c9f011f2962ccd1023c" name="Delocated" rating="TV-14 DL" embed="Y"/>
+      <collection id="8a250ba12df31170012e05ff81ec0087" name="Eagleheart" rating="TV-14" embed="Y"/>
+      <collection id="8a25c3920eaf5fa6010eaffb99c438bf" name="Family Guy" rating="TV-PG" embed="N"/>
+      <collection id="8a25c392127659d1011276999ece002a" name="Fat Guy Stuck In Internet" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba141521cf801419412470c306d" name="Filthy Sexy Teens" rating="TV-14 DLV" embed="Y"/>
+      <collection id="8a250aae270a0f4a01270bf2379e0041" name="Freaknik" rating="TV-MA" embed="Y"/>
+      <collection id="8a25c3920e3cd4c5010e3d323df0006f" name="Frisky Dingo" rating="TV-PG" embed="N"/>
+      <collection id="8a25c392127763f00112776b1ff20001" name="Harvey Birdman, Attorney at Law" rating="TV-PG" embed="N"/>
+      <collection id="8a25c3920eec2495010eecf65c5a16f7" name="Home Movies" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba1412d0643014131723c8f0173" name="Hot Package" rating="TV-MA" embed="Y"/>
+      <collection id="8a2505951e3ac6db011e3c1420880059" name="King of the Hill" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba134caa063013516dd18ef041c" name="Loiter Squad" rating="TV-14 DLSV" embed="Y"/>
+      <collection id="8a25c3920f05f16b010f069371f52339" name="Lucy, The Daughter of the Devil" rating="TV-PG" embed="N"/>
+      <collection id="8a250aae29457a12012947d38ee60008" name="Mary Shelley's Frankenhole" rating="TV-MA" embed="Y"/>
+      <collection id="8a25c392105ef29701106035229f33b2" name="Metalocalypse" rating="TV-MA" embed="Y"/>
+      <collection id="8a25c3920e3cd4c5010e3d4ce52c007d" name="Minoriteam" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba12d869160012d9a68b5570058" name="Mongo Wrestling Alliance" rating="TV-MA" embed="Y"/>
+      <collection id="8a25c3920ee1de84010ee202607a0ad3" name="Moral Orel" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba13c15a9dc013c1c2a9f7a00fc" name="Newsreaders" rating="TV-14" embed="Y"/>
+      <collection id="8a250ba12f68cdd2012f697105d10038" name="NTSF:SD:SUV::" rating="TV-14" embed="Y"/>
+      <collection id="8a250ba12d527964012d5304e37f000f" name="Off The Air" rating="TV-PG" embed="N"/>
+      <collection id="8a25c3920e3cd4c5010e3d4dfefb007f" name="Perfect Hair Forever" rating="TV-14 DLSV" embed="N"/>
+      <collection id="8a250ba142dd657a0142fd07390d0217" name="Pilots" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13f865824013fc9db8b6b0400" name="Rick and Morty" rating="TV-14 DLSV" embed="Y"/>
+      <collection id="8a25c3920ef15683010ef20fc9d2015d" name="Robot Chicken" rating="TV-MA" embed="Y"/>
+      <collection id="8a25c392127659d1011276b512950067" name="Robot Chicken Star Wars" rating="TV-MA" embed="N"/>
+      <collection id="8a25c3920e516e19010e529c8a5d001c" name="Saul of the Mole Men" rating="TV-PG" embed="N"/>
+      <collection id="8a25c3920ef15683010ef214f9770177" name="Sealab 2021" rating="TV-PG" embed="N"/>
+      <collection id="8a2505951bc80ed4011c6761049c0751" name="Snake 'N' Bacon" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba12ffa61c1012ffa82e3760003" name="Soul Quest Overdrive" rating="TV-MA" embed="Y"/>
+      <collection id="8a25c3920e3cd4c5010e3d554b530082" name="Space Ghost Coast to Coast" rating="TV-PG" embed="N"/>
+      <collection id="8a25c3920eec2495010eed62293217c8" name="Squidbillies" rating="TV-MA" embed="Y"/>
+      <collection id="8a25c39215db8cc00115dd68184d003c" name="Stiff" rating="TV-PG" embed="N"/>
+      <collection id="8a25c3920e2e6751010e2e6e91230001" name="Stroker and Hoop" rating="TV-PG" embed="N"/>
+      <collection id="8a25c392127017ed0112711d76f10001" name="Superjail!" rating="TV-MA V" embed="Y"/>
+      <collection id="8a25c3920eaf5fa6010eafc3fecd017e" name="The Boondocks" rating="TV-MA V" embed="Y"/>
+      <collection id="8a25c3920ee5ea4e010ee6e805a20001" name="The Brak Show" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba139a116f50139c0e8823b03b8" name="The Cleveland Show" rating="TV-14" embed="Y"/>
+      <collection id="8a25c392127659d101127696ef200020" name="The Drinky Crow Show" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba136ee324a0137045b3d7601ca" name="The Eric Andre Show" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13a22ebea013a2d25d12800f5" name="The Greatest Event in Television History" rating="TV-14" embed="Y"/>
+      <collection id="8a250ba13ef0a786013ef0fe93d7006d" name="The Greatest Event in Television History 2" rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13249688801325e9118460149" name="The Heart, She Holler" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13968a11f0139789e5d1a0133" name="The Restless Bell" rating="TV-14 DLS" embed="Y"/>
+      <collection id="8a250ba13335b6fe0133b39149820e26" name="The Rising Son" rating="TV-MA" embed="Y"/>
+      <collection id="8a25c3920eaf5fa6010eafac52fc00ef" name="The Venture Bros." rating="TV-14 DLSV" embed="Y"/>
+      <collection id="8a2505951d6251d9011d7797e78200ae" name="The Xtacles" rating="TV-PG" embed="N"/>
+      <collection id="8a25c392109799c3011098b1d6f40001" name="Tim and Eric Awesome Show Great Job!" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba1419857900141dc3767a92b2d" name="Tim and Eric's Bedtime Stories" rating="TV-14 L" embed="Y"/>
+      <collection id="8a250aae22c0eb170122c304f19c005e" name="Titan Maximum" rating="TV-PG" embed="N"/>
+      <collection id="8a25c3920eaf5fa6010eaffccf083bbd" name="Tom Goes To The Mayor" rating="TV-PG" embed="N"/>
+      <collection id="8a25c39215fa78a40115fc18077c00eb" name="Xavier: Renegade Angel" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba13a899fee013a9dbe77ba0393" name="You're Whole" rating="TV-14 DL" embed="Y"/>
+      <collection id="8a2505951d1a2751011d2fd2b9db0142" name="Young Person's Guide to History" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba13d27d4f2013d8412b7300767" name="Your Pretty Face is Going to Hell" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba142dd657a0143014c6e3202d0" name="Condemn the Naughty" rating="TV-MA" embed="Y"/>
+    </category>
+    <category name="Other" description="Other collections" categoryId="8a25c39211b7c6eb0111b80d1e5326a4">
+      <collection id="8a25c3921408036d0114080c4b770001" name="Ads" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba1419857900142007fe9823528" name="Adult Swim Sync App" rating="TV-PG" embed="Y"/>
+      <collection id="8a2505951d1a2751011d261779af007d" name="Brad Neely" rating="TV-PG" embed="N"/>
+      <collection id="8a25c39215b8f3910115ba5794c40045" name="Carl" rating="TV-14" embed="Y"/>
+      <collection id="8a25c392138c678401138d97f6440010" name="Convention Panels" rating="TV-PG" embed="Y"/>
+      <collection id="8a25c39212901607011290950960000b" name="Music Videos" rating="TV-14" embed="Y"/>
+      <collection id="8a250aae28010cff01280343f418001a" name="Press Releases" rating="TV-PG" embed="Y"/>
+      <collection id="8a25c39212e334eb0112e3f0f2fa00a4" name="Promos" rating="TV-14" embed="Y"/>
+      <collection id="8a250ba137ec0c5001380bb4a34e0347" name="The Eric Andre Show: Mini Episodes" rating="TV-14" embed="Y"/>
+      <collection id="8a250ba13249688801325fd4295601f7" name="UNCLASSIFIED" rating="TV-14" embed="Y"/>
+      <collection id="8a25c392129016070112907eafa00003" name="Webisodes" rating="TV-14" embed="Y"/>
+    </category>
+    <category name="Action" description="Action category" categoryId="8a25c39211b7c6eb0111b80d7f6426a5">
+      <collection id="8a250ba1377efb17013780db0ced011f" name="Casshern Sins" rating="TV-PG" embed="Y"/>
+      <collection id="8a25c392105ef2970110603f4d023a67" name="Cowboy Bebop" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba1377efb17013780d6efff011e" name="Deadman Wonderland" rating="TV-MA V" embed="Y"/>
+      <collection id="8a250aae26dc1d960126dce023fd000a" name="Fullmetal Alchemist: Brotherhood" rating="TV-14" embed="Y"/>
+      <collection id="8a25c3920e5857a1010e585e25260005" name="Ghost in the Shell" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba13b49a632013b52ebe336010c" name="Naruto" rating="TV-PG DSV" embed="Y"/>
+      <collection id="8a250ba142dd657a0142e8513fed0112" name="Naruto: Shippuden" rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13e1838a6013ea3dc1f6f06e9" name="One Piece" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba13925b17a013926b402aa000d" name="Samurai 7" rating="TV-PG LV" embed="Y"/>
+      <collection id="8a250ba13cba7c86013cca2aae1800a2" name="Soul Eater" rating="TV-14 DLSV" embed="Y"/>
+      <collection id="8a250ba142dd657a0142e84fcdcd0110" name="Space Dandy" rating="TV-14 DLSV" embed="Y"/>
+      <collection id="8a250ba13ab75d93013ab7f0504a0015" name="Sym-Bionic Titan" rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13ab75d93013ab7f1c3350016" name="Tenchi Muyo!" rating="TV-PG DV" embed="Y"/>
+      <collection id="8a25c3920e0e884f010e0ec6285b0003" name="The Big O" rating="TV-PG" embed="N"/>
+      <collection id="8a250ba13ab75d93013ab7ec575d0014" name="Thundercats" rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13f445ed6013f77f76c0201ed" name="Toonami Game Reviews" rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13f445ed6013f77f6d8f401ec" name="Toonami Tom" rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba143778bfc01438d003a650143" name="Blue Exorcist" rating="TV-14 LV" embed="Y"/>
+      <collection id="8a250ba14402b52a01446ff503d30946" name="Black Lagoon" rating="TV-MA" embed="Y"/>
+      <collection id="8a25c3920e5857a1010e585bcd5a0002" name="Bleach" rating="TV-14 LV" embed="N"/>
+    </category>
+    <category name="Originals" description="Original Programming" categoryId="90000000000000000000000000000000">
+      <collection id="8a250ba13ec31b3b013ec31cbd160010" name="Animal Calls " rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31cbe42001b" name="Entertainment " rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba141521cf801415685fbe300a4" name="Futuremanity" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13f865824013fc9e120880402" name="Job Interview Tips" rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba140e47fcc0140ef37bfae00c5" name="Literary Musings With Mark Twain" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31cc9820093" name="Magical Apartment Land " rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31cce4f00c0" name="Memes " rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31cc3690047" name="On Cinema " rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31ccdca00bf" name="Paynt Boyz " rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31ccc6a00b5" name="Porn Foley " rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba142d829000142d9889ebd0043" name="Shorts" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13f865824013fc9e1dd8b0403" name="Space Miners" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31cdde00168" name="Stock Footage Commentary " rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31ccf1600c7" name="Superego " rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31cbbbb0003" name="Tech Scoop " rating="TV-PG" embed="Y"/>
+      <collection id="8a250ba141521cf801415685292200a1" name="The New Big Ball" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31cdce4015e" name="The Trash Heap" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31cd31500f9" name="Think Talk" rating="TV-MA" embed="Y"/>
+      <collection id="8a250ba13ec31b3b013ec31cd01e00ce" name="XHow " rating="TV-PG" embed="Y"/>
+    </category>
+  </logiccategories>
+  <externalLinks>
+    <externalLink name="adultSwim" value="http://www.adultswim.com"/>
+    <externalLink name="privacyPolicy" value="http://www.adultswim.com/gen/legal/index.html"/>
+    <externalLink name="developerTools" value="http://www.adultswim.com/help/index.html"/>
+    <externalLink name="contactUs" value="http://www.adultswim.com/gen/contact/index.html"/>
+    <externalLink name="legalInformation" value="http://www.adultswim.com/gen/legal/trademark.html"/>
+    <externalLink name="termsOfUse" value="http://www.adultswim.com/gen/legal/trademark.html"/>
+  </externalLinks>
+  <services>
+    <favorites limit="30"/>
+    <getHelp url="/video/tools/xml/help.xml"/>
+    <getNews url="/video/tools/swf/rss.swf"/>
+    <getComments url="http://asfix.adultswim.com/asfix-svc/services/getContent?id=comments&amp;networkName=AS"/>
+    <getServerTime url="http://asfix.adultswim.com/asfix-svc/services/getServerTime?networkName=AS"/>
+    <getAdPlaylist url="http://asfix.adultswim.com/asfix-svc/episodeservices/getAdPlaylist?networkName=AS"/>
+    <getVideoPlaylist url="http://asfix.adultswim.com/asfix-svc/episodeservices/getVideoPlaylist?networkName=AS"/>
+    <getFeaturedEpisode url="http://asfix.adultswim.com/asfix-svc/episodeSearch/getFeaturedEpisode?networkName=AS"/>
+    <getAllEpisodes url="http://asfix.adultswim.com/asfix-svc/episodeSearch/getAllEpisodes?networkName=AS" limit="30"/>
+    <addComment url="http://asfix.adultswim.com/asfix-svc/services/postComment?networkName=AS"/>
+    <validateEpisodeIDs url="http://asfix.adultswim.com/asfix-svc/idValidation/getValidEpisodeIDs?networkName=AS"/>
+    <episodesByIDs url="http://asfix.adultswim.com/asfix-svc/episodeSearch/getEpisodesByIDs?networkName=AS"/>
+    <episodesByShow url="http://asfix.adultswim.com/asfix-svc/episodeSearch/getEpisodesByShow?networkName=AS" limit="30"/>
+    <episodesByCategory url="http://asfix.adultswim.com/asfix-svc/episodeSearch/getEpisodesByCategory?networkName=AS" limit="30"/>
+    <episodesByMultiCategory url="http://asfix.adultswim.com/asfix-svc/episodeSearch/getEpisodesByCategory?id=multiCat&amp;networkName=AS&amp;filterByCollectionId=" limit="30"/>
+    <episodesMoreLiskeThis url="http://asfix.adultswim.com/asfix-svc/episodeSearch/getMoreEpisodesLike?networkName=AS&amp;limit=50&amp;howMany=6&amp;filterByCollectionId="/>
+    <searchEpisodes url="http://asfix.adultswim.com/asfix-svc/episodeSearch/search?networkName=AS" limit="30"/>
+    <rankEpisode url="http://asfix.adultswim.com/asfix-svc/services/postRating?networkName=AS"/>
+    <getCVPPlaylist url="http://asfix.adultswim.com/asfix-svc/episodeservices/getCvpPlaylist?networkName=AS&amp;id=${videoId}"/>
+    <getCvpPlaylist_dev url="http://asfix.adultswim.com/asfix-svc/episodeservices/getCvpPlaylist_dev?networkName=AS&amp;id=${videoId}"/>
+  </services>
+</config>

@@ -1,0 +1,617 @@
+/* http://meyerweb.com/eric/tools/css/reset/ *//* v1.0 | 20080212 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,article,section,nav,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+article,section,nav{display:block;}
+body{line-height:1;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:none;}
+:focus{outline:0;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+ins,a,a:link,a:visited,a:hover{text-decoration:none;}
+
+/* clear fix */
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+.clearfix{display:inline-block;}
+html[xmlns] .clearfix{display:block;}
+* html .clearfix{height:1%;}
+
+/* global classes */
+.clear { clear: both; }
+.sprite-hover { overflow: hidden; position: relative; }
+.sprite-hover img { position: absolute; }
+.sprite-hover:hover img { bottom: 0; }
+
+/****GLOBAL NAV****/
+nav#global-nav {
+	background-color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-size: 12px;
+	border-bottom: 1px solid #525252;
+	height: 54px;
+	width: 100%;
+	z-index: 1000;
+  min-width: 1006px;
+  position: relative;
+}
+
+	.global-nav-links {
+		float: left;
+		font-weight: bold;
+		background: #000000;
+	}
+
+		
+		.global-nav-links a, .global-nav-links a:visited, .global-nav-links a:link {
+			display: block;
+			float: left;
+			height: 40px;
+			line-height: 40px;
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		.global-nav-links.on a {
+			color: #000000;
+		}
+
+		.global-nav-links a.on {
+			color: #fd4933;
+		}
+
+		.global-nav-links a:hover,.global-nav-links a:active {
+			color: #fd4933;
+		}
+
+		a#global-nav-home {
+			padding: 5px 5px 0px 14px;
+      display: block;
+      float: left;
+		}
+
+			#global-nav-home img {
+				padding-top: 10px;
+			}
+
+/*		a#global-nav-games { 
+      height: 30px;
+      line-height: 30px;
+			padding: 0px;
+      margin: 5px 0px;
+			text-transform: uppercase; 
+      width: 116px;
+      text-align: center;
+		}  */
+    .navtab-over a#global-nav-games { border: none; } 
+    .noborder { border: none !important; }
+    #btn-games {
+      margin-left: 13px;
+      width: 109px;
+    }
+
+		a#global-nav-shows {
+      text-align: center;
+		}
+
+    .navtab {
+      float: left;
+      height: 53px;
+      border-left: 1px solid #292827;
+      text-align: center;
+      position: relative;
+    }
+    .navtab a, .navtab a:link, .navtab a:visited, .navtab a:active, .navtab a:hover {
+      color: #fff;
+      font-size: 12px;
+      margin: 20px 18px 0px 15px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      font-family: arial;
+      font-weight: bold;
+    }
+    .navtab-over {
+      background-color: #242424;
+    }
+    .navtab-over a, .navtab-over a:link, .navtab-over a:visited, .navtab-over a:active, .navtab-over a:hover {
+      color: #fd4933;
+    } 
+    .navcount {
+      font-size: 10px;
+      font-weight: bold;
+      color: #c5c5c5;
+      display: inline-block;
+      padding-bottom: 2px;
+      vertical-align: middle;
+      *display: inline;
+      zoom: 1;      
+    }
+    #search-form { margin-top: 6px; }
+		#search-box {
+			float: right;
+			width: 215px;
+			height: 54px;
+			line-height: 54px;
+			border-left: 1px solid #292827;
+		}
+
+			#search-field {
+				float: left;
+				/*background: #000 url('https://s.cdn.turner.com/adultswim/dev/homepage/2012/tools/img/black-tile.gif') repeat;
+        background: transparent;     */
+				font-family: Helvetica, Arial, sans-serif;
+				font-weight: bold;
+				font-size: 12px;
+				color: #757575;
+				width: 170px;
+				border: none;
+				margin-left: 8px;
+				height: 38px;
+				line-height: 38px;
+			}
+
+			#search-icon {
+				float: right;
+				margin-right: 10px;
+				width: 15px;
+			}
+ #search-field {
+  background: transparent url('http://i.cdn.turner.com/adultswim/big/img/home/search/external-search-icon.png') 101px 15px no-repeat;
+}  
+#search-field:focus {
+  background-position: 101px -40px;
+}
+		#account-links {
+			float: right;
+			width: 93px;
+      margin-right: 0px;
+			height: 54px;
+			font-size: 10px;
+			font-weight: bold;
+			border-left: 1px solid #292827;
+			text-transform: uppercase;
+		}
+
+			#account-links div {
+
+			}
+
+			#account-links a, #account-links a:visited {
+				color: #757575;
+			}
+
+			/*#account-links a:hover, #account-links a:active {
+				color: #ffffff;
+			}*/
+
+			#sign-in {
+				margin: 20px 0 0 15px;
+			}
+
+			#my-account {
+				margin: 12px 0 5px 15px;
+			}
+
+			#sign-out {
+				margin: 0 0 0 15px;
+			}
+
+.ad-tag {
+  margin: 0px;
+  background: url('http://i.cdn.turner.com/adultswim/big/img/home/ad-tag-bw.gif') 0px 0px no-repeat;
+  height: 7px;
+  width: 9px;
+  float: right;
+}
+h2.menu {
+  font-family: arial;
+  font-size: 14px;
+  color: #fd4933;
+  margin: 12px 0px 9px 15px;
+}
+.navhide { display: none; }
+.navoff h2.menu { color: #ffffff; }
+.menucap {
+  width: 100%;
+  height: 28px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #3f3f3f;
+}
+#global-nav-adultswim-links { 
+  position: relative; 
+  float: left;
+}
+.ie7 #global-nav {
+  position: relative;
+}
+.drizzle-menu {
+  position: absolute; 
+  top: 54px;     
+  background-color: #242424;
+  z-index: 1000;
+  left: -1px;
+  text-align:left;
+  text-transform: none;
+ /* width: 568px; 
+  padding: 25px;   */
+}
+#gamesdrop {  
+  min-width: 594px;
+ /* left: 155px; */
+}
+#showdrop {
+  /* left: 273px;  */
+  min-width: 595px;
+}
+#showdrop .menucap {
+  height: 40px;
+}
+#moredrop {
+ /* left: 589px; */
+  padding-top: 10px;
+}
+ul.drop-links {
+  float: left;
+  margin-left: 16px;
+  padding-right: 22px;
+  width: 160px;
+  margin-bottom: 10px;
+}
+ul.drop-links li {
+  line-height: 1.2em;
+  margin-bottom: 9px;
+}
+ul.drop-links li a, ul.drop-links li a:link, ul.drop-links li a:visited {
+  text-decoration: none; 
+  font-family: arial;
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
+  float: none;
+  height: auto;
+  line-height: 1.3em !important;
+  margin: 0px;
+  text-align: left;
+  text-transform: none;
+}
+ul.drop-links li a:hover, ul.drop-links li a:active {
+  color: #f44932;
+}
+.drop-more {
+  float: right;
+  width: 160px;
+  height: 13px;
+  padding-right: 22px;
+  overflow:hidden;
+  margin: 0px 0px 20px 0px;
+  cursor: pointer;
+}
+.drop-more-over {
+}
+.drop-more a, .drop-more a:link, .drop-more a:visited, .drop-more a:active, .drop-more a:hover  { 
+  display: block;
+  padding-right: 18px;
+  height: 13px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  line-height: 1.1em !important;
+}
+.drop-more a, .drop-more a:link, .drop-more a:visited { 
+  font-family: arial;
+  font-size: 12px;
+  font-weight: bold;
+  color: #bababa;
+  text-decoration: none;
+  text-transform: none;
+}
+.drop-more a:hover, .drop-more a:active, .drop-more-over a, .drop-more-over a:link, .drop-more-over a:visited {
+  color: #f44932; 
+}
+.drop-more img {
+  /* display: block; */
+  vertical-align: middle;
+}
+.more-arr {
+  display: inline-block; 
+  position: relative;
+  width: 11px;
+  height: 11px;
+  margin: 0px 0px -1px 8px;
+  overflow: hidden;
+  *display: inline;
+  zoom: 1;  
+}
+.more-arr img {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.drop-more-over .more-arr img {
+  top: -13px;
+}
+.subbtn {
+  display: inline-block;
+  cursor: pointer;
+  zoom: 1;
+  *display: inline;
+  margin-right: 40px;
+}
+#topshows-btn { width: 94px; }
+#comedy-btn { width: 105px; }
+#toonami-btn { width: 80px; }
+#othernav-btn { width: 75px; }
+
+
+/****BEGIN FOOTER****/
+
+#footer-linklist {
+  width: 1004px;
+  margin: 26px auto 50px;
+}
+#square-foot-contain {
+  width: 426px;
+  float: left;
+}
+#shows-foot-col {
+  width: 186px;
+}
+.footsquare-holder {
+  float: left;
+  margin-right: 30px;
+}
+ul.foot-nav {
+  float: right;
+  width: 94px;
+}
+ul.foot-nav li {
+  margin-bottom: 13px;
+}
+.foot-nav a, .foot-nav a:link, .foot-nav a:visited {
+  font-family: arial;
+  font-weight: bold;
+  color: #242424;
+  text-decoration: none;
+  font-size: 11px;
+}
+.link-col {
+  float: left;
+}
+.link-col h4 {
+  font-family: Helvetica, arial;
+  color: #242424;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 3px 0px 19px 19px;
+}
+ul.social {
+  border-left: 1px solid #babab5;
+}
+ul.footer-list {
+  padding: 0px;
+  margin: 0px;
+  height: 210px;
+  border-left: 1px solid #babab5;
+}
+.darkbg ul.footer-list {
+  border-left: 1px solid #666666;
+}
+ul.footer-list li {
+  line-height: 0.8em;
+  margin: 0px 0px 6px 20px;
+  position: relative;
+  width: 169px;
+  height: 20px;
+}
+ul.social li {
+  margin-bottom: 12px !important;
+  width: 140px !important;
+}
+ul.gamelinks li {
+  width: 186px !important;
+}
+ul.social li:hover .social-img img {
+  left: -50px;
+}
+ul.footer-list li a, ul.footer-list li a:link, ul.footer-list li a:visited {
+  font-family: Helvetica, arial;
+  font-size: 10px;
+  color: #242424;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  width: 163px;
+  height: 20px;
+  left: 0px;
+  top: -5px;
+}   
+.darkbg .foot-nav a, .darkbg .foot-nav a:link, .darkbg .foot-nav a:visited, .darkbg .link-col h4, .darkbg ul.footer-list li a, .darkbg ul.footer-list li a:link, .darkbg ul.footer-list li a:visited {
+  color: #ffffff;
+}
+ul.footer-list li a:hover, ul.footer-list li a:active, ul.social li:hover a, .darkbg ul.footer-list li a:hover, .darkbg ul.footer-list li a:active, .darkbg ul.social li:hover a {
+  color: #ff4c26;
+} 
+.foot-nav a:hover, .foot-nav a:active, .darkbg .foot-nav a:hover, .darkbg .foot-nav a:active {
+  color: #ff4c26;
+}  
+.social a {
+  position: relative !important;
+  top: -1px !important;
+}
+a.soc-count {
+  width: 68px !important;
+  display: inline-block !important;
+  *display:inline;
+  zoom: 1;  
+}
+.global-footer {
+  background: url('https://s.cdn.turner.com/adultswim/big/img/home/bg-footer-tile.png') 0 0 repeat;
+  padding-top: 40px;
+}
+.social-img {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  display: inline-block; 
+  *display:inline;
+  zoom: 1;  
+  margin: 0px 8px -3px 0px;
+}
+.social-img img {
+  display: block;
+  position: absolute;
+  left: -26px;
+}
+.darkbg .social-img img {
+  left: -2px;
+}
+.social-img:hover img {
+  left: -50px;
+}
+#fb-link {
+  height: 16px;
+  width: 16px;
+}
+#fb-link img {
+  top: 0px;
+}
+#tw-link {
+  height: 14px;
+  width: 17px;
+}
+#tw-link img {
+  top: -30px;
+} 
+#insta-link {
+  height: 15px;
+  width: 16px;
+}
+#insta-link img {
+  top: -58px;
+}  
+#yt-link {
+  height: 20px;
+  width: 16px;
+}
+#yt-link img {
+  top: -85px;
+}
+
+#legal-footer {
+	text-align: center;
+	margin: 20px auto 0;
+	font: 10px/10px Helvetica, Arial, sans-serif;
+}
+
+	#legal-links {
+		margin-bottom: 3px;
+	}
+	
+		#legal-links li {
+			display: inline;
+		}
+		
+			#legal-links li a {
+				color: #696969 !important; 
+				text-decoration: none !important;
+			}
+			
+			#legal-links .legal-divider {
+				color: #aaaaaa;
+				margin: 0 0 0 5px; 
+			}
+			
+			#small-logo {
+				padding-left: 5px;
+	    		vertical-align: middle;
+				display: inline;
+				font-size: 0;
+			}
+			
+	#tbs-info {
+		margin: 0px;
+		color: #696969;
+		line-height: 175%;
+		filter:alpha(opacity=85);
+		-moz-opacity:.85;
+		opacity:.85;
+	}
+	
+		#tbs-info a {
+		    color: #696969 !important;
+		    text-decoration: none !important;
+		}
+
+	#adultswim-info {
+		margin: 0px;
+		color: #696969;
+		line-height: 14px;
+		padding-bottom: 10px;
+		filter:alpha(opacity=85);
+		-moz-opacity:.85;
+		opacity:.85;
+	}
+	
+		#adultswim-info img {
+			vertical-align: middle;
+			display: inline;
+		}
+
+    /* CUSTOM CSS FOR DARK/LIGHT LEGAL */
+	.light-page #legal-links li a {
+		color: #b5b6a8 !important; 
+	}
+  
+.ad-choice-area a {
+ font-weight: bold;
+}  
+/*****END FOOTER*****/
+
+.showlistcontain .viewport { width: 97%; height: 412px; overflow: hidden; position: relative; }
+.showlistcontain .overview { list-style: none; width: 100%; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+.showlistcontain .scrollbar{ position: relative; background-position: 0 0; float: right; width: 8px; }
+.showlistcontain .track { height: 400px; width:8px; position: relative; margin-top: 0px; }
+.showlistcontain .thumb { background: transparent url('http://i.cdn.turner.com/adultswim/big/img/global/show-list-scrubber.png') no-repeat center top; height: 75px; width: 8px; cursor: pointer; overflow: hidden; position: absolute; top: 4px; left: 0px; }
+.showlistcontain .thumb .end { overflow: hidden; height: 5px; width: 8px; }
+.showlistcontain .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+.vidlistitem { width: 295px; height: 22px; padding-top: 4px; }
+#shownamequery {
+  background-color: #000;
+  border: 1px solid #000;
+  width: 239px;
+  height: 35px;
+  margin: 0px 0px 0px 16px;
+  display:inline-block;
+  vertical-align: middle;
+  padding-left: 6px;
+  color: #fff;
+  font-size: 16px;
+  color: #5b5b5b;
+  font-weight: bold;
+}
+
+#showlistenter{
+  display:inline-block;
+  height: 37px;
+  width:  50px;
+  background: #000 url('https://s.cdn.turner.com/adultswim/adultswimtv/tools/img/global/icon-search-glass.png') center -2px no-repeat;
+  cursor:pointer;
+  border: 1px solid #000;
+  margin: 0px 0px 0px -3px;
+  padding: 0px;  
+  vertical-align: middle;
+}
+#showlistwait {
+  display:none;
+  height: 37px;
+  width:  50px;
+  cursor:pointer;
+  border: 1px solid #000;
+  margin: 0px 0px 0px -3px;
+  padding: 0px;  
+  vertical-align: middle;
+  position:relative;
+  background-color: #000;
+}

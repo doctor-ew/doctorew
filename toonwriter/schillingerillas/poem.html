@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			#colors,#poem{
+				float: left;
+			}
+			#poem {
+				font-size: 16px;
+				font-weight: bolder;
+			}
+			#colors{
+				width:800px;
+			}
+			#colors span{
+				border:2px solid #fff;
+				display:inline-block;
+				height:100px;
+				width:100px;
+			}
+			code {
+				display:inline-block;
+				color:#fff;
+				font-weight: bolder;
+				height:30px;
+				margin-top: 70px;
+				text-align: center;
+				width:100px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="colors"></div>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+		<script>
+			var poem=['546f20', '6d7920', '676972', '6c732c', '207468', '652053', '636869', '6c6c69', '6e6765', '72696c', '6c6173', '3a0d0a', '49206c', '6f7665', '20796f', '757220', '6b6973', '736573', '20616e', '642067', '696767', '6c6573', '2e0d0a', '596f75', '206172', '65206d', '792073', '776565', '742070', '656173', '0d0a41', '6e6420', '746865', '206265', '657327', '206b6e', '656573', '0d0a41', '6e6420', '492063', '616e27', '742077', '616974', '20746f', '206769', '766520', '796f75', '206c6f', '747320', '6f6620', '746963', '6b6c65', '732100'];
+
+			$(function(){
+				$(poem).each(function(i,v){
+					console.log(v);
+					$('#colors').append('<span style="background-color:#' + v + '"><code>#' + v + '</code></span>');
+				});
+			})
+
+		</script>
+	</body>
+</html>

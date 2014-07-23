@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="generator" content="HTML Tidy for Windows (vers 25 March 2009), see www.w3.org">
+
+	<title></title>
+	<style type="text/css">
+			canvas#phonograph {
+				height: 512px;
+				width: 552px;
+			}
+	</style>
+	<style type="text/css">
+	canvas.arm {z-index: 3; position:absolute; left:0px; top:0px;}
+	canvas.vinyl {z-index: 2; position:absolute; left:0px; top:0px;}
+	canvas.player {z-index: 1; position:absolute; left:0px; top:0px;}
+	</style>
+</head>
+
+<body>
+	<div id="imageContainer">
+		<div id="containerBG"></div>
+
+		<div id="innerContainer">
+			<canvas id="arm" class="arm" height="512" width="552"></canvas>
+			<canvas id="vinyl" class="vinyl" height="512" width="552"></canvas>
+			<canvas id="phonograph" class="phonograph" height="512" width="552"></canvas>
+
+
+			<div class="loadingBar loading-progress-15" id="loadingFill"></div>
+		</div>
+	</div>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="jquery.overlaps.js" type="text/javascript"></script>
+	<script src="http://code.createjs.com/easeljs-0.5.0.min.js" type="text/javascript"></script>
+	<script src="http://code.createjs.com/tweenjs-0.3.0.min.js" type="text/javascript"></script>
+	<script src="http://code.createjs.com/soundjs-0.3.0.min.js" type="text/javascript"></script>
+	<script src="http://code.createjs.com/preloadjs-0.2.0.min.js" type="text/javascript"></script>
+	<script src="js/tweenmax/TweenMax.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var phonograph = {
+			arm: {
+				angle: 0,
+				arrRect: [0, 0, 100, 300],
+				cnv: {},
+				context: {},
+				cX: 400,
+				cY: 300,
+				height: 400,
+				img: getImg,
+				offX: 0,
+				offY: 0,
+				src: "arm.png",
+				tx: 0,
+				ty: 230,
+				width: 100,
+				x: 270,
+				y: -100
+			},
+			player: {
+				angle: 0,
+				arrRect: [0, 0, 0, 0],
+				cnv: {},
+				context: {},
+				cX: 0,
+				cY: 0,
+				height: 400,
+				img: getImg,
+				offX: 0,
+				offY: 0,
+				src: "player.jpg",
+				tx: 0,
+				ty: 0,
+				width: 300,
+				x: 0,
+				y: 0
+			},
+			vinyl: {
+				angle: 0,
+				arrRect: [0, 0, 330, 330],
+				cnv: {},
+				context: {},
+				cX: 400,
+				cY: 300,
+				height: 400,
+				img: getImg,
+				offX: 0,
+				offY: 0,
+				src: "vinyl-record.png",
+				tx: 10,
+				ty: 10,
+				width: 300,
+				x: 10,
+				y: 10
+			}
+		};
+
+		function getImg() {
+			return new Image();
+		}
+		var layer1, layer2, layer3, ctx1, ctx2, ctx3;
+		var x = 400;
+		var y = 300;
+		var dx = 2;
+		var dy = 4;
+		var WIDTH = 400;
+		var HEIGHT = 300;
+		var player = new Image();
+		var vinyl = new Image();
+		var arm = new Image();
+
+
+		var arrPhono = ["player.jpg", "vinyl-record.png", "arm.png"];
+
+		var img, offset, dragging;
+		var degrees = 0;
+		var isPlaying = false;
+
+		function init() {
+
+
+			phonograph.arm.cnv = $("#arm").get(0);
+			phonograph.vinyl.cnv = $("#vinyl").get(0);
+			phonograph.player.cnv = $("#phonograph").get(0);
+
+			phonograph.arm.context = $("#arm").get(0).getContext('2d');
+			phonograph.vinyl.context = $("#vinyl").get(0).getContext('2d');
+			phonograph.player.context = $("#phonograph").get(0).getContext('2d');
+
+			phonograph.arm.img = arm;
+			phonograph.vinyl.img = vinyl;
+			phonograph.player.img = player;
+
+			ctx1 = phonograph.player.context
+			ctx2 = phonograph.vinyl.context;
+			ctx3 = phonograph.arm.context;
+
+			arm.src = phonograph.arm.src;
+			player.src = phonograph.player.src;
+			vinyl.src = phonograph.vinyl.src;
+
+			/* */
+			/*				player.onload = function() {
+							ctx1.drawImage(player, 0, 0);
+							ctx1.save();
+						}
+		*/
+			/*				vinyl.onload = function() {
+							ctx2.drawImage(vinyl, 62, 75, 330, 330);
+							ctx2.save();
+						}
+		*/
+			/*				arm.onload = function() {
+							ctx3.translate(00, 230); 
+							ctx3.rotate(-0.5); 
+							ctx3.drawImage(arm, 270, 100);
+							ctx3.save();
+						}
+		 */
+
+
+			//				md('arm');
+			updateRectangle('player', phonograph['player'].angle);
+			updateRectangle('vinyl', phonograph['vinyl'].angle);
+			updateRectangle('arm',phonograph['arm'].angle);
+
+		}
+
+
+		function updateRectangle(ctx, ang) {
+			phonograph[ctx].context.clearRect(phonograph[ctx].arrRect);
+			phonograph[ctx].cnv.width = phonograph[ctx].cnv.width;
+
+			offX = phonograph[ctx].cnv.offsetLeft;
+			offY = phonograph[ctx].cnv.offsetTop;
+
+			phonograph[ctx].context.setTransform(1, 0, 0, 1, 0, 0);
+			var x = phonograph[ctx].x;
+			var y = phonograph[ctx].y;
+			var width = phonograph[ctx].width;
+			var height = phonograph[ctx].height;
+			cX = x + width * 0.5;
+			cY = y + height * 0.5;
+			phonograph[ctx].context.translate(phonograph[ctx].tx, phonograph[ctx].ty);
+			phonograph[ctx].context.rotate(ang);
+//			phonograph[ctx].context.drawImage(phonograph[ctx].img, x, y);
+			phonograph[ctx].context.fillRect()
+			console.log(ctx)
+			//	if(ctx === "arm"){
+			//		md(ctx);
+			//	} else if(ctx === "vinyl") {
+//			md(ctx);
+			//	}
+
+//			phonograph[ctx].cnv.click({ctx: ctx}, getPosition);
+
+			phonograph[ctx].cnv.click({ctx: ctx}, getPosition);
+		}
+//canvas.addEventListener("mousedown", getPosition, false);
+
+
+		function spinit(ctx) {
+			// calculate click angle minus the last angle
+			console.log(phonograph[ctx].cX + phonograph[ctx].offX, phonograph[ctx].cY + phonograph[ctx].offY)
+			var clickAngle = getAngle(event.clientX, event.clientY, phonograph[ctx].cX + phonograph[ctx].offX, phonograph[ctx].cY + phonograph[ctx].offY) - phonograph[ctx].angle;
+			$(phonograph[ctx].cnv).bind("mousemove", clickAngle, function(event) {
+				// calculate move angle minus the angle onclick
+				phonograph[ctx].angle = (event.clientX, event.clientY, getAngle(phonograph[ctx].cX + phonograph[ctx].offX, phonograph[ctx].cY + phonograph[ctx].offY) - clickAngle);
+				updateRectangle(ctx, phonograph[ctx].angle);
+			});
+		}
+
+		function md(ctx) {
+			console.log(phonograph[ctx].cnv)
+			$(phonograph[ctx].cnv).mousedown(function(event) {
+				console.log('|-o-|',event.clientX, event.clientY)
+				// calculate click angle minus the last angle
+				var clickAngle = getAngle(phonograph[ctx].cX + phonograph[ctx].offX, phonograph[ctx].cY + phonograph[ctx].offY, event.clientX, event.clientY) - phonograph[ctx].angle;
+				$(phonograph[ctx].cnv).bind("mousemove", clickAngle, function(event) {
+					// calculate move angle minus the angle onclick
+					phonograph[ctx].angle = (getAngle(phonograph[ctx].cX + phonograph[ctx].offX, phonograph[ctx].cY + phonograph[ctx].offY, event.clientX, event.clientY) - clickAngle);
+					updateRectangle(ctx, phonograph[ctx].angle);
+				});
+			});
+		}
+
+		function preload() {
+
+			reload();
+			loadAll();
+		}
+
+		// Reset everything
+
+		function reload() {
+			// If there is an open preload queue, close it.
+			if(preload != null) {
+				try {
+					preload.close();
+				} catch(e) {}
+			}
+
+			// Push each item into our manifest
+			manifest = arrPhono;
+
+			// Create a preloader. There is no manfest added to it up-front, we will add items on-demand.
+			preload = new createjs.PreloadJS();
+			preload.onFileLoad = handleFileLoad;
+			preload.onProgress = handleOverallProgress;
+			preload.onFileProgress = handleFileProgress;
+			preload.onError = handleFileError;
+			preload.setMaxConnections(5);
+		}
+
+		function loadAll() {
+			while(manifest.length > 0) {
+				loadAnother();
+			}
+		}
+
+
+		// File complete handler
+
+		function handleFileLoad(event) {
+			// Get a reference to the loaded image (<img/>)
+			var img = event.result;
+			// getting the images and their index for later sorting
+			// 
+			init();
+		}
+
+		// File progress handler
+
+		function handleFileProgress(event) {}
+
+		// Overall progress handler
+
+		function handleOverallProgress(event) {
+			console.log('TOTAL: ' + preload.progress);
+			var perc = preload.progress * 100;
+			console.log('perc', perc, event);
+			TweenMax.to($("#loadingFill"), 0.2, {
+				css: {
+					'width': perc + '%'
+				}
+			});
+		}
+
+		// An error happened on a file
+
+		function handleFileError(event) {
+			console.log('error', event);
+		}
+
+
+
+		function loadAnother() {
+			// Get the next manifest item, and load it
+			var item = manifest.shift();
+			preload.loadFile(item);
+
+		}
+
+
+
+		$(function() {
+			preload();
+		});
+
+		function getAngle(cX, cY, mX, mY) {
+			var angle = Math.atan2(mY - cY, mX - cX);
+			return angle;
+		}
+
+
+function getArmPosition(event) {
+      var x = new Number();
+        var y = new Number();
+    var canvas = document.getElementById("arm");
+  
+          x = event.x;
+          y = event.y;
+
+        x -= canvas.offsetLeft;
+        y -= canvas.offsetTop;
+	console.log("arm, x:" + x + " y:" + y);
+}
+
+function getPlayerPosition(event) {
+	var x = event.x;
+	var y = event.y;
+
+    var canvas = document.getElementById("player");
+
+	x -= canvas.offsetLeft;
+	y -= canvas.offsetTop;
+
+	console.log("player, x:" + x + " y:" + y);
+}
+
+function getVinylPosition(event) {
+	var x = event.x;
+	var y = event.y;
+
+    var canvas = document.getElementById("vinyl");
+
+	x -= canvas.offsetLeft;
+	y -= canvas.offsetTop;
+
+	console.log("vinyl, x:" + x + " y:" + y);
+}
+
+function getPosition(event) {
+	var x = event.x;
+	var y = event.y;
+
+	var ctx = event.data.ctx;
+    var canvas = document.getElementById(ctx);
+
+	x -= canvas.offsetLeft;
+	y -= canvas.offsetTop;
+
+	console.log(ctx, "x:" + x + " y:" + y);
+}
+
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 /> <title>HTML5 complete</title>
+		<!--[if IE]> <script src="http://www.adultswim.com/tools/js/html5.js"></script> <![endif]-->
+		<style> article, aside, figure, footer, header, hgroup, menu, nav, section { display: block;} </style>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		
+		<script>
+			google.load("jquery", "1.7.1");
+			google.load("jqueryui", "1.8.16");
+ 		</script>
+		<script src="http://www.adultswim.com/tools/js/jquery/jquery.cookie.js"></script>
+		<style>
+			body{
+				margin: auto;
+				width: 100%;
+			}		
+			div.ew_a_floater {
+				width: 300px;
+				height: 300px;
+				vertical-align: middle;
+			}
+			}
+			.widget-inside, .ew_a_floater {
+				margin: auto;
+				text-align: center;
+				float: left;
+			}
+			#righty {
+				background: tomato;
+				float: left;
+			}
+			#wrongy {
+				background: lime;
+				float: left;
+				float: right;
+			}
+			ul {
+				clear: both;
+				display:
+				block;
+			}
+			li:hover, li:active.css({
+				width:400px!important;
+			});
+
+		</style>
+	</head>
+	<body>
+			<div id="wrongy" class="ew_a_floater"><span>Left</span></div>
+		<div class="widget-inside" style="display: block;">
+			<form method="post" action="">
+				<div class="widget-content">
+					<script type="text/javascript">
+//					debugger;
+						jQuery(document).ready(function () {
+						    if (jQuery.cookie("arr_sort_on") !== null) {
+//								//console.log('|-o-| ',jQuery("#arr_sort_on").val().split(",")[1]);
+						        var order0 = $cookie("arr_sort_on").split(",");
+						        jQuery("#list-left li").each(function (i) {
+						            $("#listItem_" + order0[i]).id("#listItem_" + i);
+						        });
+
+						        var mylist = jQuery("#list-left");
+//						        //console.log("mylist", mylist)
+						        var listitems = mylist.children("li").get(100);
+						        listitems.sort(function (a, b) {
+//						        $('li').detach().sort(function (a, b) {
+//									if(typeof(a) != "undefined" && a !== null && typeof(b) != "undefined" && b !== null) {
+//										try{
+											var compA = parseInt(jQuery(a).attr("id").split("_")[1]);
+											var compB = parseInt(jQuery(b).attr("id").split("_")[1]);
+											return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+//											} catch(e){
+											try{
+												//console.log("|-o-|sort error",e);
+											} catch(e){}
+											return false;
+//										}
+//									}
+						        })
+						        jQuery.each(listitems, function (idx, itm) {
+//									//console.log('|-o-|',listitems,idx,itm);
+						            mylist.append(itm);
+						        });
+						    }
+						    try {
+						        jQuery("#list-left").sortable({
+						            handle: ".handle",
+						            update: function () {
+						                try {
+						                    var order = jQuery("#list-left").sortable("serialize");
+						                } catch (e) {
+						                    //console.log("|-o-|order error", e);
+						                }
+						                var arrOrder = [];
+						                try {
+						                    //console.log("order(", order, ")[", order[0], "]");
+						                } catch (e) {}
+						                jQuery("#list-left li").each(function (i) {
+						                 //   arrOrder.push(jQuery(this).attr("id").split("_")[2]);
+						                    arrOrder.push(jQuery(this).attr("id").split("_")[1]);
+						                })
+						                try {
+						                    //console.log("arrOrder", arrOrder.toString());
+						                } catch (e) {}
+										$.cookie('arr_sort_on',arrOrder.toString());
+//						                jQuery("#arr_sort_on").val(arrOrder.toString());
+						            }
+						        });
+						    } catch (e) {
+						        try {
+						            //console.log(e, e.name, e.message);
+						        } catch (e) {}
+						    }
+						});
+					</script>
+	
+					<ul id="list-left" class="ui-sortable" style="">
+						<li class="listItem-li" id="listItem_0" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">When Harry Met Sally</li>
+						<li class="listItem-li" id="listItem_1" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">Rock Biter's Hands</li>
+						<li class="listItem-li" id="listItem_2" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">Super Heaven</li>
+						<li class="listItem-li" id="listItem_3" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">Cowboys and Indians</li>
+						<li class="listItem-li" id="listItem_4" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">Sheep Battle</li>
+						<li class="listItem-li" id="listItem_5" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">The Grinch's Heart</li>
+						<li class="listItem-li" id="listItem_6" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">Dengar on the Elevator</li>
+						<li class="listItem-li" id="listItem_7" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">Humping Robot's Happy Ending</li>
+						<li class="listItem-li" id="listItem_8" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">The Emmy Award Winning Robot Chicken</li>
+						<li class="listItem-li" id="listItem_9" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">Michael Jackson's Giant Dancing Robot</li>
+						<li class="listItem-li" id="listItem_10" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">One Sided Fist Fights</li>
+						<li class="listItem-li" id="listItem_11" style=""><img width="16" height="16" class="handle" alt="move" src="http://i.cdn.turner.com/adultswim/shows/robot-chicken/img/rcdc/video/move-arrow.png">Cool Cats</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+
+			<div id="righty" class="ew_a_floater"><p>Right</p><p>Right</p><p>Right</p><p>Right</p><p>Right</p><p>Right</p><p>Right</p><p>Right</p><p>Right</p><p>Right</p><p>Right</p><p>Right</p><p>Right</p><p>Right</p></div>
+
+	</body>
+	<script>
+		$().ready(function() {
+/*
+			if(jQuery.cookie('arr_sort_on') !== null){
+				jQuery("#arr_sort_on").val(jQuery.cookie('arr_sort_on'));
+			};
+*/		
+			$('li').wrapInner('<span></span>');
+			var intWidth = 0;
+			$('li').each(function(){
+				intWidth = ($(this).find('span').width() > intWidth) ? $(this).find('span').width() : intWidth;
+			});
+			$('li').width(intWidth + 5);
+		});
+	</script>
+</html>

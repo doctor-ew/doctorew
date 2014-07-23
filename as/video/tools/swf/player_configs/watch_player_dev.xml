@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- SERVICES -->
+	<!-- LIVE SERVICE - UNCOMMENT THIS OUT WHEN PUSHING THIS FILE LIVE!!!!!-->
+	<serviceConfigURL>AS.configuration.xml</serviceConfigURL>
+	<!-- <serviceConfigURL>testServices/servicesConfig.xml</serviceConfigURL>-->
+
+	<appResources>
+		<closedCaptionsFAQURL>/footer/legal/ccfaq.html</closedCaptionsFAQURL>
+		<termsOfUseURL>http://www.adultswim.com/footer/legal/terms_main.html</termsOfUseURL>
+	</appResources>	
+	
+	<!-- PLAYBACK -->
+	<playback>
+		<autoPlay>true</autoPlay>
+		<muteOnAutoPlay>true</muteOnAutoPlay>
+		<continuousPlay>true</continuousPlay>
+	</playback>
+
+	<!-- ADS -->
+	<ads>
+		<!-- enabled: specifies a global override to ads and determines if all sub modules will be enabled -->
+		<enabled>true</enabled>
+		<freewheel>
+			<!-- enabled: specifies whether the freewheel ad system is enabled -->
+			<enabled>true</enabled>
+			
+			<!-- externalAdsEnabled: specifies whether companion/sync ads in the page are enabled -->
+			<externalAdsEnabled>true</externalAdsEnabled>
+			
+			<!-- componentURL: specifies URL for the FreeWheel code component
+				NOTE: it is probably best practice to rename the SWF when it is updated AdManager_123.swf
+				 -->
+			<componentURL>freewheel/admanager/AdManager.swf</componentURL>
+			
+			<!-- profile: specifies the unique profile for this particular player -->
+			<!-- <profile>48804:adultswim_main_player</profile> -->
+			<profile>42448:adultswim_main_player</profile>
+			
+			<!-- logLevel: specifies the log level for the FreeWheel components (traces, etc) -->
+			<logLevel>VERBOSE</logLevel>
+			
+			<!-- networkID: specifies Cartoon's unique FreeWheel Network ID -->
+			<!-- <networkID>48804</networkID> -->
+			<networkID>42448</networkID>
+			
+			<!-- rendererConfigURL: specifies the URL for config that defines the renderers 
+				(NOTE IN PRODUCTION YOU WILL REMOVE THIS NODE) 
+				-->
+			<rendererConfigURL>freewheel/renderers/renderers.xml</rendererConfigURL>
+
+				
+			<!-- server: specifies the FreeWheel ad server -->
+			<!--<server>http://g1.v.fwmrm.net/</server>-->
+			<server>http://bea4.v.fwmrm.net/</server>
+			
+			<!-- version: specifies the version of the AdManager 
+				NOTE: it is probably best to leave this static and rename the AdManager each time (ex: AdManager_123.swf)
+				-->
+			<version>1</version>	
+			
+			<!-- videoAssetID: specifies the template to use for the videoAssetID AS-8a25c3920e861a4a010e861c4d8e0001 -->
+			<videoAssetID>{data.context.customID}</videoAssetID>
+			
+			<!-- videoDuration: specifies template to use for specifying the duration -->
+			<videoDuration>{data.context.duration}</videoDuration>			
+			
+			<!-- videoLiveDuration: specifies the duration (in seconds) to use for ad schedules marked against live content -->
+			<videoLiveDuration>120</videoLiveDuration>
+						
+			<!-- videoSectionID: specifies the template to use in specifying the videoSectionID -->
+			<videoSectionID>{data.context.sectionID}</videoSectionID>									
+		</freewheel>
+	</ads>
+
+	<!-- TRACKING -->
+ 	<tracking>
+		<!-- enabled: specifies a global override to tracking and determines if all sub modules will be enabled -->
+		<enabled>true</enabled>
+
+
+		<!-- url TRACKING 
+			defines a tracker that can ping URLs for a specific track request
+		-->
+		<URL>
+			<!-- enabled: specifies whether url tracking will be sent -->
+			<enabled>false</enabled>	
+			
+			<!-- URL track handlers specify a way to respond to a specifically name track request
+					There are set number of IDs in the system that you can opt to handle or not handle.
+					To handle it you specify a trackHandler for that ID, otherwise you don't and it won't try and track it
+				ID - specifies the specific named track request
+				URLs - specifies a list of URLs to ping for that specific track request
+					each URL is actually a template. 
+					Therefore the URL can opt to use data which is specific to that named request.
+					This is done using a wrapper notation {data}, specifying the value be replaced by dynamic data.context.
+					For example: a mediaStarted request may be sent a media object. 
+					This media object is represented by {data} in the template.
+					Thus a template of http://foo.com?{data.context.id} would replace {data.context.id} with the media's ID like http://foo.com?1234
+					Since systems like Neilson, Comscore, etc are just URL pings you can add new systems here very easily.
+			-->		
+					
+			<trackHandlers>
+				<trackHandler>
+					<ID>mediaStarted</ID>
+					<URLs> 
+						<!-- NEILSON Media start track -->
+						<URL><![CDATA[http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-100120&cc=1&c6=vc,c01&tl=dav0-{data.context.title}_{data.context.segmentID}&rnd={cacheID}]]></URL>
+						 <!-- COMSCORE Media start track -->
+               		 	<URL><![CDATA[http://b.scorecardresearch.com/p?c1=1&c2=8586818&c3=00011&c4=8586822&c5=020000]]></URL>
+					</URLs>										
+				</trackHandler>
+				<!--<trackHandler>
+		            <ID>adStarted</ID>
+		            <URLs>
+		                 COMSCORE Ad start track 
+		                <URL><![CDATA[http://b.scorecardresearch.com/p?c1=1&c2=8586818&c3=00011&c4=8586822&c5=010000]]></URL>
+		            </URLs>
+		        </trackHandler>     -->    
+				<trackHandler>
+					<ID>mediaEnded</ID>
+					<URLs>
+						<!-- NEILSON Media end track -->
+						<URL><![CDATA[http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-100120&cc=1&c6=vc,c01&tl=dav2-{data.context.title}_{data.context.segmentID}&rnd={cacheID}]]></URL>
+					</URLs>										
+				</trackHandler>												
+			</trackHandlers>
+		</URL>
+		
+		<!-- tracking: OMNITURE -->
+		<omniture>
+			<!-- enabled: specifies whether Omniture tracking will be sent -->
+			<enabled>false</enabled>
+			
+			<!-- params: 
+				Allows you to generically assign static parameters to the entire Omniture system.
+				These values will exist for every track, though a unique track can overwrite them for it specifically, by specifying an overwriting value
+				This is used to define any Omniture value in the system account, eVar*, prop*, etc.  
+				-->
+			<params>
+				<account>adultswimdotcom,adultswimglobal</account>
+				<!-- <account>adultswimdevelopment</account> -->
+				<dc>122</dc>
+				<delayTracking>2</delayTracking>
+				<trackingServer>stats.adultswim.com</trackingServer>
+				<visitorNameSpace>adultswim</visitorNameSpace> 
+				<trackLocal>true</trackLocal>
+			</params>
+			
+			<!-- Omniture track handlers specify a way to respond to a specifically name track request
+					There are set number of IDs in the system that you can opt to handle or not handle.
+					To handle it you specify a trackHandler for that ID, otherwise you don't and it won't try and track it			
+				ID - specifies the specific named track request
+				method - specifies the type of Omniture track (corresponds to Omnitures native trackLink or track)
+				type - specifies the type of track (defined in Omniture manual)
+				name - specifies the name to use when tracking
+				params - allows you to generically assign parameters to this unique track (disappear after the track).
+					each param value is actually a template.
+					Therefore the param can opt to use data which is specific to that named request.
+					This is done using a wrapper notation {data}, specifying the value be replaced by dynamic data.context.
+					For example: a mediaStarted request may be sent a media object. 
+					This media object is represented by {data} in the template.
+					Thus a template of SITE_{data.context.id} would replace {data.context.id} with the media's ID like SITE_1234				
+			<trackHandlers>
+			 -->
+			 <trackHandlers>
+				<trackHandler>
+					<!--APP LOADED TRACK IS ONLY IN VIRAL PLAYER-->
+					<ID>appLoaded</ID>
+					<method>trackLink</method>
+					<type>o</type>
+					<name>APP_LOADED</name>
+					<params>
+						<prop3>[v0]:{data.contentType}[v2]:{data.collectionTitle}[v3]:{data.title}[v12]:SITE_PLAYER</prop3>
+					</params>					
+				</trackHandler>				 	
+	
+				<trackHandler>
+					<ID>emailed</ID>
+					<method>trackLink</method>
+					<type>o</type>
+					<name>APP_LOADED</name>
+					<params>
+						<prop3>[v0]:{data.context.contentType}[v2]:{data.context.collectionTitle}[v8]:{data.context.segmentIndex}[v3]:{data.context.title}[v12]:SITE_PLAYER</prop3>
+					</params>					
+				</trackHandler>		
+				
+				<trackHandler>
+					<ID>mediaRequested</ID>
+					<method>trackLink</method>
+					<type>o</type>
+					<name>VIDEO_REQUESTED</name>
+					<params>
+						<prop3>[v0]:{data.context.contentType}[v2]:{data.context.collectionTitle}[v8]:{data.context.segmentIndex}[v3]:{data.context.title}[v12]:SITE_PLAYER</prop3>
+					</params>					
+				</trackHandler>					
+				<trackHandler>
+					<ID>mediaStarted</ID>
+					<method>trackLink</method>
+					<type>o</type>
+					<name>VIDEO_STARTED</name>
+					<params>
+						<prop3>[v0]:{data.context.contentType}[v2]:{data.context.collectionTitle}[v8]:{data.context.segmentIndex}[v3]:{data.context.title}[v12]:SITE_PLAYER</prop3>
+					</params>					
+				</trackHandler>		
+				<trackHandler>
+					<ID>mediaMidComplete</ID>
+					<method>trackLink</method>
+					<type>o</type>
+					<name>VIDEO_MIDCOMPLETE</name>
+					<params>
+						<prop3>[v0]:{data.context.contentType}[v2]:{data.context.collectionTitle}[v8]:{data.context.segmentIndex}[v3]:{data.context.title}[v12]:SITE_PLAYER</prop3>
+					</params>					
+				</trackHandler>					
+				<trackHandler>
+					<ID>mediaEnded</ID>
+					<method>trackLink</method>
+					<type>o</type>
+					<name>VIDEO_COMPLETE</name>
+					<params>
+						<prop3>[v0]:{data.context.contentType}[v2]:{data.context.collectionTitle}[v8]:{data.context.segmentIndex}[v3]:{data.context.title}[v12]:SITE_PLAYER</prop3>
+					</params>					
+				</trackHandler>	
+				
+				
+				<!-- AD TRACKING -->
+				<trackHandler>
+					<ID>adRequested</ID>
+					<method>trackLink</method>
+					<type>o</type>
+					<name>AD_REQUESTED</name>
+					<params>
+						<prop3>[v10]:{data.context.fileName}[v0]:{data.context.contentType}[v2]:{data.context.collectionTitle}[v3]:{data.context.title}[v8]:{data.context.segmentIndex}[v3]:{data.context.title}[v12]:SITE_PLAYER</prop3>
+					</params>					
+				</trackHandler>					
+				<trackHandler>
+					<ID>adStarted</ID>
+					<method>trackLink</method>
+					<type>o</type>
+					<name>AD_STARTED</name>
+					<params>
+						<prop3>[v10]:{data.context.fileName}[v0]:{data.context.contentType}[v2]:{data.context.collectionTitle}[v3]:{data.context.title}[v8]:{data.context.segmentIndex}[v3]:{data.context.title}[v12]:SITE_PLAYER</prop3>
+					</params>					
+				</trackHandler>		
+				<trackHandler>
+					<ID>adMidComplete</ID>
+					<method>trackLink</method>
+					<type>o</type>
+					<name>AD_MIDCOMPLETE</name>
+					<params>
+						<prop3>[v10]:{data.context.fileName}[v0]:{data.context.contentType}[v2]:{data.context.collectionTitle}[v3]:{data.context.title}[v8]:{data.context.segmentIndex}[v3]:{data.context.title}[v12]:SITE_PLAYER</prop3>
+					</params>					
+				</trackHandler>					
+				<trackHandler>
+					<ID>adEnded</ID>
+					<method>trackLink</method>
+					<type>o</type>
+					<name>AD_COMPLETE</name>
+					<params>
+						<prop3>[v10]:{data.context.fileName}[v0]:{data.context.contentType}[v2]:{data.context.collectionTitle}[v3]:{data.context.title}[v8]:{data.context.segmentIndex}[v3]:{data.context.title}[v12]:SITE_PLAYER</prop3>
+					</params>					
+				</trackHandler>																											
+			</trackHandlers>
+		</omniture>
+		<!-- adbp omniture javascript hooks -->
+		<JavaScript>
+			<!-- enabled: specifies whether url tracking will be sent --> 
+			<enabled>true</enabled>
+		
+			<handlers>
+				<!-- ads -->
+				<handler>
+					<ID>adStarted</ID>
+					<params>
+						<method>Player.omniture</method>
+						<arguments>
+							<argument>video-preroll</argument>
+							
+							<argument>{data.context.contentType}</argument>
+							<argument>{data.context.collectionTitle}</argument>
+							<argument>{data.context.title}</argument>
+							<argument>{data.context.segmentIndex}</argument>
+						</arguments>
+					</params>
+				</handler>
+
+				<!-- content -->
+				<handler>
+					<ID>mediaStarted</ID>
+					<params>
+						<method>Player.omniture</method>
+						<arguments>
+							<argument>video-start</argument>
+							
+							<argument>{data.context.contentType}</argument>
+							<argument>{data.context.collectionTitle}</argument>
+							<argument>{data.context.title}</argument>
+							<argument>{data.context.segmentIndex}</argument>
+						</arguments>
+					</params>
+				</handler>
+		
+				<handler>
+					<ID>mediaEnded</ID>
+					<params>
+						<method>Player.omniture</method>
+						<arguments>
+							<argument>video-complete</argument>
+							
+							<argument>{data.context.contentType}</argument>
+							<argument>{data.context.collectionTitle}</argument>
+							<argument>{data.context.title}</argument>
+							<argument>{data.context.segmentIndex}</argument>
+						</arguments>
+					</params>
+				</handler>
+		
+				<handler>
+					<ID>mediaMidComplete</ID>
+					<params>
+						<method>Player.omniture</method>
+						<arguments>
+							<argument>video-fifty</argument>
+							
+							<argument>{data.context.contentType}</argument>
+							<argument>{data.context.collectionTitle}</argument>
+							<argument>{data.context.title}</argument>
+							<argument>{data.context.segmentIndex}</argument>
+						</arguments>
+					</params>
+				</handler>
+		
+				<!-- user initiated -->
+				<handler>
+					<ID>mediaPaused</ID>
+					<params>
+						<method>Player.omniture</method>
+						<arguments>
+							<argument>video-pause</argument>
+							
+							<argument>{data.context.contentType}</argument>
+							<argument>{data.context.collectionTitle}</argument>
+							<argument>{data.context.title}</argument>
+							<argument>{data.context.segmentIndex}</argument>
+						</arguments>
+					</params>
+				</handler>
+		
+				<!-- buffer -->
+				<handler>
+					<ID>mediaBufferStarted</ID>
+						<params>
+							<method>Player.omniture</method>
+							<arguments>
+								<argument>video-buffering</argument>
+								
+							<argument>{data.context.contentType}</argument>
+							<argument>{data.context.collectionTitle}</argument>
+							<argument>{data.context.title}</argument>
+							<argument>{data.context.segmentIndex}</argument>
+							</arguments>
+						</params>
+				</handler>
+		
+				<handler>
+					<ID>mediaBufferEnded</ID>
+						<params>
+							<method>Player.omniture</method>
+							<arguments>
+								<argument>video-buffering</argument>
+								
+							<argument>{data.context.contentType}</argument>
+							<argument>{data.context.collectionTitle}</argument>
+							<argument>{data.context.title}</argument>
+							<argument>{data.context.segmentIndex}</argument>
+							</arguments>
+						</params>
+					</handler>
+				</handlers>
+		</JavaScript>
+	</tracking>
+
+	<!-- SHARING -->
+	<sharing>
+		<videoPageURL><![CDATA[http://video.adultswim.com/{data.collectionTitle}/{data.title}.html]]></videoPageURL>
+		<!-- URL used to refer back to the base of the video section on the site -->	
+		<embedCode><![CDATA[<object type="application/x-shockwave-flash" width="425" height="350"><param name="allowFullScreen" value="true" /><param name="movie" value="http://dreamsocket.com/projects/adultswim/fix/viralplayer/ASVPlayer.swf"/><param name="FlashVars" value="id={data.ID}" /><embed src="http://dreamsocket.com/projects/adultswim/fix/viralplayer/ASVPlayer.swf" type="application/x-shockwave-flash" FlashVars="id={data.ID}" allowFullScreen="true" width="425" height="350"></embed></object>]]></embedCode>
+	</sharing>
+</config>

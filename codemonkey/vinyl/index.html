@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			#player {
+				background: url(player.jpg) no-repeat;
+				display: block;
+				height: 512px;
+				width: 552px;
+			}
+			#vinyl {
+				background: transparent url(vinyl-record.png) no-repeat; //rgba(0,0,255,0.6)
+				background-size:250px 250px;
+				display: inline-block;
+				height: 370px;
+				left: 70px;
+				top: 80px;
+				width: 370px;
+				position: absolute;
+			}
+			#needle {
+				background: transparent url(arm.png) no-repeat; //rgba(255,0,255,0.6)
+				display: inline-block;
+				height: 266px;
+				left: 300px;
+				top: 100px;
+				width: 203px;
+				position: absolute;
+				-webkit-transform-origin: 90% 20%;
+				-moz-transform-origin: 90% 20%;
+				-webkit-transform: rotate(-25deg);
+			}
+			#needle-head {
+				/*background: rgba(0,255,0,0.6);*/
+				display: inline-block;
+				height:50px;
+				left: 030px;
+				position:absolute;
+				top: 200px;
+/*				-webkit-transform-origin: top right;
+*/				width:20px;
+				-webkit-transform: rotate(55deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="player">
+			<div id="vinyl"></div>
+			<div id="needle"><span id="needle-head"></span></div>
+		</div>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	    <script src="jquery.overlaps.js"></script>
+
+		<script src="http://code.createjs.com/easeljs-0.5.0.min.js"></script>
+		<script src="http://code.createjs.com/tweenjs-0.3.0.min.js"></script>
+		<script src="http://code.createjs.com/soundjs-0.3.0.min.js"></script>
+		<script src="http://code.createjs.com/preloadjs-0.2.0.min.js"></script>
+
+		<script type="text/javascript">
+			var img, offset, dragging;
+			var degrees = 0;
+			var isPlaying = false;
+
+			$(function() {
+
+				staticElement = new Audio();
+				audioElement = new Audio();
+				document.body.appendChild(staticElement);
+				document.body.appendChild(audioElement);
+				staticElement.src = 'static.ogg';
+				staticElement.loop = true;
+				audioElement.src = 'gears.ogg';
+				vinylPower = 'off';
+
+				//				playVinyl();
+
+				$('#dhtmlgoodies_xpPane .draggable').draggable({
+					scope: "draggable",
+					helper: "clone"
+				});
+				$('#needle-head').live('click', function(event) {
+
+					var target = $('#needle-head');
+					$(document).mouseup(function() {
+						dragging = false
+					})
+					$(document).dblclick(function() {
+						dragging = false
+					})
+					target.mousedown(function() {
+						dragging = true
+					})
+					target.dblclick(function() {
+						dragging = true
+					})
+					$(document).mousemove(function(e) {
+						if(dragging) {
+
+							var mouse_x = e.pageX;
+							var mouse_y = e.pageY;
+							var radians = Math.atan2(mouse_x - 10, mouse_y - 10);
+							var degree = (radians * (180 / Math.PI) * -1) + 45;
+
+							$('#needle').css('-webkit-transform-origin', '90% 20%');
+/* 
+							$('#needle').css('-moz-transform-origin', '0% 40%');
+							$('#needle').css('-webkit-transform-origin', '0% 40%');
+							$('#needle').css('-o-transform-origin', '0% 40%');
+							$('#needle').css('-ms-transform-origin', '0% 40%');
+
+ */
+
+							$('#needle').css('-moz-transform', 'rotate(' + degree + 'deg)');
+							$('#needle').css('-webkit-transform', 'rotate(' + degree + 'deg)');
+							$('#needle').css('-o-transform', 'rotate(' + degree + 'deg)');
+							$('#needle').css('-ms-transform', 'rotate(' + degree + 'deg)');
+
+							if($('#needle-head').overlaps('#vinyl') && !isPlaying){
+								playVinyl();
+							}
+						}
+					})
+				})
+
+			})
+
+
+
+			function playVinyl() {
+				isPlaying = true;
+				vinylInterval = setInterval(function() {
+					degrees = degrees + 2;
+					if($.browser.webkit) {
+						$('#vinyl').attr('style', '-webkit-transform:rotate(' + degrees + 'deg);');
+						$('#needle').attr('style', '-webkit-transform:rotate(' + parseFloat((audioElement.currentTime / audioElement.duration * 20 + 8)) + 'deg);');
+					}
+					if($.browser.mozilla) {
+						$('#vinyl').attr('style', '-moz-transform:rotate(' + degrees + 'deg);');
+						$('#needle').attr('style', '-moz-transform:rotate(' + parseFloat((audioElement.currentTime / audioElement.duration * 20 + 8)) + 'deg);');
+					}
+
+					if(audioElement.currentTime == audioElement.duration) {
+						stopVinyl('');
+					}
+				}, 10, degrees, staticElement.play() /* , audioElement.play() */ );
+			}
+
+
+		</script>
+	</body>
+</html>

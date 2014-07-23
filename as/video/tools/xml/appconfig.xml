@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appConfig>
+	<bundleVersion>2.4.3.3</bundleVersion>
+	<configUrl>/tools/xml/tveConfig2.xml</configUrl>
+	<containerUrl>/tools/xml/tveContainer2.xml</containerUrl>
+</appConfig>

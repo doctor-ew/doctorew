@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<contexts>
+	<default>
+		<player_version>1.3.6a.31</player_version>
+	</default>
+	<context name="tve">
+		<player instance="tve">
+			<config_path/>
+			<trusted_domains/>
+		</player>
+	</context>
+	<context name="tve_embed_cox">
+		<player_version>1.3.6a.31</player_version>
+		<player instance="tve_embed_cox">
+			<config_path/>
+			<trusted_domains/>
+		</player>
+	</context>
+    <context name="tve_ios_ipad">
+        <player instance="tve_ios_ipad">
+            <config_path/>
+            <trusted_domains/>
+        </player>
+    </context>
+    <context name="tve_ios_iphone">
+        <player instance="tve_ios_iphone">
+            <config_path/>
+            <trusted_domains/>
+        </player>
+    </context>
+	<!-- 
+	<context name="tve_embed_att">
+		<player_version>1.3.6a.31</player_version>
+		<player instance="tve_embed_att">
+			<config_path/>
+			<trusted_domains/>
+		</player>
+	</context>
+	<context name="tve_embed_att_preprod">
+		<player_version>1.3.6a.31</player_version>
+		<player instance="tve_embed_att_preprod">
+			<config_path/>
+			<trusted_domains/>
+		</player>
+	</context>
+	-->
+</contexts>

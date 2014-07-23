@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 /> <title>HTML5 complete</title>
+		<!--[if IE]> <script src="http://www.adultswim.com/tools/js/html5.js"></script> <![endif]-->
+		<style> article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; background:lime;} </style>
+	</head>
+	<body>
+		<div>
+			<h3>Instrux</h3>
+			<p>Write a method to draw on a <code>&lt;canvas /&gt;</code> element a series of squares representing an integer in the following array:</p>
+			<code style="margin-left:10px;">var pi = Math.PI.toPrecision(20);</code><br />
+			<p><em>Hint:</em> You may need more than 1 iterator</p>
+			<p><em>Extra Credit:</em> Write out the column's array value on the canvas.</p>
+			<p><em>Extra Credit++:</em>Color the square based on it's row value.</p>
+		</div>
+		<div id="canvasGoesHere">
+		</div>
+	</body>
+	<script src="http://i.cdn.turner.com/adultswim/tools/js/jquery/jquery-1.7.min.js"></script>
+	<script>
+		$().ready(function() {
+			howToMakePi();
+		});
+
+		function howToMakePi() {;
+			$('body').append('<div id="canvasGoesHere"></div>').append('<canvas id="mycanvas" width="1000" height="1000" />');
+			var getPi = Math.PI.toPrecision(20);
+			var canvas = $('#mycanvas').get(0);
+			if (canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+				var i = 0;
+				ctx.strokeStyle = "#000000";
+				ctx.fillStyle = "#003366";
+				ctx.lineWidth = 1;
+				var len = getPi.length;
+				count_0 = len;
+				while(count_0--) {
+					setRows(ctx,getPi,count_0);
+				}
+			}
+		};
+		function setRows(ctx,getPi,count_0){
+			count_1 = getPi.charAt(count_0);
+			while (count_1--) {
+				drawSq(ctx,count_0,count_1);
+			}
+			ctx.font = "bold 10px Courier New";
+			ctx.fillStyle = "rgb(0,51,102)";
+			ctx.fillText(getPi.charAt(count_0), (count_0 * 15), 10);
+		};
+		function drawSq(ctx,count_0,count_1){
+			ctx.strokeStyle = "rgba(0,0,0," + parseFloat((1 - (count_1 + 1) / 10)).toFixed(2) + ")";
+			ctx.fillStyle = "rgba(0,51,102," + parseFloat((1 - (count_1 + 1) / 10)).toFixed(2) + ")";
+			ctx.beginPath();
+			ctx.moveTo((count_0 * 15) + 0, (count_1 * 15) + 20);
+			ctx.lineTo((count_0 * 15) + 0, (count_1 * 15) + 30);
+			ctx.lineTo((count_0 * 15) + 10, (count_1 * 15) + 30);
+			ctx.lineTo((count_0 * 15) + 10, (count_1 * 15) + 20);
+			ctx.lineTo((count_0 * 15) + 0, (count_1 * 15) + 20);
+			ctx.stroke();
+			ctx.fill();
+		};
+	</script>
+</html>

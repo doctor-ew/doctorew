@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 /> <title>HTML5 complete</title>
+		<!--[if IE]> <script src="http://www.adultswim.com/tools/js/html5.js"></script> <![endif]-->
+		<style> article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; background:lime;} </style>
+	</head>
+	<body>
+		<div class="field field-type-text field-field-page-header">
+      <div class="field-label">Page Header: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>&nbsp;</p>
+<h1 id="header-title">
+	<img alt="Classic TV and Movie Music, Remade for the Better" src="http://i.cdn.turner.com/adultswim/blog/gobbledegook/tools/img/theme-music/title-theme-music.jpg" /></h1>
+<div id="by-line">
+	By Mark Bisi</div>
+<div id="head-blurb">
+	Movies and television are nothing without music. You can throw in all the car chases, Earth-threatening meteors and mystical body swaps that you want (by way of fortune cookies, magical fountains or enchanted Snuggies), but if your fancy-pants images aren&rsquo;t accompanied by an epic John Williams score, then you might as well have made a 16-hour documentary about people sleeping. Not even tossing and turning. That&rsquo;s too compelling.&nbsp;<br />
+	<br />
+	So why don&rsquo;t we take a moment to celebrate the power of music by running down some of the internet&rsquo;s most intriguing interpretations of our favorite movie and TV themes?</div>
+        </div>
+        </div>
+</div>
+<h1 id="header-title">
+	<span><span><span><strong>A Cappella Simpsons Theme</strong></span></span></span></h1>
+<div>
+<h1 id="header-title">
+		<iframe align="right" class="youtube-player" frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/hZwJ3BZ6gig" title="YouTube video player" type="text/html" width="560"></iframe></h1>
+</div>
+<div>
+	<span><span>In his cover of one of the most recognizable theme songs in existence, singer Nick McKaig combines two of Youtube’s most prevalent trends: a cappella singing and “video songs.” “Video songs” consist of split-screen footage of a single person performing individual parts of an ensemble musical piece, creating a layered virtual orchestra. This approach allows Youtubers to make fully-realized songs when they are all alone, which is how a cappella enthusiasts normally find themselves, anyway.</span></span></div>
+<p></p>
+<p> </p>
+<p> </p>
+<h1>
+	<span><span><span><span><span><span><span><strong><span><span>Heavy Metal Back to the Future</span></span></strong></span></span></span></span></span></span></span></h1>
+<div>
+	 </div>
+<div>
+	<iframe align="left" class="youtube-player" frameborder="0" height="316" scrolling="no" src="http://www.youtube.com/embed/89xI44bwVSM" title="YouTube video player" type="text/html" width="560"></iframe>It’s rare for a cover to surpass the original, but not in the case of a heavy metal rendition of composer Alan Silvestri’s 1985’s Back to the Future theme. Sure, Silvestri’s iconic work made the hearts of moviegoers soar higher than a DeLorean hitting 88 miles-per-hour, but can you imagine how much better the movie might have been with the accompaniment of a double-bass drum and finger-tapping guitar solos? With those kinds of rock-solid jams underscoring the climactic lightning-storm scene and George McFly’s big victory over Biff at the “Enchantment Under the Sea” dance, Robert Zemeckis’ movie would have been infinitely more brutal. Of course, Michael J. Fox was great and all, but you’d probably have to go back and recast him with a Dee Snider type in order to match the heavy-metal intensity. Or maybe you’re just not ready for that. Well, your kids are going to love it (in an alternate timeline).</div>	</body>
+	<script src="http://i.cdn.turner.com/adultswim/tools/js/jquery/jquery-1.4.min.js"></script>
+	<script>
+		$().ready(function() {
+			
+		});
+	</script>
+</html>

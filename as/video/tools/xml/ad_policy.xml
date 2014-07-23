@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policy>
+    <default>
+        <adServer type="FREEWHEEL">
+            <param name="adVideoAssetId" value="${video.freewheelId}" />
+            <param name="externalSlots" value="on" />
+            <param name="sensitiveFallbackId" value="tnt_no_ads" />
+            <param name="adNetworkId" value="48804"/> <!-- 42448 |-o-| pew pew cache -->
+            <param name="adVideoNetworkId" value="48804"/>
+            <param name="apiUrl" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/2/AdManager.swf"/>
+            <param name="adServerRootUrl" value="http://BEA4.v.fwmrm.net"/>
+            <param name="renderersUrl" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/2/renderers.xml"/>
+
+            <param name="fallbackId" value="55589325" />
+            <param name="adVideoAssetId" value="${video.freewheelId}"/>
+            <param name="adPlayerProfile" value="adultswim_main_player"/>
+            <param name="externalSlots" value="on"/>
+            <param name="sensitiveFallbackId" value=""/>
+        </adServer>
+    </default>
+    <context name="tve_embed_att">
+        <adServer type="FREEWHEEL">
+            <param name="adSection" value="att_uverse_tve"/>
+        </adServer>
+    </context>
+    <context name="tve_embed_att_preprod">
+        <adServer type="FREEWHEEL">
+            <param name="adSection" value="att_uverse_tve"/>
+        </adServer>
+    </context>
+    <context name="tve_embed_charter">
+        <adServer type="FREEWHEEL">
+            <param name="adSection" value="charter_tve"/>
+        </adServer>
+    </context>
+    <context name="tve_embed_charter_preprod">
+        <adServer type="FREEWHEEL">
+            <param name="adSection" value="charter_tve"/>
+        </adServer>
+    </context>
+    <context name="tve_embed_cox">
+        <adServer type="FREEWHEEL">
+            <param name="adSection" value="cox_portal_tve"/>
+        </adServer>
+    </context>
+    <context name="tve_embed_cox_preprod">
+        <adServer type="FREEWHEEL">
+            <param name="adSection" value="cox_portal_tve"/>
+        </adServer>
+    </context>
+    <context name="tve_embed_suddenlink">
+        <adServer type="FREEWHEEL">
+            <param name="adSection" value="suddenlink_portal_tve"/>
+        </adServer>
+    </context>
+    <context name="tve_embed_suddenlink_preprod">
+        <adServer type="FREEWHEEL">
+            <param name="adSection" value="suddenlink_portal_tve"/>
+        </adServer>
+    </context>
+    <context name="tve_ios_iphone">
+        <ad_server type="FREEWHEEL">
+            <param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/AdManager.swf" />
+            <param name="ad_server_root_url" value="http://BEA4.v.fwmrm.net" />
+            <param name="ad_section" value="tbs.com_mobile_iphone" />
+            <param name="ad_network_id" value="48804" />
+            <param name="ad_video_network_id" value="48804" />
+            <param name="ad_video_asset_id" value="${video.freewheelId}" />
+            <param name="renderers_url" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/renderers.xml" />
+            <param name="ad_player_profile" value="tbs_ios_v2" />
+            <param name="external_slots" value="on" />
+            <param name="sensitive_fallback_id" value="tbs_no_ads" />
+        </ad_server>
+        <ad_server type="AUDITUDE">
+            <param name="auditude_domain" value="auditude.com" />
+            <!-- sandbox.auditude.com -->
+            <param name="auditude_zone" value="131829" />
+            <!-- 110601 -->
+            <param name="auditude_media_id" value="vast_Comedy" />
+            <param name="auditude_targeting_parameters" value="stream=${video.feedType}-iphone" />
+        </ad_server>
+    </context>
+    <context name="tve_android_tablet">
+        <adServer type="FREEWHEEL">
+            <param name="apiUrl" value="http://adm.fwmrm.net/p/turner_android_v1/AdManager.fpk" />
+            <param name="adServerRootUrl" value="http://BEA4.v.fwmrm.net" />
+            <param name="adSection" value="as.tv_mobile_androidtablet" />
+            <param name="adNetworkId" value="48804" />
+            <param name="adVideoNetworkId" value="48804" />
+            <param name="adVideoAssetId" value="${video.freewheelId}" />
+            <param name="adPlayerProfile" value="tnt_android_v2" />
+            <param name="externalSlots" value="on" />
+            <param name="sensitiveFallbackId" value="tnt_no_ads" />
+        </adServer>
+        <adServer type="AUDITUDE" disabled="false">
+            <param name="auditudeDomain" value="auditude.com" />
+            <!-- sandbox.auditude.com -->
+            <param name="auditudeZone" value="131829" />
+            <!-- 110601 -->
+            <param name="auditudeMediaId" value="vast_Comedy" />
+            <param name="auditudeTargetingParameters" value="stream=${video.feedType}-androidtablet" />
+        </adServer>
+    </context>
+
+    <context name="tve_android_tablet_ASSE">
+        <adServer type="AUDITUDE" disabled="false">
+            <param name="auditudeDomain" value="auditude.com" />
+            <!-- sandbox.auditude.com -->
+            <param name="auditudeZone" value="131829" />
+            <!-- 110601 -->
+            <param name="auditudeMediaId" value="vast_Comedy" />
+            <param name="auditudeTargetingParameters" value="stream=${video.feedType}-androidtablet" />
+        </adServer>
+    </context>
+
+    <context name="tve_android_tablet_ASSW">
+        <adServer type="AUDITUDE" disabled="false">
+            <param name="auditudeDomain" value="auditude.com" />
+            <!-- sandbox.auditude.com -->
+            <param name="auditudeZone" value="131829" />
+            <!-- 110601 -->
+            <param name="auditudeMediaId" value="vast_Comedy" />
+            <param name="auditudeTargetingParameters" value="stream=${video.feedType}-androidtablet" />
+        </adServer>
+    </context>
+
+    <context name="tve_android_phone_ASSE">
+        <adServer type="AUDITUDE" disabled="false">
+            <param name="auditudeDomain" value="auditude.com" />
+            <!-- sandbox.auditude.com -->
+            <param name="auditudeZone" value="131829" />
+            <!-- 110601 -->
+            <param name="auditudeMediaId" value="vast_Comedy" />
+            <param name="auditudeTargetingParameters" value="stream=${video.feedType}-androidphone" />
+        </adServer>
+    </context>
+
+    <context name="tve_android_phone_ASSW">
+        <adServer type="AUDITUDE" disabled="false">
+            <param name="auditudeDomain" value="auditude.com" />
+            <!-- sandbox.auditude.com -->
+            <param name="auditudeZone" value="131829" />
+            <!-- 110601 -->
+            <param name="auditudeMediaId" value="vast_Comedy" />
+            <param name="auditudeTargetingParameters" value="stream=${video.feedType}-androidphone" />
+        </adServer>
+    </context>
+
+
+    <context name="tve_embed_simulcast">
+        <adServer type="FREEWHEEL">
+        </adServer>
+    </context>
+    <context name="tve_embed_simulcast_preprod">
+        <adServer type="FREEWHEEL">
+            <param name="adNetworkId" value="42448" />
+            <param name="adVideoNetworkId" value="42448" />
+        </adServer>
+    </context>
+
+    <context name="live_preview">
+        <adServer type="NONE"></adServer>
+    </context>
+
+    <context name="live_preview_2">
+        <adServer type="NONE"></adServer>
+    </context>  
+    <context name="live_preview_4">
+        <adServer type="NONE"></adServer>
+    </context>
+</policy>

@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<token_auth>
+		<param name="tokenizer_src" value="http://www.adultswim.com/astv/mvpd/processors/services/token.do" />
+		<param name="profile" value="adultswim" />
+		<param name="login_check" value="off" />
+	</token_auth>
+
+	<!--
+		OMNITURE_ACCOUNT
+		Name of the omniture account to track to
+		Example - devaolturnersi
+	<param name="omniture_account" value="adultswimdottvdev"/>
+	-->
+	<param name="omniture_account" value="" />
+	<param name="c3_ad_offset" value="3" />
+	<param name="content_padding" value="4" />
+
+	<!--
+		OMNITURE_SERVER
+		Omniture domain to use to track to
+		Example - metrics.si.com
+	<param name="omniture_server" value="stats.adultswim.com"/>
+	-->
+	<param name="omniture_server" value="" />
+	<!--
+        OMNITURE_TRACKING POLICY
+    -->
+	<param name="tracking_policy_context" value="clips" />
+	<param name="tracking_policy_src" value="http://www.adultswim.com/tools/xml/cvp/cfg/tve/adobe/trackingPolicy.xml" />
+	<!--
+		NIELSEN_URL
+		Base URL for submitting to Nielsen
+		Example - http://secure-us.imrworldwide.com/cgi-bin/m?cc=1&amp;ci=us-100120&amp;c6=vc,c03
+			(fill in "ci" and "c6" with your values)
+	-->
+	<param name="nielsen_url" value="http://secure-us.imrworldwide.com/cgi-bin/m?cc=1&amp;ci=us-100120&amp;c6=vc,c01" />
+	
+	<!-- 
+	COMSCORE_URL
+	Base URL for submitting to Comscore
+		
+	ex. http://beacon.securestudies.com/scripts/beacon.dll?CXNID=3005117&amp;CDID=3005117&amp;CPID=3005117	
+	-->
+
+	<param name="comscore_url" value="http://b.scorecardresearch.com/p?c1=1&amp;c2=8586818&amp;c3=00011&amp;c4=8586822&amp;c5=020000" />
+
+
+	<!--
+		AD_SERVER [type = (DE | DART | NONE)]
+			The ad server implementation to use (NONE or empty string will turn ads off)
+
+			AD_API
+				URL to the ad server swf api if needed
+				http://ad.doubleclick.net/879366/DartShell9_7.swf - DART
+				http://i.cdn.turner.com/xslo/cvp/ads/de/DEShellApp.swf - DE
+
+			AD_MAN_ROOT_URL 
+				Base URL to the adman .ad files (for DE only)
+
+			AD_SERVER_ROOT_URL
+				Base URL to the ad server (for DE only)
+
+			AD_VIDEO_ROOT_URL
+				Base URL to the video CDN (for DE only)
+
+			AD_VIDEO_EXTENSION
+				File exention for ad videos (for DE only)
+
+			ADDITIONAL_VIDEO_SEGVARS
+				Additional segvars to add to video ad requests (for DE only)
+
+			ADDITIONAL_SYNC_SEGVARS
+				Additional segvars to add to sync ad requests (for DE only)
+	-->
+	<ad_server type="FREEWHEEL">
+		<!-- Updated for 3.0 -->
+		<!-- 
+    	<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/admanager/AdManager_2.9.swf"/>
+    -->
+		<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/AdManager.swf" />
+		<!-- Updated for 3.0 -->
+		<param name="renderers_url" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/renderers.xml" />
+
+		<param name="ad_server_root_url" value="http://BEA4.v.fwmrm.net" />
+		<param name="ad_section" value="verizon_tve" />
+		<!-- provided by SAS -->
+		<param name="ad_network_id" value="48804" />
+		<!-- DEV network id -->
+		<param name="ad_video_network_id" value="48804" />
+		<!-- DEV network id -->
+		<param name="ad_video_asset_id" value="${video.freewheelIdNew}"/>
+		<param name="ad_player_profile" value="adultswim_main_player" />
+		<!-- provided by SAS -->
+		<param name="external_slots" value="on" />
+		<param name="sensitive_fallback_id" value="" />
+		<!-- provided by SAS -->
+	</ad_server>
+
+	<!--
+		AD_POLICY_SRC (url)
+			This will be the default path for where ad policy metadata will be found.
+	-->
+	<!--<param name="ad_policy_src" value="http://collabspace.turner.com/dmtvideo/handoff/adPolicy.xml" />-->
+	<param name="ad_policy_src" value="" />
+
+
+	<!--
+		AD_POLICY_CONTEXT
+			This is used to select a context from the ad policy xml file.
+	-->
+	<param name="ad_policy_context" value="main" />
+
+	<!--
+		TOGGLE_FULLSCREEN_QUALITY (on|off)
+		Toggle for whether to switch to higher quality video on fullscreen or not.
+			- On - switch to higher quality video on fullscreen
+			- Off - do not switch to higher quality video on fullscreen
+	-->
+	<param name="toggle_fullscreen_quality" value="off" />
+
+
+	<!-- 
+	1. HARDCODED FUNCTIONALITY
+	All hardcorded functionality will be embedded in the players for SI and SIKids.
+	We'd like to have the FLA and the ability to update these values down the road.
+	
+		1.1 TRUSTED TOP LEVEL DOMAINS
+			Thes are the TLD's the SWF should recognize (regardless of subdomains 
+			or ports) and use a relative, local version of the config XML doc
+
+			- turner.com
+			- cnn.com
+			- fannation.com
+			- sikids.com
+			- golf.com
+			- cnnsi.com
+			
+			BASE HOST
+			If the SWF isn't on a trusted TLD, then use the base host for each player:
+			
+			SI.com:			http://sportsillustrated.cnn.com/
+			SIKids.com:		http://www.sikids.com/
+		
+		1.2 CONFIG XML LOCATION
+			
+			RELATIVE
+			Relative should be used when SWF is loaded on a "trusted" Top Level 
+			Domain
+			
+			SI.com:			/.element/swf/cfg/v.si.xml
+			SIKids.com:		/.element/swf/cfg/v.sifk.xml
+			
+			ABSOLUTE
+			Absolute config file should be used when SWF is loaded on any other
+			Top Level Domain. It's just the relative path tacked on to the base host:
+			
+			SI.com:			http://sportsillustrated.cnn.com/.element/swf/cfg/v.si.xml
+			SIKids.com:		http://www.sikids.com/.element/swf/cfg/v.sifk.xml
+-->
+
+	<!--
+	2. CONFIGURABLE FUNCTIONALITY: GLOBAL
+	The following parameters begin as global parameters, and then can be
+	overrided by parameters per each Player instance.
+	
+-->
+
+	<!--
+		2.1 MEDIA_SRC (url)
+			This will be the default host FLV's will be retrieved from when relative
+			paths are found in the Video metadata files. It should be ignored if an
+			absolute path is defined in Video metadata file
+	-->
+	<param name="media_src" value="http://collabspace.turner.com:82/cvp/player" />
+
+	<!--
+		2.2 DATA_SRC (url)
+			This will be the default path for where metadata will be found. Again,
+			It may be full or relative. 
+				- If relative, use local host for trusted TLD's and 
+	-->
+	<!-- uncomment for dev	<param name="data_src" value="http://teg8fdev1.turner.com:9220/mvpd/tve/cvpXML/?id=${videoId}" /> -->
+	<param name="data_src" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?id=${videoId}&amp;networkName=AS" />
+	<!--<param name="data_src" value="http://staging3.adultswim.com/astv/mvpd/tve/cvpXML/?id=${videoId}"/>-->
+	<!-- uncomment for pro <param name="data_src" value="http://www.tbs.com/mvpd/tve/cvpXML/?id=${videoId}" /> -->
+	<!--
+	2.3 LOW_BITRATE (bitrate)
+	2.4 HIGH_BITRATE (bitrate)
+	This would define which video to use in a metadata.xml file for the low
+	res and high res versions per bitrate. SO, below's example would mean you'll
+	need to use the 300K bitrate video for normal videos and 600K bitrate for high
+	res mode. This matches the lines in the video.xml file:
+	
+	<files>
+	<file bitrate="150" type="hp">/video/peter_king/2008/11/10/test.video.SportsIllustrated.150k.flv</file>
+	<file bitrate="300" type="standard">/video/peter_king/2008/11/10/test.video.SportsIllustrated.300k.flv</file>
+	<file bitrate="600" type="hd">/video/peter_king/2008/11/10/test.video.SportsIllustrated.600k.flv</file>
+	</files>
+	-->
+	<param name="low_bitrate" value="512" />
+	<param name="high_bitrate" value="512" />
+
+	<!--
+		2.6 CONTROLS [display = (on|off)]
+				Display flag toggles whether to show the toolbar, giant play button, and menu.  This flag
+				overrides the display flag on the individual components below.
+				
+				TOOLBAR [display = (on|off)]
+					Display flag toggles whether to show the toolbar with all the play buttons. An all or nothing function.
+					We can parse out the toolbar later in a phase 2 (ability to partial hide)
+			
+					<LAYOUT> Section
+						BACKGROUND_COLOR (hex color - 0xFFFFFF)
+						
+						FOREGROUND_COLOR (hex color - 0xFFFFFF)
+						
+						BORDER_COLOR (hex color - 0xFFFFFF)
+						
+						TEXT_COLOR (hex color - 0xFFFFFF)
+						
+						X (int)
+						
+						Y (int)
+						
+						WIDTH (int)
+						
+						HEIGHT (int)
+					</LAYOUT>
+						
+					SHOW_OUTSIDE_PLAYER (on|off)
+						If true, the toolbar will be shown below the video player, and will not be
+						transparent or autohide
+						Phase II may allow this param to evolve into coordinates/offsets for more specific placement
+						
+					INITIAL_TIME_TO_HIDE (milliseconds)
+						Amount of time the toolbar will initially show when a video begins
+						
+					TIME_TO_HIDE (milliseconds)
+						After the toolbar initially hides, the amount of time the toolbar will show when
+						the user interacts with it
+						
+					OPACITY (0-100)
+						Determines the opacity of the toolbar
+						Note : if SHOW_OUTSIDE_PLAYER is 'on', this is ignored
+						
+					<COMPONENTS> Section
+						PLAY_BUTTON [display = (on|off)]
+							<LAYOUT>
+								*Same properties as ToolBar Layout*
+							</LAYOUT>
+							
+						SCRUBBER [display = (on|off)]
+							<LAYOUT>
+								*Same properties as ToolBar Layout*
+								
+								TRACK_BORDER_COLOR (hex color - 0xFFFFFF)
+								
+								BUFFER_TRACK_COLOR (hex color - 0xFFFFFF)
+								
+								PLAY_TRACK_COLOR (hex color - 0xFFFFFF)
+							</LAYOUT>
+							
+						SCRUBBER_LABEL [display = (on|off)]
+							<LAYOUT>
+								*Same properties as ToolBar Layout*
+							</LAYOUT>
+							
+						FULL_SCREEN_BUTTON [display = (on|off)]
+							<LAYOUT>
+								*Same properties as ToolBar Layout*
+							</LAYOUT>
+							
+						SOUND_BUTTON [display = (on|off)]
+							<LAYOUT>
+								*Same properties as ToolBar Layout*
+								
+								VOLUME_BAR_BORDER_COLOR (hex color - 0xFFFFFF)
+								
+								VOLUME_BAR_COLOR (hex color - 0xFFFFFF)
+								
+								VOLUME_BAR_TRACK_COLOR (hex color - 0xFFFFFF)
+								
+								VOLUME_BAR_HANDLE_COLOR (hex color - 0xFFFFFF)
+							</LAYOUT>
+							
+						MENU_BUTTON [display = (on|off)]
+							<LAYOUT>
+								*Same properties as ToolBar Layout*
+							</LAYOUT>
+							
+					</COMPONENTS>
+					
+				GIANT_PLAY_BUTTON [display = (on|off)]
+					Display flag toggles whether to show the giant play button.
+					
+				MENU [display = (on|off)]
+					Display flag toggles whether to show the Share / Embed buttons
+					
+					TOGGLE_SYNDICATION (on|off)
+						Toggles whether or not to show the "Share / Embed" feature
+					
+					TOGGLE_REPLAY (on|off)
+						Toggles whether or not to show the "Replay" feature
+					
+					COUNTDOWN_TIME (seconds)
+						Amount of time for the countdown timer
+	-->
+	<controls display="on">
+		<toolbar display="on">
+			<layout>
+				<param name="background_color" value="0x101010" />
+				<param name="border_color" value="0x1C1C1C" />
+				<param name="height" value="30" />
+			</layout>
+
+			<param name="show_outside_player" value="off" />
+			<param name="initial_time_to_hide" value="4000" />
+			<param name="time_to_hide" value="2000" />
+			<param name="opacity" value="85" />
+			<param name="separator_width" value="15" />
+
+			<components>
+				<play_button display="on">
+					<layout>
+						<param name="order" value="0" />
+						<param name="foreground_color" value="0xFFFFFF" />
+						<param name="border_color" value="0x1C1C1C" />
+					</layout>
+				</play_button>
+				<scrubber display="on">
+					<layout>
+						<param name="order" value="1" />
+					</layout>
+				</scrubber>
+				<scrubber_label display="on">
+					<layout>
+						<param name="order" value="2" />
+					</layout>
+				</scrubber_label>
+				<full_screen_button display="on">
+					<layout>
+						<param name="order" value="3" />
+					</layout>
+				</full_screen_button>
+				<sound_button display="on">
+					<layout>
+						<param name="order" value="4" />
+					</layout>
+				</sound_button>
+				<menu_button display="off">
+					<layout>
+						<param name="order" value="5" />
+					</layout>
+				</menu_button>
+			</components>
+		</toolbar>
+		<giant_play_button display="on" />
+		<menu display="off">
+			<param name="toggle_syndication" value="off" />
+			<param name="toggle_replay" value="off" />
+			<param name="countdown_time" value="7" />
+			<param name="thumbnail_width" value="340" />
+		</menu>
+	</controls>
+
+	<!--
+		2.7 BUG OVERLAY (url)
+			URL to a PNG to overlay over the main video content
+				- if not PNG format, ignore
+				- if blank, don't use a bug overlay
+				- do not stretch PNG
+				- (optional) shrink with player
+	<param name="bug_overlay" value="http://i.cdn.turner.com/si/.e1d/img/4.0/video/si.png" />
+	-->
+
+	<!--
+		2.8 AUTOSTART (on|off)
+			Toggle for whether to start on load or not.
+				- On - start as soon as videos are in queue, and every time videos are in queue
+				- Off - load thumbnail and play button overlay, and wait for user click
+	-->
+
+	<param name="autostart" value="off" />
+
+	<!--
+		2.9 VOLUME (0-100)
+			Setting for Volume once the player is first loaded. Values are between 0 (mute) 
+			and 100 (full volume)
+	-->
+	<param name="volume" value="75" />
+
+	<!--
+		2.9 MUTED (on|off)
+			Toggle for starting the player muted. Values are between on (muted) 
+			and off (not muted)
+	-->
+	<param name="muted" value="off" />
+
+	<!--
+		2.10 DEFAULT_THUMBNAIL (url)
+			Setting a default thumbnail to use if one isn't defined 
+	-->
+	<param name="default_thumbnail" value="http://i.cdn.turner.com/si/.e1d/img/4.0/video/si.default.tn.jpg" />
+
+	<!--
+		2.11 WIDTH (int)
+			HEIGHT (int)
+			These will be used to determine which thumbnails to use from the metadata.
+			We'd also like to lock the video player to the size specified here, regardless
+			of embed code, so no one can tinker with the way the video shows up on other sites.
+	<param name="width" value="576" />
+	<param name="height" value="324" />
+	<param name="width" value="992" />
+	<param name="height" value="442" />
+	-->
+	<param name="width" value="640" />
+	<param name="height" value="360" />
+
+	<!--
+		2.12 ASPECT_ADJUST (auto|none)
+			If a video comes in that's smaller than the size of the player...
+				auto: 	grow the video till it's as tall and / or wide as the player, and place
+						black bars in the gaps
+				none:	display video as is in original size
+	-->
+	<param name="aspect_adjust" value="auto" />
+
+	<!--
+		2.13 SMOOTHING (on|off)
+			Toggle Video Smoothing
+	-->
+	<param name="smoothing" value="on" />
+
+	<!--
+		2.13 EMBED Section
+				URL (url)
+					Full url to the video player SWF that's to be used in the "Share" Embed
+					code for embedding on foreign sites.
+					
+				WIDTH
+					Width of the embed swf
+				
+				HEIGHT
+					Height of the embed swf
+				
+				HTML_WRAPPER_START
+					Any HTML you wish to include before the swf
+				
+				HTML_WRAPPER_END
+					Any HTML you wish to include after the swf
+	-->
+	<embed>
+		<param name="url" value="http://collabspace.turner.com:82/cvp/player/EmbeddedTurnerPlayer.swf" />
+		<param name="width" value="400" />
+		<param name="height" value="325" />
+		<param name="html_wrapper_start" />
+		<param name="html_wrapper_end" />
+	</embed>
+
+	<share partner="CNN" partnerId="89487">
+		<bookmark name="Email" syntax="http://www.emailthis.clickability.com/et/emailThis?clickMap=create&amp;fb=Y&amp;url=${url}&amp;title=${title}&amp;random=${random}&amp;partnerID=${partnerId}&amp;expire=&amp;summary=&amp;image=" icon="http://i.cdn.turner.com/xslo/cvp/assets/images/icons/email.png" />
+		<bookmark name="Mixx" syntax="http://www.mixx.com/submit/video?page_url=${url}&amp;title=${title}&amp;description=${description}&amp;partner=${partner}" icon="http://i.cdn.turner.com/xslo/cvp/assets/images/icons/mixx.png" />
+		<bookmark name="reddit" syntax="http://www.reddit.com/submit?url=${url}&amp;title=${title}" icon="http://i.cdn.turner.com/xslo/cvp/assets/images/icons/reddit.png" />
+		<bookmark name="Digg" syntax="http://digg.com/submit/?phase=2&amp;url=${url}&amp;title=${title}&amp;bodytext=${description}" icon="http://i.cdn.turner.com/xslo/cvp/assets/images/icons/digg.png" />
+		<bookmark name="StumbleUpon" syntax="http://www.stumbleupon.com/submit?title=${title}&amp;url=${url}" icon="http://i.cdn.turner.com/xslo/cvp/assets/images/icons/stumbleupon.png" />
+		<bookmark name="Facebook" syntax="http://www.facebook.com/share.php?u=${url}&amp;t=${title}" icon="http://i.cdn.turner.com/xslo/cvp/assets/images/icons/facebook.png" />
+		<bookmark name="MySpace" syntax="http://www.myspace.com/Modules/PostTo/Pages/?t=${title}&amp;c=&amp;u=${url}&amp;l=1" icon="http://i.cdn.turner.com/xslo/cvp/assets/images/icons/myspace.png" />
+		<bookmark name="del.icio.us" syntax="http://delicious.com/save?jump=close&amp;v=4&amp;partner=${partner}&amp;noui&amp;jump=close&amp;url=${url}&amp;title=${title}&amp;notes=${description}" icon="http://i.cdn.turner.com/xslo/cvp/assets/images/icons/delicious.png" />
+	</share>
+
+	<!--
+		2.13 CLICKBACK_URL (url)
+			Url used by the embedded container to link back to the main site.
+	-->
+	<param name="clickback_url" value="http://www.si.com" />
+
+	<!--
+
+	3. CONFIGURABLE FUNCTIONALITY: PLAYER INSTANCES
+	This is where we configure each player instance with override parameters for each.
+	Ideally the player to use is just a Flashparam in the embed code.
+	
+-->
+
+	<!-- Sample "Main" Player Instance -->
+
+	<player name="main">
+		<param name="width" value="640" />
+		<param name="height" value="360" />
+		<param name="autostart" value="on" />
+
+	</player>
+<!-- Sample "Main" Player Instance -->
+    <player name="tve_ios_ipad">
+
+		<param name="media_src" value="http://apple-secure.cdn.turner.com/adultswim/big"/>
+        <param name="iOSFileSelection" value="ipad"/>
+
+        <token_auth>
+        <param name="tokenizer_src" value="http://www.adultswim.com/astv/mvpd/processors/services/token_ipadAdobe.do"/>
+        </token_auth>
+
+		<param name="data_src" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?id=${videoId}&amp;networkName=AS" />
+
+        <ad_server type="FREEWHEEL">
+        <param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/AdManager.swf"/>
+        <param name="ad_server_root_url" value="http://BEA4.v.fwmrm.net"/>
+        <param name="ad_section" value="as.com_mobile_huge_ipad"/>
+        <param name="ad_network_id" value="48804"/>
+        <param name="ad_video_network_id" value="48804"/>
+        <param name="ad_video_asset_id" value="${video.freewheelIdNew}"/>
+        <param name="renderers_url" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/renderers.xml"/>
+        <param name="ad_player_profile" value="adultswim_ios_v1"/>
+        <param name="external_slots" value="on"/>
+        <param name="sensitive_fallback_id" value="tbs_no_ads"/>
+        </ad_server>
+        <ad_server type="AUDITUDE"> 
+             <param name="auditude_domain" value="auditude.com"/> <!-- sandbox.auditude.com --> 
+             <param name="auditude_zone" value="131829"/> <!-- 110601 --> 
+             <param name="auditude_media_id" value="vast_Comedy"/> 
+             <param name="auditude_targeting_parameters" value="stream=${video.feedType}-ipad"/>
+        </ad_server>
+        <param name="tracking_policy_src" value="http://www.adultswim.com/tools/xml/tve_ios_tracking_policy_preprod.xml"/>
+        <param name="tracking_policy_context" value="main"/>
+	</player>
+	
+    <player name="tve_ios_iphone">
+
+		<param name="media_src" value="http://apple-secure.cdn.turner.com/adultswim/big"/>
+        <param name="iOSFileSelection" value="iphone"/>
+
+        <token_auth>
+        <param name="tokenizer_src" value="http://www.adultswim.com/astv/mvpd/processors/services/token_ipadAdobe.do"/>
+        </token_auth>
+		<param name="data_src" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?id=${videoId}&amp;networkName=AS" />
+
+        <ad_server type="FREEWHEEL">
+        <param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/AdManager.swf"/>
+        <param name="ad_server_root_url" value="http://BEA4.v.fwmrm.net"/>
+        <param name="ad_section" value="as.com_mobile_huge_iphone"/>
+        <param name="ad_network_id" value="48804"/>
+        <param name="ad_video_network_id" value="48804"/>
+        <param name="ad_video_asset_id" value="${video.freewheelIdNew}"/>
+        <param name="ad_section" value="as.com_mobile_huge_iphone"/>
+        <param name="renderers_url" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/renderers.xml"/>
+        <param name="ad_player_profile" value="adultswim_ios_v1"/>
+        <param name="external_slots" value="on"/>
+        <param name="sensitive_fallback_id" value="tbs_no_ads"/>
+        </ad_server>
+        <ad_server type="AUDITUDE"> 
+             <param name="auditude_domain" value="auditude.com"/> <!-- sandbox.auditude.com --> 
+             <param name="auditude_zone" value="131829"/> <!-- 110601 --> 
+             <param name="auditude_media_id" value="vast_Comedy"/> 
+             <param name="auditude_targeting_parameters" value="stream=${video.feedType}-iphone"/>
+        </ad_server>
+        <param name="tracking_policy_src" value="http://www.adultswim.com/tools/xml/tve_ios_tracking_policy_preprod.xml"/>
+        <param name="tracking_policy_context" value="main"/>
+	</player>
+	
+	
+	<player name="tve_embed_cox">
+		<param name="width" value="640" />
+		<param name="height" value="360" />
+		<param name="autostart" value="on" />
+
+		<ad_server type="FREEWHEEL">
+			<!-- Updated for 3.0 -->
+			<!-- 
+	    	<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/admanager/AdManager_2.9.swf"/>
+	    -->
+			<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/AdManager.swf" />
+			<!-- Updated for 3.0 -->
+			<param name="renderers_url" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/renderers.xml" />
+	
+			<param name="ad_server_root_url" value="http://BEA4.v.fwmrm.net" />
+			<param name="ad_section" value="cox_tve" />
+			<!-- provided by SAS -->
+			<param name="ad_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_asset_id" value="${video.freewheelIdNew}"/>
+			<param name="ad_player_profile" value="adultswim_main_player" />
+			<!-- provided by SAS -->
+			<param name="external_slots" value="on" />
+			<param name="sensitive_fallback_id" value="" />
+			<!-- provided by SAS -->
+		</ad_server>
+
+
+		<token_auth>
+			<param name="tokenizer_src" value="http://www.adultswim.com/astv/mvpd/processors/services/token_cox.do" />
+			<param name="profile" value="adultswim" />
+			<param name="login_check" value="off" />
+		</token_auth>
+		<param name="data_src" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}&amp;networkName=AS" />
+		<param name="tracking_policy_src" value="http://www.adultswim.com/tools/xml/cvp/cfg/tve/adobe/trackingPolicy_embed.xml" />
+	</player>
+	
+	<player name="tve_embed_att">
+		<param name="width" value="640" />
+		<param name="height" value="360" />
+		<param name="autostart" value="on" />
+
+		<ad_server type="FREEWHEEL">
+			<!-- Updated for 3.0 -->
+			<!-- 
+	    	<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/admanager/AdManager_2.9.swf"/>
+	    -->
+			<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/AdManager.swf" />
+			<!-- Updated for 3.0 -->
+			<param name="renderers_url" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/renderers.xml" />
+	
+			<param name="ad_server_root_url" value="http://BEA4.v.fwmrm.net" />
+			<param name="ad_section" value="att_uverse_tve" />
+			<!-- provided by SAS -->
+			<param name="ad_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_asset_id" value="${video.freewheelIdNew}"/>
+			<param name="ad_player_profile" value="adultswim_main_player" />
+			<!-- provided by SAS -->
+			<param name="external_slots" value="on" />
+			<param name="sensitive_fallback_id" value="" />
+			<!-- provided by SAS -->
+		</ad_server>
+
+
+		<token_auth>
+			<param name="tokenizer_src" value="http://www.adultswim.com/astv/mvpd/processors/services/token_att.do" />
+			<param name="profile" value="adultswim" />
+			<param name="login_check" value="off" />
+		</token_auth>
+		<param name="data_src" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}&amp;networkName=AS" />
+		<param name="tracking_policy_src" value="http://www.adultswim.com/tools/xml/cvp/cfg/tve/adobe/trackingPolicy_embed.xml" />
+	</player>
+	
+	<!-- Sample "HP" Player Instance -->
+	<player name="hp">
+		<param name="low_bitrate" value="512" />
+		<param name="high_bitrate" value="512" />
+		<param name="width" value="250" />
+		<param name="height" value="140" />
+		<param name="volume" value="50" />
+		<param name="muted" value="on" />
+		<!--
+		<param name="default_thumbnail" value="http://i.cdn.turner.com/si/.e1d/img/4.0/video/si.default.hp.tn.jpg" />
+		-->
+		<controls>
+			<toolbar display="off" />
+
+		</controls>
+		<param name="ad_policy_context" value="hp" />
+	</player>
+
+	<player name="tve_embed_att_preprod">
+		<param name="width" value="640" />
+		<param name="height" value="360" />
+		<param name="autostart" value="on" />
+
+		<ad_server type="FREEWHEEL">
+			<!-- Updated for 3.0 -->
+			<!-- 
+	    	<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/admanager/AdManager_2.9.swf"/>
+	    -->
+			<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/AdManager.swf" />
+			<!-- Updated for 3.0 -->
+			<param name="renderers_url" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/renderers.xml" />
+	
+			<param name="ad_server_root_url" value="http://BEA4.v.fwmrm.net" />
+			<param name="ad_section" value="att_uverse_tve" />
+
+			<!-- provided by SAS -->
+			<param name="ad_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_asset_id" value="${video.freewheelIdNew}"/>
+			<param name="ad_player_profile" value="adultswim_main_player" />
+			<!-- provided by SAS -->
+			<param name="external_slots" value="on" />
+			<param name="sensitive_fallback_id" value="" />
+			<!-- provided by SAS -->
+		</ad_server>
+
+
+		<token_auth>
+			<param name="tokenizer_src" value="http://pre-prod.adultswim.com/astv/mvpd/processors/services/token_att.do" />
+			<param name="profile" value="adultswim" />
+			<param name="login_check" value="off" />
+		</token_auth>
+		<param name="data_src" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}&amp;networkName=AS" />
+		<param name="tracking_policy_src" value="http://www.adultswim.com/tools/xml/cvp/cfg/tve/adobe/trackingPolicy_embed.xml" />
+	</player>
+	
+	<player name="tve_embed_suddenlink">
+		<param name="width" value="640" />
+		<param name="height" value="360" />
+		<param name="autostart" value="on" />
+
+		<ad_server type="FREEWHEEL">
+			<!-- Updated for 3.0 -->
+			<!-- 
+	    	<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/admanager/AdManager_2.9.swf"/>
+	    -->
+			<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/AdManager.swf" />
+			<!-- Updated for 3.0 -->
+			<param name="renderers_url" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/renderers.xml" />
+	
+			<param name="ad_server_root_url" value="http://BEA4.v.fwmrm.net" />
+			<param name="ad_section" value="suddenlink_portal_tve" />
+			<!-- provided by SAS -->
+			<param name="ad_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_asset_id" value="${video.freewheelIdNew}"/>
+			<param name="ad_player_profile" value="adultswim_main_player" />
+			<!-- provided by SAS -->
+			<param name="external_slots" value="on" />
+			<param name="sensitive_fallback_id" value="" />
+			<!-- provided by SAS -->
+		</ad_server>
+
+
+		<token_auth>
+			<param name="tokenizer_src" value="http://www.adultswim.com/astv/mvpd/processors/services/token_embed.do" />
+			<param name="profile" value="adultswim" />
+			<param name="login_check" value="off" />
+		</token_auth>
+		<param name="data_src" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}&amp;networkName=AS" />
+		<param name="tracking_policy_src" value="http://www.adultswim.com/tools/xml/cvp/cfg/tve/adobe/trackingPolicy_embed.xml" />
+	</player>
+	
+	<player name="tve_embed_suddenlink_preprod">
+		<param name="width" value="640" />
+		<param name="height" value="360" />
+		<param name="autostart" value="on" />
+
+		<ad_server type="FREEWHEEL">
+			<!-- Updated for 3.0 -->
+			<!-- 
+	    	<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/admanager/AdManager_2.9.swf"/>
+	    -->
+			<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/AdManager.swf" />
+			<!-- Updated for 3.0 -->
+			<param name="renderers_url" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/renderers.xml" />
+	
+			<param name="ad_server_root_url" value="http://BEA4.v.fwmrm.net" />
+			<param name="ad_section" value="suddenlink_portal_tve" />
+
+			<!-- provided by SAS -->
+			<param name="ad_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_asset_id" value="${video.freewheelIdNew}"/>
+			<param name="ad_player_profile" value="adultswim_main_player" />
+			<!-- provided by SAS -->
+			<param name="external_slots" value="on" />
+			<param name="sensitive_fallback_id" value="" />
+			<!-- provided by SAS -->
+		</ad_server>
+
+
+		<token_auth>
+			<param name="tokenizer_src" value="http://pre-prod.adultswim.com/astv/mvpd/processors/services/token_embed.do" />
+			<param name="profile" value="adultswim" />
+			<param name="login_check" value="off" />
+		</token_auth>
+		<param name="data_src" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?titleId=${videoId}&amp;networkName=AS" />
+		<param name="tracking_policy_src" value="http://www.adultswim.com/tools/xml/cvp/cfg/tve/adobe/trackingPolicy_embed.xml" />
+	</player>
+
+	<!-- Sample "HP" Player Instance -->
+	<player name="hp">
+		<param name="low_bitrate" value="512" />
+		<param name="high_bitrate" value="512" />
+		<param name="width" value="250" />
+		<param name="height" value="140" />
+		<param name="volume" value="50" />
+		<param name="muted" value="on" />
+		<!--
+		<param name="default_thumbnail" value="http://i.cdn.turner.com/si/.e1d/img/4.0/video/si.default.hp.tn.jpg" />
+		-->
+		<controls>
+			<toolbar display="off" />
+
+		</controls>
+		<param name="ad_policy_context" value="hp" />
+	</player>
+
+	<!-- Sample Embedded Player Instance -->
+	<player name="embed">
+		<param name="low_bitrate" value="512" />
+		<param name="high_bitrate" value="512" />
+		<param name="width" value="400" />
+		<param name="height" value="225" />
+		<!-- <param name="bug_overlay" value="http://i.cdn.turner.com/si/.e1d/img/4.0/video/si.png" />       -->
+		<param name="autostart" value="off" />
+		<param name="volume" value="50" />
+		<!--
+		<param name="default_thumbnail" value="http://i.cdn.turner.com/si/.e1d/img/4.0/video/si.default.tn.jpg" />
+		-->
+		<ad_server type="FREEWHEEL">
+			<!-- Updated for 3.0 -->
+			<!-- 
+	    	<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/admanager/AdManager_2.9.swf"/>
+	    -->
+			<param name="ad_api" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/AdManager.swf" />
+			<!-- Updated for 3.0 -->
+			<param name="renderers_url" value="http://i.cdn.turner.com/xslo/cvp/ads/freewheel/bundles/1/renderers.xml" />
+	
+			<param name="ad_server_root_url" value="http://BEA4.v.fwmrm.net" />
+			<param name="ad_section" value="cox_tve" />
+			<!-- provided by SAS -->
+			<param name="ad_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_network_id" value="48804" />
+			<!-- DEV network id -->
+			<param name="ad_video_asset_id" value="${video.freewheelIdNew}"/>
+			<param name="ad_player_profile" value="adultswim_main_player" />
+			<!-- provided by SAS -->
+			<param name="external_slots" value="on" />
+			<param name="sensitive_fallback_id" value="" />
+			<!-- provided by SAS -->
+		</ad_server>
+	</player>
+
+	<player name="live">
+		<!--
+		<param name="width" value="576" />
+		<param name="height" value="324" />
+-->
+		<param name="width" value="992" />
+		<param name="height" value="442" />
+		<param name="autostart" value="on" />
+		<controls display="on">
+			<toolbar display="on">
+				<layout>
+					<param name="background_color" value="0x101010" />
+					<param name="border_color" value="0x1C1C1C" />
+					<param name="height" value="30" />
+				</layout>
+				<param name="show_outside_player" value="off" />
+				<param name="initial_time_to_hide" value="4000" />
+				<param name="time_to_hide" value="2000" />
+				<param name="opacity" value="85" />
+				<param name="separator_width" value="15" />
+				<components>
+					<play_button display="on">
+						<layout>
+							<param name="order" value="0" />
+							<param name="foreground_color" value="0xFFFFFF" />
+							<param name="border_color" value="0x1C1C1C" />
+						</layout>
+					</play_button>
+					<scrubber display="on">
+						<layout>
+							<param name="order" value="1" />
+						</layout>
+					</scrubber>
+					<scrubber_label display="off">
+						<layout>
+							<param name="order" value="2" />
+						</layout>
+					</scrubber_label>
+					<full_screen_button display="on">
+						<layout>
+							<param name="order" value="3" />
+						</layout>
+					</full_screen_button>
+					<sound_button display="on">
+						<layout>
+							<param name="order" value="4" />
+						</layout>
+					</sound_button>
+					<menu_button display="on">
+						<layout>
+							<param name="order" value="5" />
+						</layout>
+					</menu_button>
+				</components>
+			</toolbar>
+			<giant_play_button display="on" />
+			<menu display="off">
+				<param name="toggle_syndication" value="on" />
+				<param name="toggle_share" value="on" />
+				<param name="toggle_replay" value="off" />
+				<param name="countdown_time" value="7" />
+				<param name="thumbnail_width" value="340" />
+			</menu>
+		</controls>
+	</player>
+	<overlays>
+		<overlay type="content" layout="adcountdown" id="adCountdownOverlay">
+			<label>
+				<text>Advertisement</text>
+				<color>0xFFFFFF</color>
+			</label>
+			<label>
+				<text>This advertisement will end in</text>
+				<color>0xFFFFFF</color>
+			</label>
+		</overlay>
+	</overlays>
+	<actions>
+		<action type="overlay">
+			<adstart>
+				<show>adCountdownOverlay</show>
+			</adstart>
+			<adend>
+				<hide>adCountdownOverlay</hide>
+			</adend>
+		</action>
+		<action type="overlay">
+			<fullscreen>
+				<hide>adCountdownOverlay</hide>
+			</fullscreen>
+		</action>
+	</actions>
+
+</config>

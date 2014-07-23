@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<contexts>
+	<default>
+		<policies>
+			<param name="trackingPolicySrc" value="http://video.adultswim.com/tools/xml/tracking_policy.xml"/>
+			<param name="trackingPolicyContext" value=""/>
+
+			<param name="adPolicySrc" value="http://video.adultswim.com/tools/xml/ad_policy.xml" />
+			<param name="adPolicyContext" value="" />
+
+			<param name="uiPolicySrc" value="http://video.adultswim.com/tools/xml/ui_policy.xml" />
+			<param name="uiPolicyContext" value="" />
+			
+		</policies>
+	</default>
+	<context name="main">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<policies>
+				<param name="trackingPolicySrc" value="/tools/xml/tracking_policy.xml"/>
+				<param name="uiPolicySrc" value="/tools/xml/ui_policy.xml" />
+				<param name="adPolicySrc" value="/tools/xml/ad_policy.xml" />
+			</policies>
+			<param name="width" value="992" />
+			<param name="height" value="442" />
+			<param name="x" value="0" />
+			<param name="y" value="0" />
+			<player playerInstance="main" />
+		</element>
+
+	</context>
+	<context name="aslivestream">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<policies>
+				<param name="trackingPolicySrc" value="/tools/xml/tracking_policy.xml"/>
+				<param name="uiPolicySrc" value="/tools/xml/ui_policy.xml" />
+				<param name="uiPolicyContext" value="aslivestream" />
+				<param name="adPolicySrc" value="/tools/xml/ad_policy.xml" />
+			</policies>
+			<param name="width" value="992" />
+			<param name="height" value="442" />
+			<param name="x" value="0" />
+			<param name="y" value="0" />
+			<player playerInstance="main" />
+		</element>
+
+	</context>
+	<context name="tve_embed">
+	    <element id="cvp_1" type="cvp" autoshow="true">
+	        <param name="width" value="100%"/>
+	        <param name="height" value="100%"/>
+	        <player playerInstance="tve_embed"/>
+	    </element>
+	</context>
+	<context name="tve_embed_preprod">
+	    <element id="cvp_1" type="cvp" autoshow="true">
+	        <param name="width" value="100%"/>
+	        <param name="height" value="100%"/>
+	        <player playerInstance="tve_embed_preprod"/>
+	    </element>
+	</context>
+	<context name="tve_embed_att">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<param name="width" value="100%" />
+			<param name="height" value="100%" />
+			<policies>
+				<param name="adPolicyContext" value="tve_embed_att"/>
+	        </policies>
+			<player playerInstance="tve_embed_att" />
+		</element>
+	</context>
+	<context name="tve_embed_att_preprod">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<param name="width" value="100%" />
+			<param name="height" value="100%" />
+			<policies>
+				<param name="adPolicyContext" value="tve_embed_att_preprod"/>
+	        </policies>
+			<player playerInstance="tve_embed_att_preprod" />
+		</element>
+	</context>
+	<context name="tve_embed_charter">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<param name="width" value="100%" />
+			<param name="height" value="100%" />
+			<policies>
+				<param name="adPolicyContext" value="tve_embed_charter"/>
+	        </policies>
+			<player playerInstance="tve_embed_charter" />
+		</element>
+	</context>
+	<context name="tve_embed_charter_preprod">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<param name="width" value="100%" />
+			<param name="height" value="100%" />
+			<policies>
+				<param name="adPolicyContext" value="tve_embed_charter_preprod"/>
+	        </policies>
+			<player playerInstance="tve_embed_charter_preprod" />
+		</element>
+	</context>
+	<context name="tve_embed_cox">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<param name="width" value="100%" />
+			<param name="height" value="100%" />
+			<policies>
+				<param name="adPolicyContext" value="tve_embed_cox"/>
+	        </policies>
+			<player playerInstance="tve_embed_cox" />
+		</element>
+	</context>
+	<context name="tve_embed_cox_preprod">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<param name="width" value="100%" />
+			<param name="height" value="100%" />
+			<policies>
+				<param name="adPolicyContext" value="tve_embed_cox_preprod"/>
+	        </policies>
+			<player playerInstance="tve_embed_cox_preprod" />
+		</element>
+	</context>
+	<context name="tve_embed_suddenlink">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<param name="width" value="100%" />
+			<param name="height" value="100%" />
+			<policies>
+				<param name="adPolicyContext" value="tve_embed_suddenlink"/>
+	        </policies>
+			<player playerInstance="tve_embed_suddenlink" />
+		</element>
+	</context>
+	
+	<context name="tve_embed_suddenlink_preprod">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<param name="width" value="100%" />
+			<param name="height" value="100%" />
+			<policies>
+				<param name="adPolicyContext" value="tve_embed_suddenlink_preprod"/>
+	        </policies>
+			<player playerInstance="tve_embed_suddenlink_preprod" />
+		</element>
+	</context>
+
+	<context name="tve_ios_ipad">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<param name="width" value="640" />
+			<param name="height" value="360" />
+			<param name="x" value="0" />
+			<param name="y" value="0" />
+			<policies>
+				<param name="trackingPolicySrc" value="http://video.adultswim.com/tools/xml/tve_ios_tracking_policy_preprod.xml"/>
+				<param name="adPolicyContext" value="tve_ios_ipad"/>
+			</policies>
+			<player playerInstance="tve_ios_ipad" />
+		</element>
+	</context>
+	<context name="tve_ios_iphone">
+		<element id="cvp_1" type="cvp" autoshow="true">
+			<param name="width" value="640" />
+			<param name="height" value="360" />
+			<param name="x" value="0" />
+			<param name="y" value="0" />
+			<policies>
+				<param name="trackingPolicySrc" value="http://video.adultswim.com/tools/xml/tve_ios_tracking_policy_preprod.xml"/>
+				<param name="adPolicyContext" value="tve_ios_iphone"/>
+			</policies>
+			<player playerInstance="tve_ios_iphone" />
+		</element>
+	</context>
+    <context name="tve_embed_simulcast">
+        <element id="cvp_1" type="cvp" autoshow="true">
+            <policies>
+                <param name="uiPolicySrc" value="http://video.adultswim.com/tools/xml/ui_policy.xml" />
+                <param name="adPolicyContext" value="tve_embed_simulcast" />
+            </policies>
+            <param name="width" value="100%" />
+            <param name="height" value="100%" />
+            <param name="x" value="0" />
+            <param name="y" value="0" />
+            <player playerInstance="tve_embed_simulcast">
+                <config_path/>
+                <trusted_domains/>
+            </player>
+        </element>
+    </context>
+    <context name="tve_embed_simulcast_preprod">
+        <element id="cvp_1" type="cvp" autoshow="true">
+            <policies>
+                <param name="trackingPolicySrc" value="http://pre-prod-video.adultswim.com/tools/xml/tracking_policy.xml" />
+                <param name="uiPolicySrc" value="http://pre-prod-video.adultswim.com/tools/xml/ui_policy.xml" />
+                <param name="adPolicySrc" value="http://pre-prod-video.adultswim.com/tools/xml/ad_policy.xml" />
+                <param name="adPolicyContext" value="tve_embed_simulcast_preprod" />
+            </policies>
+            <param name="width" value="100%" />
+            <param name="height" value="100%" />
+            <param name="x" value="0" />
+            <param name="y" value="0" />
+            <player playerInstance="tve_embed_simulcast_preprod">
+                <config_path/>
+                <trusted_domains/>
+            </player>
+        </element>
+    </context>
+
+    <context name="live_preview">
+    	<element id="cvp_1" type="cvp" autoshow="true">
+    		<policies>
+    			<param name="trackingPolicySrc" value=""/>
+    			<param name="uiPolicySrc" value="/tools/xml/ui_policy.xml"/>
+    			<param name="uiPolicyContext" value="live_preview"/>
+    			<param name="adPolicySrc" value="/tools/xml/ad_policy.xml"/>
+    			<param name="adPolicyContext" value="live_preview"/>
+    		</policies>
+    		<param name="width" value="100%"/>
+    		<param name="height" value="100%"/>
+    		<param name="x" value="0"/>
+    		<param name="y" value="0"/>
+    		<player playerInstance="live_preview"/>
+    	</element>
+    </context>
+
+    <context name="live_preview_2">
+    	<element id="cvp_1" type="cvp" autoshow="true">
+    		<policies>
+    			<param name="trackingPolicySrc" value=""/>
+    			<param name="uiPolicySrc" value="/tools/xml/ui_policy.xml"/>
+    			<param name="uiPolicyContext" value="live_preview"/>
+    			<param name="adPolicySrc" value="/tools/xml/ad_policy.xml"/>
+    			<param name="adPolicyContext" value="live_preview"/>
+    		</policies>
+    		<param name="width" value="100%"/>
+    		<param name="height" value="100%"/>
+    		<param name="x" value="0"/>
+    		<param name="y" value="0"/>
+    		<player playerInstance="live_preview_2"/>
+    	</element>
+    </context>
+    
+    <context name="live_preview_3">
+    	<element id="cvp_1" type="cvp" autoshow="true">
+    		<policies>
+    			<param name="trackingPolicySrc" value=""/>
+    			<param name="uiPolicySrc" value="/tools/xml/ui_policy.xml"/>
+    			<param name="uiPolicyContext" value="live_preview_3"/>
+    			<param name="adPolicySrc" value="/tools/xml/ad_policy.xml"/>
+    			<param name="adPolicyContext" value="live_preview"/>
+    		</policies>
+    		<param name="width" value="100%"/>
+    		<param name="height" value="100%"/>
+    		<param name="x" value="0"/>
+    		<param name="y" value="0"/>
+    		<player playerInstance="live_preview_3"/>
+    		<param name="dataSrc" value="http://www.adultswim.com/astv/mvpd/services/cvpXML.do?id=${videoId}" />
+
+    	</element>
+    </context>   
+    
+    <context name="live_preview_4">
+    	<element id="cvp_1" type="cvp" autoshow="true">
+    		<policies>
+    			<param name="trackingPolicySrc" value=""/>
+    			<param name="uiPolicySrc" value="/tools/xml/ui_policy.xml"/>
+    			<param name="uiPolicyContext" value="live_preview_4"/>
+    			<param name="adPolicySrc" value="/tools/xml/ad_policy.xml"/>
+    			<param name="adPolicyContext" value="live_preview"/>
+    		</policies>
+    		<param name="width" value="100%"/>
+    		<param name="height" value="100%"/>
+    		<param name="x" value="0"/>
+    		<param name="y" value="0"/>
+    		<player playerInstance="live_preview_4"/>
+    	</element>
+    </context>
+
+    <context name="live_preview_lazzo">
+    	<element id="cvp_1" type="cvp" autoshow="true">
+    		<policies>
+    			<param name="trackingPolicySrc" value=""/>
+    			<param name="uiPolicySrc" value="/tools/xml/ui_policy.xml"/>
+    			<param name="uiPolicyContext" value="live_preview"/>
+    			<param name="adPolicySrc" value="/tools/xml/ad_policy.xml"/>
+    			<param name="adPolicyContext" value="live_preview"/>
+    		</policies>
+    		<param name="width" value="100%"/>
+    		<param name="height" value="100%"/>
+    		<param name="x" value="0"/>
+    		<param name="y" value="0"/>
+    		<player playerInstance="live_preview_lazzo"/>
+    	</element>
+    </context>
+</contexts>

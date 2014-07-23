@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trackingContexts>
+   <default>
+      <omniture>
+         <param name="omnitureAccount" value="${javascript.jsmd.tveRSID}"/>
+         <param name="omnitureServer" value="metrics.turner.com"/>
+      </omniture>
+   </default>
+   <context name="clips">
+      <omniture>
+         <dataPoints>
+             </dataPoints>
+      </omniture>
+   </context>
+   <context name="short_interval_c3">
+      <param name="interval" value="60s"/>
+   </context>
+   <context name="short_interval_c4">
+      <param name="interval" value="60s"/>
+   </context>
+    <context name="long_interval_c3">
+        <param name="interval" value="60s"/>
+    </context>
+    <context name="long_interval_c4">
+        <param name="interval" value="60s"/>
+    </context>
+	<context name="tve_embed">
+        <param name="interval" value="60s"/>
+		<pings>
+			<contentPlay>
+				<param name="ping" value="http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-100120&amp;c6=vc,c01&amp;cc=1&amp;tl=dav0-${video.contentId}&amp;rnd=${random}"/>
+				<param name="ping" value="http://b.scorecardresearch.com/p?c1=1&amp;c2=8586818&amp;c3=00011&amp;c4=8586822&amp;c5=020000"/>
+			</contentPlay>
+			<contentComplete>
+				<param name="ping" value="http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-100120&amp;c6=vc,c01&amp;cc=1&amp;tl=dav2-${video.contentId}&amp;rnd=${random}"/>
+			</contentComplete>
+		</pings>
+    </context>
+</trackingContexts>

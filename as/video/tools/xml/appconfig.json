@@ -1,0 +1,7 @@
+cvp_onAppConfigReceived({
+	"appConfig" : {
+		"bundleVersion" : "2.4.2.0",
+		"configUrl" : "/tools/xml/tveConfig2.xml",
+		"containerUrl" : "/tools/xml/tveContainer2.xml"
+	}
+});

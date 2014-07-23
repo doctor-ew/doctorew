@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policy>
+	<elements>
+
+		<ui id="octoshapeInstall" swf="http://z.cdn.turner.com/xslo/cvp/assets/ui/default/overlays/cvp_image_overlay_2.0.0.2.swf">
+            <overlay>
+                <data>
+                    <key name="image">http://z.cdn.turner.com/cnn/.element/img/3.0/video/octoOverlay_640x406.png</key>
+                </data>
+                <actions>
+                    <action type="show" event="OctoshapeAskEvent" />
+                    <action type="hide" event="OctoshapeInstalledEvent" />
+                    <action type="hide" event="OctoshapeNotInstalledEvent" />
+                </actions>
+            </overlay>
+        </ui>
+<!--
+		<ui id="watermark" swf="/gold_ref/CVP2Eval/assets/cvp_image_overlay.swf">
+-->
+
+
+		<ui id="watermark" swf="http://z.cdn.turner.com/xslo/cvp/assets/ui/default/overlays/cvp_image_overlay_2.0.0.2.swf">
+			<overlay>
+				<data>
+					<key name="image">${video.ads.ad[type=bug]}</key>
+				</data>
+				<fallback>
+					<key name="image">http://z.cdn.turner.com/adultswim/tools/img/adultswimdottv/bug-white100x13.png</key>
+				</fallback>
+				<actions>
+					<action type="hide" event="AdPlayEvent" />
+					<action type="hide" event="ContentBeginEvent" />
+					<action type="show" event="ContentPlayEvent" />
+				</actions>
+			</overlay>
+		</ui>
+
+<!--
+		<ui id="controls" swf="/gold_ref/CVP2Eval/assets/cvp_default_controls.swf">
+-->
+
+		<ui id="controls" swf="http://z.cdn.turner.com/xslo/cvp/assets/ui/default/controls/cvp_default_controls_2.4.1.1.swf">
+
+		 	<!-- cvp_default_controls_2.1.5.0.swf -->
+			<controls>
+				<param name="defaultSlateImage" value="" />
+				<giantPlayButton display="on" />
+				<tinyBar display="on">
+					<layout>
+						<param name="foregroundColor" value="0xffffff"/>
+					</layout>
+				</tinyBar>
+				<menu display="on">
+					<param name="countdownTime" value="7" />
+
+					<param name="relatedClickTarget" value="_player"/>
+					<slates>
+						<share display="off">
+							<param name="largeBtns" value="facebook,twitter,embed,link"/>
+							<param name="smallBtns" value="email,delicious,digg,stumbleupon,reddit,myspace,mixx"/>
+							<layout>
+								<param name="order" value="0" />
+							</layout>
+						</share>
+						<info display="on"> 
+							<layout>
+								<param name="order" value="1" />
+							</layout>
+						</info>
+						<related display="on"> 
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</related>
+						<closedCaptionSettings display="on">
+	                        <param name="faq" value="For more information about Closed Captions, please refer to our &lt;a href='http://video.adultswim.com/footer/legal/ccfaq.html' target='_blank'&gt;&lt;u&gt;FAQs&lt;/u&gt;&lt;/a&gt;"/>
+	                        <layout>
+	                            <param name="order" value="1" />
+	                        </layout>
+	                    </closedCaptionSettings>
+					</slates>
+				</menu>
+				<toolbar display="on">
+					<param name="showOutsidePlayer" value="off" />
+					
+					<components>
+						<playButton display="on">
+							<layout>
+								<param name="order" value="0" />
+							</layout>
+						</playButton>
+						<scrubber display="on">
+							<tooltip display="off"/>
+							<param name="disable" value="${video.isLive}" /> <!-- this would disable the scrubber for live streams only -->
+							<layout>
+								<param name="order" value="1" />
+								<param name="foregroundColor" value="0xffffff"/>
+							</layout>
+						</scrubber>
+						<scrubberLabel display="on">
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</scrubberLabel>
+						<scrubberCountdown display="off">
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</scrubberCountdown>
+						<fullScreenButton display="on">
+							<layout>
+								<param name="order" value="3" />
+							</layout>
+						</fullScreenButton>
+						<soundButton display="on">
+							<layout>
+								<param name="order" value="4" />
+								<param name="foregroundColor" value="0xffffff"/>
+							</layout>
+						</soundButton>
+						<shareButton display="off">
+							<layout>
+								<param name="order" value="5" />
+							</layout>
+						</shareButton>
+						<infoButton display="on">
+							<layout>
+								<param name="order" value="6" />
+							</layout>
+						</infoButton>
+						<relatedButton display="on"> 
+							<layout>
+								<param name="order" value="7" />
+							</layout>
+						</relatedButton>
+					</components>
+				</toolbar>
+			</controls>
+		</ui>
+
+		<ui id="live_controls" swf="http://z.cdn.turner.com/xslo/cvp/assets/ui/default/controls/cvp_default_controls_2.4.1.1.swf">
+			<controls>
+				<param name="defaultSlateImage" value="" />
+				<giantPlayButton display="on" />
+				<tinyBar display="on">
+					<layout>
+						<param name="foregroundColor" value="0xffffff"/>
+					</layout>
+				</tinyBar>
+				<menu display="on">
+					<param name="countdownTime" value="7" />
+
+					<param name="relatedClickTarget" value="_player"/>
+					<slates>
+						<share display="off">
+							<param name="largeBtns" value="facebook,twitter,embed,link"/>
+							<param name="smallBtns" value="email,delicious,digg,stumbleupon,reddit,myspace,mixx"/>
+							<layout>
+								<param name="order" value="0" />
+							</layout>
+						</share>
+						<info display="on"> 
+							<layout>
+								<param name="order" value="1" />
+							</layout>
+						</info>
+						<related display="on"> 
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</related>
+						<closedCaptionSettings display="on">
+	                        <param name="faq" value="For more information about Closed Captions, please refer to our &lt;a href='http://video.adultswim.com/footer/legal/ccfaq.html' target='_blank'&gt;&lt;u&gt;FAQs&lt;/u&gt;&lt;/a&gt;"/>
+	                        <layout>
+	                            <param name="order" value="1" />
+	                        </layout>
+	                    </closedCaptionSettings>
+					</slates>
+				</menu>
+				<toolbar display="on">
+					<param name="showOutsidePlayer" value="off" />
+					
+					<components>
+						<playButton display="on">
+							<layout>
+								<param name="order" value="0" />
+							</layout>
+						</playButton>
+						<scrubber display="on">
+							<tooltip display="off"/>
+							<param name="disable" value="${video.isLive}" /> <!-- this would disable the scrubber for live streams only -->
+							<layout>
+								<param name="order" value="1" />
+								<param name="foregroundColor" value="0xffffff"/>
+							</layout>
+						</scrubber>
+						<scrubberLabel display="off">
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</scrubberLabel>
+						<scrubberCountdown display="off">
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</scrubberCountdown>
+						<fullScreenButton display="on">
+							<layout>
+								<param name="order" value="3" />
+							</layout>
+						</fullScreenButton>
+						<soundButton display="on">
+							<layout>
+								<param name="order" value="4" />
+								<param name="foregroundColor" value="0xffffff"/>
+							</layout>
+						</soundButton>
+						<shareButton display="off">
+							<layout>
+								<param name="order" value="5" />
+							</layout>
+						</shareButton>
+						<infoButton display="on">
+							<layout>
+								<param name="order" value="6" />
+							</layout>
+						</infoButton>
+						<relatedButton display="on"> 
+							<layout>
+								<param name="order" value="7" />
+							</layout>
+						</relatedButton>
+					</components>
+				</toolbar>
+			</controls>
+		</ui>
+
+
+		<ui id="live_preview_controls" swf="http://z.cdn.turner.com/xslo/cvp/assets/ui/default/controls/cvp_default_controls_2.4.1.1.swf">
+			<!-- cvp_default_controls_2.1.5.0.swf -->
+			<controls>
+				<param name="defaultSlateImage" value="" />
+				<giantPlayButton display="on" />
+				<tinyBar display="on">
+					<layout>
+						<param name="foregroundColor" value="0xffffff"/>
+					</layout>
+				</tinyBar>
+				<menu display="on">
+					<param name="countdownTime" value="7" />
+
+					<param name="relatedClickTarget" value="_player"/>
+					<slates>
+						<share display="off">
+							<param name="largeBtns" value="facebook,twitter,embed,link"/>
+							<param name="smallBtns" value="email,delicious,digg,stumbleupon,reddit,myspace,mixx"/>
+							<layout>
+								<param name="order" value="0" />
+							</layout>
+						</share>
+						<info display="on"> 
+							<layout>
+								<param name="order" value="1" />
+							</layout>
+						</info>
+						<related display="on"> 
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</related>
+						<closedCaptionSettings display="on">
+	                        <param name="faq" value="For more information about Closed Captions, please refer to our &lt;a href='http://video.adultswim.com/footer/legal/ccfaq.html' target='_blank'&gt;&lt;u&gt;FAQs&lt;/u&gt;&lt;/a&gt;"/>
+	                        <layout>
+	                            <param name="order" value="1" />
+	                        </layout>
+	                    </closedCaptionSettings>
+					</slates>
+				</menu>
+				<toolbar display="on">
+					<param name="showOutsidePlayer" value="off" />
+					
+					<components>
+						<playButton display="off">
+							<layout>
+								<param name="order" value="0" />
+							</layout>
+						</playButton>
+						<scrubber display="off">
+							<tooltip display="off"/>
+							<param name="disable" value="${video.isLive}" /> <!-- this would disable the scrubber for live streams only -->
+							<layout>
+								<param name="order" value="1" />
+								<param name="foregroundColor" value="0xffffff"/>
+							</layout>
+						</scrubber>
+						<scrubberLabel display="off">
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</scrubberLabel>
+						<scrubberCountdown display="off">
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</scrubberCountdown>
+						<fullScreenButton display="off">
+							<layout>
+								<param name="order" value="3" />
+							</layout>
+						</fullScreenButton>
+						<soundButton display="on">
+							<layout>
+								<param name="order" value="4" />
+								<param name="foregroundColor" value="0xffffff"/>
+							</layout>
+						</soundButton>
+						<shareButton display="off">
+							<layout>
+								<param name="order" value="5" />
+							</layout>
+						</shareButton>
+						<infoButton display="off">
+							<layout>
+								<param name="order" value="6" />
+							</layout>
+						</infoButton>
+						<relatedButton display="off"> 
+							<layout>
+								<param name="order" value="7" />
+							</layout>
+						</relatedButton>
+					</components>
+				</toolbar>
+			</controls>
+		</ui>
+    
+    <ui id="live_fish_controls" swf="http://z.cdn.turner.com/xslo/cvp/assets/ui/default/controls/cvp_default_controls_2.4.1.1.swf">
+			<!-- cvp_default_controls_2.1.5.0.swf -->
+			<controls>
+				<param name="defaultSlateImage" value="http://i.cdn.turner.com/adultswim/big/img/2014/01/08/FishTank.gif" />
+				<giantPlayButton display="off" />
+				<tinyBar display="on">
+					<layout>
+						<param name="foregroundColor" value="0xffffff"/>
+					</layout>
+				</tinyBar>
+				<menu display="on">
+					<param name="countdownTime" value="7" />
+
+					<param name="relatedClickTarget" value="_player"/>
+					<slates>
+						<share display="off">
+							<param name="largeBtns" value="facebook,twitter,embed,link"/>
+							<param name="smallBtns" value="email,delicious,digg,stumbleupon,reddit,myspace,mixx"/>
+							<layout>
+								<param name="order" value="0" />
+							</layout>
+						</share>
+						<info display="on"> 
+							<layout>
+								<param name="order" value="1" />
+							</layout>
+						</info>
+						<related display="on"> 
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</related>
+						<closedCaptionSettings display="on">
+	                        <param name="faq" value="For more information about Closed Captions, please refer to our &lt;a href='http://video.adultswim.com/footer/legal/ccfaq.html' target='_blank'&gt;&lt;u&gt;FAQs&lt;/u&gt;&lt;/a&gt;"/>
+	                        <layout>
+	                            <param name="order" value="1" />
+	                        </layout>
+	                    </closedCaptionSettings>
+					</slates>
+				</menu>
+				<toolbar display="on">
+					<param name="showOutsidePlayer" value="off" />
+					
+					<components>
+						<playButton display="off">
+							<layout>
+								<param name="order" value="0" />
+							</layout>
+						</playButton>
+						<scrubber display="off">
+							<tooltip display="off"/>
+							<param name="disable" value="${video.isLive}" /> <!-- this would disable the scrubber for live streams only -->
+							<layout>
+								<param name="order" value="1" />
+								<param name="foregroundColor" value="0xffffff"/>
+							</layout>
+						</scrubber>
+						<scrubberLabel display="off">
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</scrubberLabel>
+						<scrubberCountdown display="off">
+							<layout>
+								<param name="order" value="2" />
+							</layout>
+						</scrubberCountdown>
+						<fullScreenButton display="off">
+							<layout>
+								<param name="order" value="3" />
+							</layout>
+						</fullScreenButton>
+						<soundButton display="on">
+							<layout>
+								<param name="order" value="4" />
+								<param name="foregroundColor" value="0xffffff"/>
+							</layout>
+						</soundButton>
+						<shareButton display="off">
+							<layout>
+								<param name="order" value="5" />
+							</layout>
+						</shareButton>
+						<infoButton display="off">
+							<layout>
+								<param name="order" value="6" />
+							</layout>
+						</infoButton>
+						<relatedButton display="off"> 
+							<layout>
+								<param name="order" value="7" />
+							</layout>
+						</relatedButton>
+					</components>
+				</toolbar>
+			</controls>
+		</ui>
+	</elements>
+	<default>
+		<ui elements="controls"/>
+	</default>
+	<context name="overlays">
+		<ui elements="watermark,controls,octoshapeInstall"/>
+	</context>
+	<context name="aslivestream">
+		<ui elements="live_controls"/>
+	</context>
+	<context name="live_preview">
+		<ui elements="live_preview_controls"/>
+	</context>
+	<context name="live_preview_2">
+		<ui elements="live_fish_controls"/>
+	</context> 
+	<context name="live_preview_3">
+		<ui elements="live_preview_controls"/>
+	</context>   
+	<context name="live_preview_4">
+		<ui elements="live_preview_controls"/>
+	</context>
+</policy> 

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			canvas#phonograph {
+				height: 512px;
+				width: 552px;
+			}
+		</style>
+	</head>
+	<body>
+		
+       <div id="imageContainer">
+            <div id="containerBG"> </div>
+            
+            <div id="innerContainer">
+				<canvas id="phonograph" height="512" width="552"></canvas>
+
+                <div class="loadingBar">
+                    <div class="loading-progress-15" id="loadingFill"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	    <script src="jquery.overlaps.js"></script>
+
+		<script src="http://code.createjs.com/easeljs-0.5.0.min.js"></script>
+		<script src="http://code.createjs.com/tweenjs-0.3.0.min.js"></script>
+		<script src="http://code.createjs.com/soundjs-0.3.0.min.js"></script>
+		<script src="http://code.createjs.com/preloadjs-0.2.0.min.js"></script>
+
+
+		<script src="js/tweenmax/TweenMax.min.js"></script>
+
+		<script type="text/javascript">
+
+			var arrPhono = ["player.jpg", "vinyl-record.png", "arm.png"];
+
+			var img, offset, dragging;
+			var degrees = 0;
+			var isPlaying = false;
+
+			function init() {
+
+			    var ctx = $("#phonograph").get(0).getContext('2d');
+			    var player = new Image();
+			    var vinyl = new Image();
+			    var arm = new Image();
+
+			    player.src = "player.jpg";
+			    vinyl.src = "vinyl-record.png";
+			    arm.src = "arm.png";
+
+			    player.onload = function() {
+			        ctx.drawImage(player, 0, 0);
+			        ctx.save();
+			    }
+			    vinyl.onload = function() {
+			        ctx.drawImage(vinyl, 62, 75, 330, 330);
+			        ctx.save();
+			    }
+			    arm.onload = function() {
+//					ctx.translate(50, 35); 
+//			    	ctx.rotate(0.5); 
+			        ctx.drawImage(arm, 270, 100);
+			        ctx.save();
+			    }
+
+
+			}
+
+
+
+			function preload() {
+
+			    reload();
+			    loadAll();
+			}
+
+			// Reset everything
+
+
+			function reload() {
+			    // If there is an open preload queue, close it.
+			    if(preload != null) {
+			        try {
+			            preload.close();
+			        } catch(e) {}
+			    }
+
+			    // Push each item into our manifest
+			    manifest = arrPhono;
+
+			    // Create a preloader. There is no manfest added to it up-front, we will add items on-demand.
+			    preload = new createjs.PreloadJS();
+			    preload.onFileLoad = handleFileLoad;
+			    preload.onProgress = handleOverallProgress;
+			    preload.onFileProgress = handleFileProgress;
+			    preload.onError = handleFileError;
+			    preload.setMaxConnections(5);
+			}
+
+			function loadAll() {
+			    while(manifest.length > 0) {
+			        loadAnother();
+			    }
+			}
+
+
+			// File complete handler
+
+
+			function handleFileLoad(event) {
+			    // Get a reference to the loaded image (<img/>)
+			    var img = event.result;
+			    // getting the images and their index for later sorting
+			    // 
+			    init();
+			}
+
+			// File progress handler
+
+
+			function handleFileProgress(event) {}
+
+			// Overall progress handler
+
+
+			function handleOverallProgress(event) {
+			    console.log('TOTAL: ' + preload.progress);
+			    var perc = preload.progress * 100;
+			    console.log('perc',perc, event);
+			    TweenMax.to($("#loadingFill"), 0.2, {
+			        css: {
+			            'width': perc + '%'
+			        }
+			    });
+			}
+
+			// An error happened on a file
+
+
+			function handleFileError(event) {
+			    console.log('error',event);
+			}
+
+
+
+			function loadAnother() {
+			    // Get the next manifest item, and load it
+			    var item = manifest.shift();
+			    preload.loadFile(item);
+
+			}
+
+
+
+			$(function() {
+   			    preload();
+			});
+
+</script>
+	</body>
+</html>
